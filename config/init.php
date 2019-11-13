@@ -1,7 +1,7 @@
 <?php
 define("DEBUG", 1);
 define("ROOT", dirname(__DIR__));
-define("www", ROOT . '/public');
+define("WWW", ROOT . '/public');
 define("APP", ROOT . '/app');
 define("CORE", ROOT . '/vendor/ibuild/core');
 define("LIBS", ROOT . '/vendor/ibuild/core/libs');
@@ -15,7 +15,7 @@ $app_path = "http://{$_SERVER['HTTP_HOST']}{$_SERVER['PHP_SELF']}";
 $app_path = preg_replace("#[^/]+$#", '', $app_path);
 // http://localhost:81
 $app_path = str_replace('/public/', '', $app_path);
-define("PATCH", $app_path);
+define("PATH", $app_path);
 define("ADMIN", PATH . '/admin');
 
 

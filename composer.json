@@ -1,0 +1,9 @@
+{
+    "autoload": {
+        "psr-4": {
+            "ibuild\\": "vendor/ibuild/core",
+            "app\\": "app"
+        }
+    },
+    "require": {}
+}

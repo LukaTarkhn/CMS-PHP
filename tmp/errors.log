@@ -214,3 +214,209 @@
 =========================
 [2019-11-15 10:33:01] Error text: D:\OSPanel\domains\localhost/app/views/Page/view.php not found | file: D:\OSPanel\domains\localhost\vendor\ibuild\core\base\View.php | line: 38
 =========================
+[2019-11-15 11:22:15] Error text: Can't connect database | file: D:\OSPanel\domains\localhost\vendor\ibuild\core\Db.php | line: 13
+=========================
+[2019-11-15 11:23:44] Error text: Can't connect database | file: D:\OSPanel\domains\localhost\vendor\ibuild\core\Db.php | line: 13
+=========================
+[2019-11-15 11:23:45] Error text: Can't connect database | file: D:\OSPanel\domains\localhost\vendor\ibuild\core\Db.php | line: 13
+=========================
+[2019-11-15 11:24:41] Error text: Can't connect database | file: D:\OSPanel\domains\localhost\vendor\ibuild\core\Db.php | line: 13
+=========================
+[2019-11-15 11:24:41] Error text: Can't connect database | file: D:\OSPanel\domains\localhost\vendor\ibuild\core\Db.php | line: 13
+=========================
+[2019-11-15 11:24:42] Error text: Can't connect database | file: D:\OSPanel\domains\localhost\vendor\ibuild\core\Db.php | line: 13
+=========================
+[2019-11-15 11:24:42] Error text: Can't connect database | file: D:\OSPanel\domains\localhost\vendor\ibuild\core\Db.php | line: 13
+=========================
+[2019-11-15 11:41:29] Error text: Can't connect database | file: D:\OSPanel\domains\localhost\vendor\ibuild\core\Db.php | line: 13
+=========================
+[2019-11-15 11:43:47] Error text: Can't connect database | file: D:\OSPanel\domains\localhost\vendor\ibuild\core\Db.php | line: 13
+=========================
+[2019-11-15 11:48:41] Error text: Can't connect database | file: D:\OSPanel\domains\localhost\vendor\ibuild\core\Db.php | line: 13
+=========================
+[2019-11-15 11:48:43] Error text: Can't connect database | file: D:\OSPanel\domains\localhost\vendor\ibuild\core\Db.php | line: 13
+=========================
+[2019-11-15 11:49:49] Error text: Can't connect database | file: D:\OSPanel\domains\localhost\vendor\ibuild\core\Db.php | line: 13
+=========================
+[2019-11-15 11:51:05] Error text: Can't connect database | file: D:\OSPanel\domains\localhost\vendor\ibuild\core\Db.php | line: 13
+=========================
+[2019-11-15 11:52:49] Error text: Can't connect database | file: D:\OSPanel\domains\localhost\vendor\ibuild\core\Db.php | line: 13
+=========================
+[2019-11-15 11:59:13] Error text: Can't connect database | file: D:\OSPanel\domains\localhost\vendor\ibuild\core\Db.php | line: 13
+=========================
+[2019-11-15 11:59:24] Error text: Could not connect to database (ibuild). | file: D:\OSPanel\domains\localhost\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | line: 440
+=========================
+[2019-11-15 11:59:25] Error text: Could not connect to database (ibuild). | file: D:\OSPanel\domains\localhost\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | line: 440
+=========================
+[2019-11-15 12:00:16] Error text: Could not connect to database (?). | file: D:\OSPanel\domains\localhost\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | line: 440
+=========================
+[2019-11-15 12:00:32] Error text: Could not connect to database (ibuild). | file: D:\OSPanel\domains\localhost\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | line: 440
+=========================
+[2019-11-15 12:00:33] Error text: Could not connect to database (ibuild). | file: D:\OSPanel\domains\localhost\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | line: 440
+=========================
+[2019-11-15 12:04:07] Error text: Could not connect to database (ibuild). | file: D:\OSPanel\domains\localhost\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | line: 440
+=========================
+[2019-11-15 12:30:50] Error text: Could not connect to database (ibuild). | file: D:\OSPanel\domains\localhost\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | line: 440
+=========================
+[2019-11-15 12:31:30] Error text: Could not connect to database (ibuild). | file: D:\OSPanel\domains\localhost\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | line: 440
+=========================
+[2019-11-15 12:31:31] Error text: Could not connect to database (ibuild). | file: D:\OSPanel\domains\localhost\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | line: 440
+=========================
+[2019-11-15 12:31:32] Error text: Could not connect to database (ibuild). | file: D:\OSPanel\domains\localhost\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | line: 440
+=========================
+[2019-11-15 12:31:32] Error text: Could not connect to database (ibuild). | file: D:\OSPanel\domains\localhost\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | line: 440
+=========================
+[2019-11-15 12:31:32] Error text: Could not connect to database (ibuild). | file: D:\OSPanel\domains\localhost\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | line: 440
+=========================
+[2019-11-15 12:31:33] Error text: Could not connect to database (ibuild). | file: D:\OSPanel\domains\localhost\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | line: 440
+=========================
+[2019-11-15 12:31:45] Error text: Could not connect to database (ibuild). | file: D:\OSPanel\domains\localhost\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | line: 440
+=========================
+[2019-11-15 12:48:44] Error text: Could not connect to database (ibuild). | file: D:\OSPanel\domains\localhost\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | line: 440
+=========================
+[2019-11-15 12:55:24] Error text: Could not connect to database (?). | file: D:\OSPanel\domains\localhost\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | line: 440
+=========================
+[2019-11-15 12:55:43] Error text: Could not connect to database (ibuild). | file: D:\OSPanel\domains\localhost\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | line: 440
+=========================
+[2019-11-15 12:56:12] Error text: Can't connect database | file: D:\OSPanel\domains\localhost\vendor\ibuild\core\Db.php | line: 13
+=========================
+[2019-11-15 12:56:13] Error text: Can't connect database | file: D:\OSPanel\domains\localhost\vendor\ibuild\core\Db.php | line: 13
+=========================
+[2019-11-15 12:56:14] Error text: Can't connect database | file: D:\OSPanel\domains\localhost\vendor\ibuild\core\Db.php | line: 13
+=========================
+[2019-11-15 12:56:14] Error text: Can't connect database | file: D:\OSPanel\domains\localhost\vendor\ibuild\core\Db.php | line: 13
+=========================
+[2019-11-15 12:56:21] Error text: Could not connect to database (ibuild). | file: D:\OSPanel\domains\localhost\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | line: 440
+=========================
+[2019-11-15 13:14:52] Error text: Could not connect to database (ibuild). | file: D:\OSPanel\domains\localhost\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | line: 440
+=========================
+[2019-11-15 13:14:54] Error text: Could not connect to database (ibuild). | file: D:\OSPanel\domains\localhost\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | line: 440
+=========================
+[2019-11-15 13:14:55] Error text: Could not connect to database (ibuild). | file: D:\OSPanel\domains\localhost\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | line: 440
+=========================
+[2019-11-15 13:14:55] Error text: Could not connect to database (ibuild). | file: D:\OSPanel\domains\localhost\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | line: 440
+=========================
+[2019-11-15 13:14:55] Error text: Could not connect to database (ibuild). | file: D:\OSPanel\domains\localhost\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | line: 440
+=========================
+[2019-11-15 13:14:55] Error text: Could not connect to database (ibuild). | file: D:\OSPanel\domains\localhost\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | line: 440
+=========================
+[2019-11-15 13:15:07] Error text: Could not connect to database (ibuild). | file: D:\OSPanel\domains\localhost\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | line: 440
+=========================
+[2019-11-15 13:15:08] Error text: Could not connect to database (ibuild). | file: D:\OSPanel\domains\localhost\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | line: 440
+=========================
+[2019-11-15 13:15:37] Error text: Could not connect to database (ibuild). | file: D:\OSPanel\domains\localhost\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | line: 440
+=========================
+[2019-11-15 13:15:37] Error text: Could not connect to database (ibuild). | file: D:\OSPanel\domains\localhost\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | line: 440
+=========================
+[2019-11-15 13:15:38] Error text: Could not connect to database (ibuild). | file: D:\OSPanel\domains\localhost\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | line: 440
+=========================
+[2019-11-15 13:23:06] Error text: Could not connect to database (ibuild). | file: D:\OSPanel\domains\localhost\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | line: 440
+=========================
+[2019-11-15 13:27:29] Error text: Could not connect to database (db). | file: D:\OSPanel\domains\localhost\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | line: 440
+=========================
+[2019-11-15 13:27:30] Error text: Could not connect to database (db). | file: D:\OSPanel\domains\localhost\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | line: 440
+=========================
+[2019-11-15 13:27:30] Error text: Could not connect to database (db). | file: D:\OSPanel\domains\localhost\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | line: 440
+=========================
+[2019-11-15 13:27:30] Error text: Could not connect to database (db). | file: D:\OSPanel\domains\localhost\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | line: 440
+=========================
+[2019-11-15 13:27:31] Error text: Could not connect to database (db). | file: D:\OSPanel\domains\localhost\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | line: 440
+=========================
+[2019-11-15 13:29:42] Error text: Could not connect to database (test). | file: D:\OSPanel\domains\localhost\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | line: 440
+=========================
+[2019-11-15 13:29:43] Error text: Could not connect to database (test). | file: D:\OSPanel\domains\localhost\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | line: 440
+=========================
+[2019-11-15 13:30:17] Error text: Could not connect to database (ibuild). | file: D:\OSPanel\domains\localhost\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | line: 440
+=========================
+[2019-11-15 13:30:18] Error text: Could not connect to database (ibuild). | file: D:\OSPanel\domains\localhost\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | line: 440
+=========================
+[2019-11-15 13:30:18] Error text: Could not connect to database (ibuild). | file: D:\OSPanel\domains\localhost\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | line: 440
+=========================
+[2019-11-15 13:30:19] Error text: Could not connect to database (ibuild). | file: D:\OSPanel\domains\localhost\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | line: 440
+=========================
+[2019-11-15 13:30:19] Error text: Could not connect to database (ibuild). | file: D:\OSPanel\domains\localhost\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | line: 440
+=========================
+[2019-11-15 13:30:19] Error text: Could not connect to database (ibuild). | file: D:\OSPanel\domains\localhost\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | line: 440
+=========================
+[2019-11-15 13:30:19] Error text: Could not connect to database (ibuild). | file: D:\OSPanel\domains\localhost\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | line: 440
+=========================
+[2019-11-15 13:30:20] Error text: Could not connect to database (ibuild). | file: D:\OSPanel\domains\localhost\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | line: 440
+=========================
+[2019-11-15 13:30:20] Error text: Could not connect to database (ibuild). | file: D:\OSPanel\domains\localhost\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | line: 440
+=========================
+[2019-11-15 13:30:48] Error text: Could not connect to database (test). | file: D:\OSPanel\domains\localhost\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | line: 440
+=========================
+[2019-11-15 13:30:48] Error text: Could not connect to database (test). | file: D:\OSPanel\domains\localhost\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | line: 440
+=========================
+[2019-11-15 13:30:49] Error text: Could not connect to database (test). | file: D:\OSPanel\domains\localhost\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | line: 440
+=========================
+[2019-11-15 13:30:49] Error text: Could not connect to database (test). | file: D:\OSPanel\domains\localhost\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | line: 440
+=========================
+[2019-11-15 13:30:49] Error text: Could not connect to database (test). | file: D:\OSPanel\domains\localhost\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | line: 440
+=========================
+[2019-11-15 15:47:00] Error text: Could not connect to database (ibuildsd). | file: D:\OSPanel\domains\localhost\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | line: 440
+=========================
+[2019-11-15 15:47:19] Error text: Could not connect to database (test). | file: D:\OSPanel\domains\localhost\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | line: 440
+=========================
+[2019-11-15 15:47:19] Error text: Could not connect to database (test). | file: D:\OSPanel\domains\localhost\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | line: 440
+=========================
+[2019-11-15 15:47:20] Error text: Could not connect to database (test). | file: D:\OSPanel\domains\localhost\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | line: 440
+=========================
+[2019-11-15 15:47:20] Error text: Could not connect to database (test). | file: D:\OSPanel\domains\localhost\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | line: 440
+=========================
+[2019-11-15 16:08:22] Error text: Could not connect to database (ibuild). | file: D:\OSPanel\domains\localhost\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | line: 440
+=========================
+[2019-11-15 16:08:23] Error text: Could not connect to database (ibuild). | file: D:\OSPanel\domains\localhost\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | line: 440
+=========================
+[2019-11-15 16:08:25] Error text: Could not connect to database (ibuild). | file: D:\OSPanel\domains\localhost\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | line: 440
+=========================
+[2019-11-15 16:08:25] Error text: Could not connect to database (ibuild). | file: D:\OSPanel\domains\localhost\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | line: 440
+=========================
+[2019-11-15 16:08:25] Error text: Could not connect to database (ibuild). | file: D:\OSPanel\domains\localhost\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | line: 440
+=========================
+[2019-11-15 16:08:25] Error text: Could not connect to database (ibuild). | file: D:\OSPanel\domains\localhost\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | line: 440
+=========================
+[2019-11-15 16:08:26] Error text: Could not connect to database (ibuild). | file: D:\OSPanel\domains\localhost\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | line: 440
+=========================
+[2019-11-15 16:08:44] Error text: Could not connect to database (ibuild). | file: D:\OSPanel\domains\localhost\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | line: 440
+=========================
+[2019-11-15 16:09:08] Error text: Could not connect to database (test). | file: D:\OSPanel\domains\localhost\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | line: 440
+=========================
+[2019-11-15 16:13:59] Error text: Could not connect to database (ibuild). | file: D:\OSPanel\domains\localhost\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | line: 440
+=========================
+[2019-11-15 16:14:07] Error text: Could not connect to database (users). | file: D:\OSPanel\domains\localhost\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | line: 440
+=========================
+[2019-11-15 16:14:08] Error text: Could not connect to database (users). | file: D:\OSPanel\domains\localhost\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | line: 440
+=========================
+[2019-11-15 16:14:08] Error text: Could not connect to database (users). | file: D:\OSPanel\domains\localhost\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | line: 440
+=========================
+[2019-11-15 16:14:08] Error text: Could not connect to database (users). | file: D:\OSPanel\domains\localhost\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | line: 440
+=========================
+[2019-11-15 16:14:08] Error text: Could not connect to database (users). | file: D:\OSPanel\domains\localhost\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | line: 440
+=========================
+[2019-11-15 16:14:08] Error text: Could not connect to database (users). | file: D:\OSPanel\domains\localhost\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | line: 440
+=========================
+[2019-11-15 16:14:29] Error text: Could not connect to database (database). | file: D:\OSPanel\domains\localhost\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | line: 440
+=========================
+[2019-11-15 16:14:30] Error text: Could not connect to database (database). | file: D:\OSPanel\domains\localhost\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | line: 440
+=========================
+[2019-11-15 16:14:30] Error text: Could not connect to database (database). | file: D:\OSPanel\domains\localhost\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | line: 440
+=========================
+[2019-11-15 16:14:30] Error text: Could not connect to database (database). | file: D:\OSPanel\domains\localhost\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | line: 440
+=========================
+[2019-11-15 16:14:30] Error text: Could not connect to database (database). | file: D:\OSPanel\domains\localhost\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | line: 440
+=========================
+[2019-11-15 16:14:31] Error text: Could not connect to database (database). | file: D:\OSPanel\domains\localhost\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | line: 440
+=========================
+[2019-11-15 16:14:53] Error text: Could not connect to database (database). | file: D:\OSPanel\domains\localhost\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | line: 440
+=========================
+[2019-11-15 16:15:38] Error text: Could not connect to database (database). | file: D:\OSPanel\domains\localhost\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | line: 440
+=========================
+[2019-11-15 16:15:39] Error text: Could not connect to database (database). | file: D:\OSPanel\domains\localhost\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | line: 440
+=========================
+[2019-11-15 16:15:47] Error text: Could not connect to database (database). | file: D:\OSPanel\domains\localhost\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | line: 440
+=========================
+[2019-11-15 16:26:46] Error text: Could not connect to database (database). | file: D:\OSPanel\domains\localhost\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | line: 440
+=========================
+[2019-11-15 16:26:48] Error text: Could not connect to database (database). | file: D:\OSPanel\domains\localhost\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | line: 440
+=========================

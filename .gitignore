@@ -1,1 +1,3 @@
 txt.txt
+.gitignore
+tmp/errors.log

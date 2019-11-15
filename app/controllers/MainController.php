@@ -2,8 +2,13 @@
 
 namespace app\controllers;
 
-class MainController {
+class MainController extends AppController {
     public function indexAction() {
-        echo __METHOD__;
+        $this->setMeta('Home Page', 'descriptions...', 'keyword 1, keyword 2');
+
+        $name = 'Luka';
+        $age = '25';
+        $names = ['Luka', 'Lea'];
+        $this->set(compact('name', 'age', 'names'));
     }
 }

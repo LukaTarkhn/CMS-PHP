@@ -110,3 +110,107 @@
 =========================
 [2019-11-13 18:40:59] Error text: Controller app\controllers\PageController not found | file: D:\OSPanel\domains\localhost\vendor\ibuild\core\Router.php | line: 33
 =========================
+[2019-11-14 09:27:46] Error text: Controller app\controllers\PageController not found | file: D:\OSPanel\domains\localhost\vendor\ibuild\core\Router.php | line: 33
+=========================
+[2019-11-14 09:27:46] Error text: Page not found | file: D:\OSPanel\domains\localhost\vendor\ibuild\core\Router.php | line: 36
+=========================
+[2019-11-14 09:37:52] Error text: Controller app\controllers\PageController not found | file: D:\OSPanel\domains\localhost\vendor\ibuild\core\Router.php | line: 33
+=========================
+[2019-11-14 10:36:35] Error text: Controller app\controllers\IndexController not found | file: D:\OSPanel\domains\localhost\vendor\ibuild\core\Router.php | line: 34
+=========================
+[2019-11-14 10:36:38] Error text: Page not found | file: D:\OSPanel\domains\localhost\vendor\ibuild\core\Router.php | line: 37
+=========================
+[2019-11-14 10:36:41] Error text: Controller app\controllers\DasdController not found | file: D:\OSPanel\domains\localhost\vendor\ibuild\core\Router.php | line: 34
+=========================
+[2019-11-14 10:36:42] Error text: Page not found | file: D:\OSPanel\domains\localhost\vendor\ibuild\core\Router.php | line: 37
+=========================
+[2019-11-14 10:36:43] Error text: Controller app\controllers\IndexController not found | file: D:\OSPanel\domains\localhost\vendor\ibuild\core\Router.php | line: 34
+=========================
+[2019-11-14 10:38:35] Error text: D:\OSPanel\domains\localhost/app/views//.php not found | file: D:\OSPanel\domains\localhost\vendor\ibuild\core\base\View.php | line: 35
+=========================
+[2019-11-14 10:38:36] Error text: D:\OSPanel\domains\localhost/app/views//.php not found | file: D:\OSPanel\domains\localhost\vendor\ibuild\core\base\View.php | line: 35
+=========================
+[2019-11-14 10:38:39] Error text: D:\OSPanel\domains\localhost/app/views//.php not found | file: D:\OSPanel\domains\localhost\vendor\ibuild\core\base\View.php | line: 35
+=========================
+[2019-11-14 10:40:34] Error text: D:\OSPanel\domains\localhost/app/views//index.php not found | file: D:\OSPanel\domains\localhost\vendor\ibuild\core\base\View.php | line: 35
+=========================
+[2019-11-14 10:42:05] Error text: D:\OSPanel\domains\localhost/app/views//.php not found | file: D:\OSPanel\domains\localhost\vendor\ibuild\core\base\View.php | line: 35
+=========================
+[2019-11-14 10:42:06] Error text: D:\OSPanel\domains\localhost/app/views//.php not found | file: D:\OSPanel\domains\localhost\vendor\ibuild\core\base\View.php | line: 35
+=========================
+[2019-11-14 10:48:12] Error text: D:\OSPanel\domains\localhost/app/views//.php not found | file: D:\OSPanel\domains\localhost\vendor\ibuild\core\base\View.php | line: 35
+=========================
+[2019-11-14 10:49:45] Error text: D:\OSPanel\domains\localhost/app/views//.php not found | file: D:\OSPanel\domains\localhost\vendor\ibuild\core\base\View.php | line: 35
+=========================
+[2019-11-14 10:49:46] Error text: D:\OSPanel\domains\localhost/app/views//.php not found | file: D:\OSPanel\domains\localhost\vendor\ibuild\core\base\View.php | line: 35
+=========================
+[2019-11-14 10:50:40] Error text: D:\OSPanel\domains\localhost/app/views//.php not found | file: D:\OSPanel\domains\localhost\vendor\ibuild\core\base\View.php | line: 35
+=========================
+[2019-11-14 10:50:41] Error text: D:\OSPanel\domains\localhost/app/views//.php not found | file: D:\OSPanel\domains\localhost\vendor\ibuild\core\base\View.php | line: 35
+=========================
+[2019-11-14 11:01:06] Error text: Controller app\controllers\admin\MainController not found | file: D:\OSPanel\domains\localhost\vendor\ibuild\core\Router.php | line: 34
+=========================
+[2019-11-14 11:03:42] Error text: Controller app\controllers\AdminController not found | file: D:\OSPanel\domains\localhost\vendor\ibuild\core\Router.php | line: 34
+=========================
+[2019-11-14 11:03:47] Error text: Controller app\controllers\admin\MainController not found | file: D:\OSPanel\domains\localhost\vendor\ibuild\core\Router.php | line: 34
+=========================
+[2019-11-14 11:04:11] Error text: Page not found | file: D:\OSPanel\domains\localhost\vendor\ibuild\core\Router.php | line: 37
+=========================
+[2019-11-14 11:04:13] Error text: Page not found | file: D:\OSPanel\domains\localhost\vendor\ibuild\core\Router.php | line: 37
+=========================
+[2019-11-14 11:04:15] Error text: Page not found | file: D:\OSPanel\domains\localhost\vendor\ibuild\core\Router.php | line: 37
+=========================
+[2019-11-15 09:20:29] Error text: Page not found | file: D:\OSPanel\domains\localhost\vendor\ibuild\core\Router.php | line: 37
+=========================
+[2019-11-15 09:25:49] Error text: Page not found | file: D:\OSPanel\domains\localhost\vendor\ibuild\core\Router.php | line: 37
+=========================
+[2019-11-15 10:18:24] Error text: Controller app\controllers\PageController not found | file: D:\OSPanel\domains\localhost\vendor\ibuild\core\Router.php | line: 36
+=========================
+[2019-11-15 10:20:51] Error text: Controller app\controllers\PageController not found | file: D:\OSPanel\domains\localhost\vendor\ibuild\core\Router.php | line: 36
+=========================
+[2019-11-15 10:20:52] Error text: Controller app\controllers\PageController not found | file: D:\OSPanel\domains\localhost\vendor\ibuild\core\Router.php | line: 36
+=========================
+[2019-11-15 10:20:52] Error text: Controller app\controllers\PageController not found | file: D:\OSPanel\domains\localhost\vendor\ibuild\core\Router.php | line: 36
+=========================
+[2019-11-15 10:20:53] Error text: Controller app\controllers\PageController not found | file: D:\OSPanel\domains\localhost\vendor\ibuild\core\Router.php | line: 36
+=========================
+[2019-11-15 10:20:53] Error text: Controller app\controllers\PageController not found | file: D:\OSPanel\domains\localhost\vendor\ibuild\core\Router.php | line: 36
+=========================
+[2019-11-15 10:20:53] Error text: Controller app\controllers\PageController not found | file: D:\OSPanel\domains\localhost\vendor\ibuild\core\Router.php | line: 36
+=========================
+[2019-11-15 10:21:52] Error text: Controller app\controllers\PageController not found | file: D:\OSPanel\domains\localhost\vendor\ibuild\core\Router.php | line: 36
+=========================
+[2019-11-15 10:21:53] Error text: Controller app\controllers\PageController not found | file: D:\OSPanel\domains\localhost\vendor\ibuild\core\Router.php | line: 36
+=========================
+[2019-11-15 10:21:53] Error text: Controller app\controllers\PageController not found | file: D:\OSPanel\domains\localhost\vendor\ibuild\core\Router.php | line: 36
+=========================
+[2019-11-15 10:22:23] Error text: Controller app\controllers\PageController not found | file: D:\OSPanel\domains\localhost\vendor\ibuild\core\Router.php | line: 36
+=========================
+[2019-11-15 10:24:12] Error text: Controller app\controllers\MainController not found | file: D:\OSPanel\domains\localhost\vendor\ibuild\core\Router.php | line: 36
+=========================
+[2019-11-15 10:24:13] Error text: Controller app\controllers\MainController not found | file: D:\OSPanel\domains\localhost\vendor\ibuild\core\Router.php | line: 36
+=========================
+[2019-11-15 10:24:13] Error text: Controller app\controllers\MainController not found | file: D:\OSPanel\domains\localhost\vendor\ibuild\core\Router.php | line: 36
+=========================
+[2019-11-15 10:25:41] Error text: Controller app\controllers\MainController not found | file: D:\OSPanel\domains\localhost\vendor\ibuild\core\Router.php | line: 36
+=========================
+[2019-11-15 10:25:41] Error text: Controller app\controllers\MainController not found | file: D:\OSPanel\domains\localhost\vendor\ibuild\core\Router.php | line: 36
+=========================
+[2019-11-15 10:25:42] Error text: Controller app\controllers\MainController not found | file: D:\OSPanel\domains\localhost\vendor\ibuild\core\Router.php | line: 36
+=========================
+[2019-11-15 10:25:42] Error text: Controller app\controllers\MainController not found | file: D:\OSPanel\domains\localhost\vendor\ibuild\core\Router.php | line: 36
+=========================
+[2019-11-15 10:25:44] Error text: Controller app\controllers\MainController not found | file: D:\OSPanel\domains\localhost\vendor\ibuild\core\Router.php | line: 36
+=========================
+[2019-11-15 10:26:23] Error text: D:\OSPanel\domains\localhost/app/views/Page/view.php not found | file: D:\OSPanel\domains\localhost\vendor\ibuild\core\base\View.php | line: 38
+=========================
+[2019-11-15 10:26:29] Error text: Controller app\controllers\MainController not found | file: D:\OSPanel\domains\localhost\vendor\ibuild\core\Router.php | line: 36
+=========================
+[2019-11-15 10:26:34] Error text: Controller app\controllers\MainController not found | file: D:\OSPanel\domains\localhost\vendor\ibuild\core\Router.php | line: 36
+=========================
+[2019-11-15 10:26:35] Error text: Controller app\controllers\MainController not found | file: D:\OSPanel\domains\localhost\vendor\ibuild\core\Router.php | line: 36
+=========================
+[2019-11-15 10:26:45] Error text: Controller app\controllers\MainController not found | file: D:\OSPanel\domains\localhost\vendor\ibuild\core\Router.php | line: 36
+=========================
+[2019-11-15 10:33:01] Error text: D:\OSPanel\domains\localhost/app/views/Page/view.php not found | file: D:\OSPanel\domains\localhost\vendor\ibuild\core\base\View.php | line: 38
+=========================

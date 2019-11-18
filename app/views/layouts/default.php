@@ -9,6 +9,14 @@
 <body>
     <h1>DEFAULT LAYOUT</h1>
     <?=$content;?>
-    
+
+
+<?php
+$logs = \R::getDatabaseAdapter()
+    ->getDatabase()
+    ->getLogger();
+
+DEBUG( $logs->grep( 'SELECT' ) );
+?>
 </body>
 </html>

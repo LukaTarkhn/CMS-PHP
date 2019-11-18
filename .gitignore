@@ -1,4 +1,4 @@
-txt.txt
+*.txt
 .gitignore
 tmp/errors.log
 gabordemooij

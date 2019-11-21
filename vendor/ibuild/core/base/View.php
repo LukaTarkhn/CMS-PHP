@@ -48,9 +48,11 @@ class View {
     }
 
     public function getMeta() {
-        $output = '<tite>' . $this->meta['title'] . '</title>' . PHP_EOL;
+        $output = '<title>' . $this->meta['title'] . '</title>' . PHP_EOL;
+        $output .= '<meta charset="' . $this->meta['charset'] . '">' . PHP_EOL;
         $output .= '<meta name="description" content="' . $this->meta['desc'] . '">' . PHP_EOL;
         $output .= '<meta name="keywords" content="' . $this->meta['keywords'] . '">' . PHP_EOL;
+        $output .= '<meta name="developer" content="' . $this->meta['developer'] . '">' . PHP_EOL;
         return $output;
     }
 

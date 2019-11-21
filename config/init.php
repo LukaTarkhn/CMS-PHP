@@ -7,7 +7,7 @@ define("CORE", ROOT . '/vendor/ibuild/core');
 define("LIBS", ROOT . '/vendor/ibuild/core/libs');
 define("CACHE", ROOT . '/tmp/cache');
 define("CONF", ROOT . '/config');
-define("LAYOUT", 'default');
+define("LAYOUT", 'main');
 
 // http://localhost:81/public/index.php
 $app_path = "http://{$_SERVER['HTTP_HOST']}{$_SERVER['PHP_SELF']}";

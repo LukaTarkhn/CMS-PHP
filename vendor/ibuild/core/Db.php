@@ -11,8 +11,6 @@ class Db {
         \R::setup($db['dsn'], $db['user'], $db['pass']);
          if(!\R::testConnection()) {
              throw new \Exception("Can't connect database", 500);
-         } else {
-             echo "Connected";
          }
 
          \R::freeze(true);

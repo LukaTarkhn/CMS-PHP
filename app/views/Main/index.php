@@ -288,7 +288,7 @@
                                         </div>
 
                                         <div class="caption-text">
-                                            <h6 class="dark-text"><?=$finishedProject->title?></h6>	<!-- PROJECT TITLE -->
+                                            <h6 class="dark-text"><?=$finishedProject->title_geo?></h6>	<!-- PROJECT TITLE -->
                                         </div>
                                     </figcaption>
                                 </figure>
@@ -1431,7 +1431,7 @@
                                         </div>
 
                                         <div class="caption-text">
-                                            <h6 class="dark-text"><?=$finishedProject->title?></h6>	<!-- PROJECT TITLE -->
+                                            <h6 class="dark-text"><?=$finishedProject->title_eng?></h6>	<!-- PROJECT TITLE -->
                                         </div>
                                     </figcaption>
                                 </figure>
@@ -2579,7 +2579,7 @@
                                         </div>
 
                                         <div class="caption-text">
-                                            <h6 class="dark-text"><?=$finishedProject->title?></h6>	<!-- PROJECT TITLE -->
+                                            <h6 class="dark-text"><?=$finishedProject->title_rus?></h6>	<!-- PROJECT TITLE -->
                                         </div>
                                     </figcaption>
                                 </figure>

@@ -21,4 +21,17 @@ class AppController extends Controller
 
         new AppModel();
     }
+
+    public function getRequestID($get = true, $id = 'id') {
+        if ($get) {
+            $data = $_GET;
+        }else {
+            $data = $_POST;
+        }
+        $id = !empty($data[$id]) ? $data[$id] : null;
+        if(!$id) {
+            throw new \Exception('Page not found', 404);
+        }
+        return $id;
+    }
 }

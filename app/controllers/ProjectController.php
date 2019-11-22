@@ -8,7 +8,7 @@ class ProjectController extends AppController
 {
     public function  viewAction() {
         $alias = $this->route['id'];
-        $project = \R::findOne('finished_projects', 'id = ?', [$alias]);
+        $project = \R::findOne('finished', 'id = ?', [$alias]);
         if(!$project) {
             throw  new \Exception('Page not found', 404);
         }

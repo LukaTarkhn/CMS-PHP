@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="plugins/jqvmap/jqvmap.min.css">
     <!-- Theme style -->
     <link rel="stylesheet" href="dist/css/adminlte.min.css">
+    <link rel="stylesheet" href="my.css">
     <!-- overlayScrollbars -->
     <link rel="stylesheet" href="plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
     <!-- summernote -->
@@ -67,7 +68,7 @@
                     <!-- Add icons to the links using the .nav-icon class
                          with font-awesome or any other icon font library -->
                     <li class="nav-item has-treeview menu-open">
-                        <a href="#" class="nav-link">
+                        <a href="<?=ADMIN;?>/apartment" class="nav-link">
                             <i class="nav-icon far fa-building"></i>
                             <p>
                                 Apartments
@@ -84,13 +85,13 @@
                         </a>
                         <ul class="nav nav-treeview">
                             <li class="nav-item">
-                                <a href="<?=ADMIN;?>" class="nav-link">
+                                <a href="<?=ADMIN;?>/current" class="nav-link">
                                     <i class="fas fa-stream nav-icon"></i>
                                     <p>Current works list</p>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="<?=ADMIN;?>" class="nav-link">
+                                <a href="<?=ADMIN;?>/current/add" class="nav-link">
                                     <i class="fas fa-plus nav-icon"></i>
                                     <p>Add current work</p>
                                 </a>
@@ -107,13 +108,13 @@
                         </a>
                         <ul class="nav nav-treeview">
                             <li class="nav-item">
-                                <a href="<?=ADMIN;?>" class="nav-link">
+                                <a href="<?=ADMIN;?>/finished" class="nav-link">
                                     <i class="fas fa-stream nav-icon"></i>
                                     <p>Finished projects list</p>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="<?=ADMIN;?>" class="nav-link">
+                                <a href="<?=ADMIN;?>/finished/add" class="nav-link">
                                     <i class="fas fa-plus nav-icon"></i>
                                     <p>Add finished project</p>
                                 </a>
@@ -121,7 +122,7 @@
                         </ul>
                     </li>
                     <li class="nav-item has-treeview menu-open">
-                        <a href="#" class="nav-link">
+                        <a href="<?=ADMIN;?>/aboutus" class="nav-link">
                             <i class="nav-icon fas fa-text-height"></i>
                             <p>
                                 About us
@@ -129,7 +130,7 @@
                         </a>
                     </li>
                     <li class="nav-item has-treeview menu-open">
-                        <a href="#" class="nav-link">
+                        <a href="<?=ADMIN;?>/user" class="nav-link">
                             <i class="nav-icon fas fa-user"></i>
                             <p>
                                 User
@@ -168,6 +169,8 @@
 </script>
 <!-- jQuery -->
 <script src="plugins/jquery/jquery.min.js"></script>
+<script src="/js/ajaxupload.js"></script>
+<script src="my.js"></script>
 <!-- jQuery UI 1.11.4 -->
 <script src="plugins/jquery-ui/jquery-ui.min.js"></script>
 <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->

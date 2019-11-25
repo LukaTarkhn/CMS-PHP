@@ -269,7 +269,7 @@
 
                                     <!-- PROJECT IMAGE and LINK -->
                                     <a href="/project/<?=$finishedProject->id?>" title="Click to view details">
-                                        <img src="images/projects/1.jpg" alt="">
+                                        <img src="images/<?=$finishedProject->img?>" alt="">
                                         <p class="description">
                                             <span class="icon icon-plus"></span>
                                         </p>

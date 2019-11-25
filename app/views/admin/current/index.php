@@ -21,7 +21,7 @@
                 <div class="box-body">
                     <div class="table-responsive">
                         <table class="table table-bordered table-hover">
-                            <thead>
+                            <thead class="thead-dark">
                             <tr>
                                 <th>ID</th>
                                 <th>Title-geo</th>

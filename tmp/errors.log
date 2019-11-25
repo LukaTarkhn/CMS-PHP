@@ -3476,3 +3476,27 @@
 =========================
 [2019-11-25 09:17:31] Error text: Page not found | file: C:\xampp\htdocs\vendor\ibuild\core\Router.php | line: 38
 =========================
+[2019-11-25 09:20:47] Error text: Controller app\controllers\admin\ApartmentController not found | file: C:\xampp\htdocs\vendor\ibuild\core\Router.php | line: 35
+=========================
+[2019-11-25 09:21:10] Error text: Controller app\controllers\admin\ApartmentController not found | file: C:\xampp\htdocs\vendor\ibuild\core\Router.php | line: 35
+=========================
+[2019-11-25 12:23:17] Error text: Controller app\controllers\admin\ApartmentController not found | file: C:\xampp\htdocs\vendor\ibuild\core\Router.php | line: 35
+=========================
+[2019-11-25 12:59:21] Error text: Controller app\controllers\admin\ApartmentController not found | file: C:\xampp\htdocs\vendor\ibuild\core\Router.php | line: 35
+=========================
+[2019-11-25 12:59:37] Error text: Controller app\controllers\admin\ApartmentController not found | file: C:\xampp\htdocs\vendor\ibuild\core\Router.php | line: 35
+=========================
+[2019-11-25 13:03:28] Error text: Page not found | file: C:\xampp\htdocs\vendor\ibuild\core\Router.php | line: 38
+=========================
+[2019-11-25 13:03:28] Error text: Page not found | file: C:\xampp\htdocs\vendor\ibuild\core\Router.php | line: 38
+=========================
+[2019-11-25 14:02:57] Error text: Controller app\controllers\admin\ApartmentController not found | file: C:\xampp\htdocs\vendor\ibuild\core\Router.php | line: 35
+=========================
+[2019-11-25 14:15:28] Error text: C:\xampp\htdocs/app/views/admin\Apartment/index.php not found | file: C:\xampp\htdocs\vendor\ibuild\core\base\View.php | line: 38
+=========================
+[2019-11-25 14:38:54] Error text: Controller app\controllers\admin\ApartmentsController not found | file: C:\xampp\htdocs\vendor\ibuild\core\Router.php | line: 35
+=========================
+[2019-11-25 14:46:55] Error text: Call to undefined method app\models\admin\Apartments::getImg() | file: C:\xampp\htdocs\app\controllers\admin\ApartmentController.php | line: 24
+=========================
+[2019-11-25 15:00:11] Error text: Controller app\controllers\ApartmentController not found | file: C:\xampp\htdocs\vendor\ibuild\core\Router.php | line: 35
+=========================

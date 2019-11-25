@@ -4,67 +4,67 @@
 namespace app\controllers\admin;
 
 
-use app\models\admin\Current;
+use app\models\admin\finished;
 use ibuild\App;
 
-class CurrentController extends AppController
+class FinishedController extends AppController
 {
     public function indexAction() {
-        $currents = \R::findAll('current');
-        $this->setMeta('Current works list');
-        $this->set(compact('currents'));
+        $finisheds = \R::findAll('finished');
+        $this->setMeta('finished works list');
+        $this->set(compact('finisheds'));
     }
 
     public function addImageAction() {
         if(isset($_GET['upload'])) {
             if($_POST['name'] == 'single'){
-                $wmax = App::$app->getProperty('currentimg_width');
-                $hmax = App::$app->getProperty('currentimg_height');
+                $wmax = App::$app->getProperty('finishedimg_width');
+                $hmax = App::$app->getProperty('finishedimg_height');
             }
             $name = $_POST['name'];
-            $current = new Current();
-            $current->uploadImg($name, $wmax, $hmax);
+            $finished = new finished();
+            $finished->uploadImg($name, $wmax, $hmax);
         }
     }
 
     public function editAction() {
         if(!empty($_POST)) {
             $id = $this->getRequestID(false);
-            $current = new Current();
+            $finished = new finished();
             $data = $_POST;
-            $current->load($data);
-            $current->getImg();
-            if($current->update('current', $id)) {
-                $current = \R::load('current', $id);
-                \R::store($current);
+            $finished->load($data);
+            $finished->getImg();
+            if($finished->update('finished', $id)) {
+                $finished = \R::load('finished', $id);
+                \R::store($finished);
                 $_SESSION['success'] = "Edit saved";
                 redirect();
             }
         }
         $id = $this->getRequestID();
-        $current = \R::load("current", $id);
-        $this->setMeta("Current work {$current->title_geo}");
-        $this->set(compact('current'));
+        $finished = \R::load("finished", $id);
+        $this->setMeta("finished work {$finished->title_geo}");
+        $this->set(compact('finished'));
     }
 
     public function deleteAction(){
         $id = $this->getRequestID();
-        \R::exec("DELETE FROM current WHERE id = ?", [$id]);
+        \R::exec("DELETE FROM finished WHERE id = ?", [$id]);
         redirect();
     }
 
     public function addAction() {
         if(!empty($_POST)) {
-            $current = new Current();
+            $finished = new Finished();
             $data = $_POST;
-            $current->load($data);
-            $current->getImg();
-            if($id = $current->save('current')) {
-                $_SESSION['success'] = "Current work added";
+            $finished->load($data);
+            $finished->getImg();
+            if($id = $finished->save('finished')) {
+                $_SESSION['success'] = "finished work added";
             }
             redirect();
         }
 
-        $this->setMeta('New current work');
+        $this->setMeta('New finished work');
     }
 }

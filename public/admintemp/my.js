@@ -10,7 +10,7 @@ $('.del-item').on('click', function(){
         id = $this.data('id'),
         src = $this.data('src');
     $.ajax({
-        url: adminpath + '/product/delete-gallery',
+        url: adminpath + '/current/delete-image',
         data: {id: id, src: src},
         type: 'POST',
         beforeSend: function(){
@@ -27,7 +27,7 @@ $('.del-item').on('click', function(){
         error: function(){
             setTimeout(function(){
                 $this.closest('.file-upload').find('.overlay').css({'display':'none'});
-                alert('Ошибка');
+                alert('Error');
             }, 1000);
         }
     });

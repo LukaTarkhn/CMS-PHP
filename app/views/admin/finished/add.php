@@ -3,7 +3,7 @@
     <div class="container-fluid">
         <div class="row mb-2">
             <div class="col-sm-6">
-                <h1 class="m-0 text-dark">Add new current work</h1>
+                <h1 class="m-0 text-dark">Add new finished project</h1>
             </div><!-- /.col -->
         </div><!-- /.row -->
     </div><!-- /.container-fluid -->
@@ -20,14 +20,14 @@
                         <h5><i class="icon fas fa-check"></i><?=$_SESSION['success']; unset($_SESSION['success']);?></h5>
                     </div>
                 <?php endif; ?>
-                <form action="<?=ADMIN;?>/current/add" method="post" data-toggle="validator">
+                <form action="<?=ADMIN;?>/finished/add" method="post" data-toggle="validator">
                     <div class="form-group">
-                                <label for="title">Main image</label>
-                                <div class="box-body">
-                                    <div id="single" class="btn btn-success" data-url="current/add-image" data-name="single">Select Image</div>
-                                    <p><small>Recomended size: 1000х800px</small></p>
-                                    <div class="single"></div>
-                                </div>
+                        <label for="title">Main image</label>
+                        <div class="box-body">
+                            <div id="single" class="btn btn-success" data-url="finished/add-image" data-name="single">Select Image</div>
+                            <p><small>Recomended size: 1000х800px</small></p>
+                            <div class="single"></div>
+                        </div>
                     </div>
                     <div class="box-body">
                         <div class="form-group">

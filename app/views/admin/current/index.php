@@ -3,7 +3,11 @@
     <div class="container-fluid">
         <div class="row mb-2">
             <div class="col-sm-6">
-                <h1 class="m-0 text-dark">Current works list</h1>
+                <h1 class="m-0 text-dark">Current works list <br><br>
+                    <a href="<?=ADMIN;?>/current/add">
+                        <i class="fa fa-fw fa-plus text-primary"></i>
+                    </a>
+                </h1>
             </div><!-- /.col -->
         </div><!-- /.row -->
     </div><!-- /.container-fluid -->
@@ -38,7 +42,7 @@
                                             <i class="fa fa-fw fa-edit text-info"></i>
                                         </a>
                                         <a href="<?=ADMIN;?>/current/delete?id=<?=$current['id']?>">
-                                            <i class="fa fa-fw fa-times text-danger"></i>
+                                            <i class="fa fa-fw fa-times text-danger delete"></i>
                                         </a>
                                     </th>
                                 </tr>

@@ -3,8 +3,8 @@
     <div class="container-fluid">
         <div class="row mb-2">
             <div class="col-sm-6">
-                <h1 class="m-0 text-dark">Current works list <br><br>
-                    <a href="<?=ADMIN;?>/current/add">
+                <h1 class="m-0 text-dark">finished projects list <br><br>
+                    <a href="<?=ADMIN;?>/finished/add">
                         <i class="fa fa-fw fa-plus text-primary"></i>
                     </a>
                 </h1>
@@ -31,17 +31,17 @@
                             </tr>
                             </thead>
                             <tbody>
-                            <?php foreach ($currents as $current): ?>
+                            <?php foreach ($finisheds as $finished): ?>
                                 <tr>
-                                    <th><?=$current['id']?></th>
-                                    <th><?=$current['title_geo']?></th>
-                                    <th><?=$current['title_eng']?></th>
-                                    <th><?=$current['title_rus']?></th>
+                                    <th><?=$finished['id']?></th>
+                                    <th><?=$finished['title_geo']?></th>
+                                    <th><?=$finished['title_eng']?></th>
+                                    <th><?=$finished['title_rus']?></th>
                                     <th>
-                                        <a href="<?=ADMIN;?>/current/edit?id=<?=$current['id']?>">
+                                        <a href="<?=ADMIN;?>/finished/edit?id=<?=$finished['id']?>">
                                             <i class="fa fa-fw fa-edit text-info"></i>
                                         </a>
-                                        <a href="<?=ADMIN;?>/current/delete?id=<?=$current['id']?>">
+                                        <a href="<?=ADMIN;?>/finished/delete?id=<?=$finished['id']?>">
                                             <i class="fa fa-fw fa-times text-danger delete"></i>
                                         </a>
                                     </th>

@@ -27,6 +27,32 @@ class CurrentController extends AppController
         }
     }
 
+    public function editAction() {
+        if(!empty($_POST)) {
+            $id = $this->getRequestID(false);
+            $current = new Current();
+            $data = $_POST;
+            $current->load($data);
+            $current->getImg();
+            if($current->update('current', $id)) {
+                $current = \R::load('current', $id);
+                \R::store($current);
+                $_SESSION['success'] = "Edit saved";
+                redirect();
+            }
+        }
+        $id = $this->getRequestID();
+        $current = \R::load("current", $id);
+        $this->setMeta("Current work {$current->title_geo}");
+        $this->set(compact('current'));
+    }
+
+    public function deleteAction(){
+        $id = $this->getRequestID();
+        \R::exec("DELETE FROM current WHERE id = ?", [$id]);
+        redirect();
+    }
+
     public function addAction() {
         if(!empty($_POST)) {
             $current = new Current();
@@ -41,13 +67,4 @@ class CurrentController extends AppController
 
         $this->setMeta('New current work');
     }
-
-    public function editAction() {
-
-        $current_id = $this->getRequestID();
-        $current = \R::load("current", $current_id);
-        $this->setMeta("Current work {$current_id}");
-        $this->set(compact('current'));
-    }
-
 }

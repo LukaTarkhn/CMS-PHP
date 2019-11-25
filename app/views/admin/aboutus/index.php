@@ -23,26 +23,21 @@
                         <table class="table table-bordered table-hover">
                             <thead>
                             <tr>
-                                <th>ID</th>
-                                <th>Title-geo</th>
-                                <th>Title-eng</th>
-                                <th>Title-rus</th>
+                                <th>GEO</th>
+                                <th>ENG</th>
+                                <th>RUS</th>
                                 <th>Action</th>
                             </tr>
                             </thead>
                             <tbody>
-                            <?php foreach ($finisheds as $finished): ?>
+                            <?php foreach ($aboutus as $about): ?>
                                 <tr>
-                                    <th><?=$finished['id']?></th>
-                                    <th><?=$finished['title_geo']?></th>
-                                    <th><?=$finished['title_eng']?></th>
-                                    <th><?=$finished['title_rus']?></th>
+                                    <th><?=$about['content_geo']?></th>
+                                    <th><?=$about['content_eng']?></th>
+                                    <th><?=$about['content_rus']?></th>
                                     <th>
-                                        <a href="<?=ADMIN;?>/finished/edit?id=<?=$finished['id']?>">
+                                        <a href="<?=ADMIN;?>/aboutus/edit?id=<?=$about['id']?>">
                                             <i class="fa fa-fw fa-edit text-info"></i>
-                                        </a>
-                                        <a href="<?=ADMIN;?>/finished/delete?id=<?=$finished['id']?>">
-                                            <i class="fa fa-fw fa-times text-danger delete"></i>
                                         </a>
                                     </th>
                                 </tr>

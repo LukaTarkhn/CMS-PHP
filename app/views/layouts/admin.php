@@ -76,64 +76,28 @@
                         </a>
                     </li>
                     <li class="nav-item has-treeview menu-open">
-                        <a href="#" class="nav-link">
+                        <a href="<?=ADMIN;?>/current" class="nav-link">
                             <i class="nav-icon fas fa-tachometer-alt"></i>
                             <p>
                                 Current Works
-                                <i class="right fas fa-angle-left"></i>
                             </p>
                         </a>
-                        <ul class="nav nav-treeview">
-                            <li class="nav-item">
-                                <a href="<?=ADMIN;?>/current" class="nav-link">
-                                    <i class="fas fa-stream nav-icon"></i>
-                                    <p>Current works list</p>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="<?=ADMIN;?>/current/add" class="nav-link">
-                                    <i class="fas fa-plus nav-icon"></i>
-                                    <p>Add current work</p>
-                                </a>
-                            </li>
-                        </ul>
                     </li>
+
                     <li class="nav-item has-treeview menu-open">
-                        <a href="#" class="nav-link">
+                        <a href="<?=ADMIN;?>/finished" class="nav-link">
                             <i class="nav-icon fas fa-flag-checkered"></i>
                             <p>
                                 Finished projects
-                                <i class="right fas fa-angle-left"></i>
                             </p>
                         </a>
-                        <ul class="nav nav-treeview">
-                            <li class="nav-item">
-                                <a href="<?=ADMIN;?>/finished" class="nav-link">
-                                    <i class="fas fa-stream nav-icon"></i>
-                                    <p>Finished projects list</p>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="<?=ADMIN;?>/finished/add" class="nav-link">
-                                    <i class="fas fa-plus nav-icon"></i>
-                                    <p>Add finished project</p>
-                                </a>
-                            </li>
-                        </ul>
                     </li>
+
                     <li class="nav-item has-treeview menu-open">
                         <a href="<?=ADMIN;?>/aboutus" class="nav-link">
                             <i class="nav-icon fas fa-text-height"></i>
                             <p>
                                 About us
-                            </p>
-                        </a>
-                    </li>
-                    <li class="nav-item has-treeview menu-open">
-                        <a href="<?=ADMIN;?>/user" class="nav-link">
-                            <i class="nav-icon fas fa-user"></i>
-                            <p>
-                                User
                             </p>
                         </a>
                     </li>
@@ -152,13 +116,6 @@
 
 
     <footer class="main-footer">
-        <?php
-        $logs = R::getDatabaseAdapter()
-            ->getDatabase()
-            ->getLogger();
-
-        debug( $logs->grep( 'SELECT' ) );
-        ?>
     </footer>
 </div>
 <!-- ./wrapper -->

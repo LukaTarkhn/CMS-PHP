@@ -6,7 +6,7 @@ namespace app\models\admin;
 
 use app\models\AppModel;
 
-class Current extends  AppModel
+class Finished extends  AppModel
 {
     public $attributes = [
         'title_geo' => '',

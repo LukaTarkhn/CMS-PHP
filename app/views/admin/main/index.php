@@ -19,14 +19,12 @@
                 <!-- small box -->
                 <div class="small-box bg-info">
                     <div class="inner">
-                        <h3>150</h3>
-
-                        <p>New Orders</p>
+                        <h4>Apartments</h4>
                     </div>
-                    <div class="icon">
-                        <i class="ion ion-bag"></i>
+                    <div class="icon" style="margin-bottom: 20px;">
+                        <i class="nav-icon far fa-building"></i>
                     </div>
-                    <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+                    <a href="<?=ADMIN;?>/apartment" class="small-box-footer">View <i class="fas fa-arrow-circle-right"></i></a>
                 </div>
             </div>
             <!-- ./col -->
@@ -34,29 +32,25 @@
                 <!-- small box -->
                 <div class="small-box bg-success">
                     <div class="inner">
-                        <h3>53<sup style="font-size: 20px">%</sup></h3>
-
-                        <p>Bounce Rate</p>
+                        <h4>Current works</h4>
                     </div>
-                    <div class="icon">
-                        <i class="ion ion-stats-bars"></i>
+                    <div class="icon" style="margin-bottom: 20px;">
+                        <i class="nav-icon fas fa-tachometer-alt"></i>
                     </div>
-                    <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+                    <a href="<?=ADMIN;?>/current" class="small-box-footer">View <i class="fas fa-arrow-circle-right"></i></a>
                 </div>
             </div>
             <!-- ./col -->
             <div class="col-lg-3 col-6">
                 <!-- small box -->
-                <div class="small-box bg-warning">
+                <div class="small-box bg-blue">
                     <div class="inner">
-                        <h3>44</h3>
-
-                        <p>User Registrations</p>
+                        <h4>Finished projects</h4>
                     </div>
-                    <div class="icon">
-                        <i class="ion ion-person-add"></i>
+                    <div class="icon" style="margin-bottom: 20px;">
+                        <i class="nav-icon fas fa-flag-checkered"></i>
                     </div>
-                    <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+                    <a href="<?=ADMIN;?>/finished" class="small-box-footer">View <i class="fas fa-arrow-circle-right"></i></a>
                 </div>
             </div>
             <!-- ./col -->
@@ -64,14 +58,12 @@
                 <!-- small box -->
                 <div class="small-box bg-danger">
                     <div class="inner">
-                        <h3>65</h3>
-
-                        <p>Unique Visitors</p>
+                        <h4>About us</h4>
                     </div>
-                    <div class="icon">
-                        <i class="ion ion-pie-graph"></i>
+                    <div class="icon" style="margin-bottom: 20px;">
+                        <i class="nav-icon fas fa-text-height"></i>
                     </div>
-                    <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+                    <a href="<?=ADMIN;?>/aboutus" class="small-box-footer">View <i class="fas fa-arrow-circle-right"></i></a>
                 </div>
             </div>
             <!-- ./col -->

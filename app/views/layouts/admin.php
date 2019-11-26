@@ -79,7 +79,7 @@
                         <a href="<?=ADMIN;?>/current" class="nav-link">
                             <i class="nav-icon fas fa-tachometer-alt"></i>
                             <p>
-                                Current Works
+                                Current works
                             </p>
                         </a>
                     </li>

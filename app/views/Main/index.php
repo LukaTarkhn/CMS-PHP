@@ -5,68 +5,64 @@
 <?php if ($lang['code'] === 'GE'): ?>
 <div class="GE">
     <section class="home fixed-bg" id="home">
-
-        <div class="color-overlay">
+<!--        <div id="myCarousel" class="carousel slide" data-ride="carousel">-->
+<!--            <!-- Indicators -->-->
+<!--            <ol class="carousel-indicators">-->
+<!--                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>-->
+<!--                <li data-target="#myCarousel" data-slide-to="1"></li>-->
+<!--                <li data-target="#myCarousel" data-slide-to="2"></li>-->
+<!--            </ol>-->
+<!---->
+<!--            <!-- Wrapper for slides -->-->
+<!--            <div class="carousel-inner">-->
+<!--                <div class="item active home1">-->
+<!--                    <img src="../images/backgrounds/1.jpg">-->
+<!--                </div>-->
+<!---->
+<!--                <div class="item home2">-->
+<!--                    <img src="../images/backgrounds/2.jpg">-->
+<!--                </div>-->
+<!---->
+<!--                <div class="item home3">-->
+<!--                    <img src="../images/backgrounds/3.jpg" >-->
+<!--                </div>-->
+<!--            </div>-->
+<!---->
+<!--            <!-- Left and right controls -->-->
+<!--            <a class="left carousel-control" href="#myCarousel" data-slide="prev">-->
+<!--                <span class="glyphicon glyphicon-chevron-left"></span>-->
+<!--                <span class="sr-only">Previous</span>-->
+<!--            </a>-->
+<!--            <a class="right carousel-control" href="#myCarousel" data-slide="next">-->
+<!--                <span class="glyphicon glyphicon-chevron-right"></span>-->
+<!--                <span class="sr-only">Next</span>-->
+<!--            </a>-->
+<!---->
+<!--        </div>-->
+        <div class="color-overlay-home">
             <!-- COLOR OVERLAY -->
             <div class="container">
                 <div class="row">
                     <div class="col-lg-10 col-lg-offset-1 col-md-12">
 
-                        <!-- INTRO HEADING -->
-                        <h1 class="intro white-text text-center">We design things with love and passion.</h1>
+
                         <!-- CALL TO ACTION -->
                         <div class="cta smooth-scroll">
-                            <a href="#section3" class="btn btn-default standard-button red-button">Our Works</a>
-                            <a href="#section2" class="btn btn-default standard-button green-button">Services</a>
+                            <a href="#section3" class="btn btn-default standard-button red-button MTRegular">
+                                ჩვენი პროექტები
+                            </a>
+                            <a href="#section10" class="btn btn-default standard-button yellow-button MTRegular">
+                                მშენებლობა პირდაპირში
+                            </a>
+                            <a href="#section10" class="btn btn-default standard-button green-button MTRegular">
+                                ჩვენ დაგირეკავთ
+                            </a>
                         </div>
-
                     </div>
                 </div>
-
-                <div class="row text-center">
-
-                    <!-- 3 FEATURES ON HOMEPAGE -->
-                    <div class="home-features">
-
-                        <!-- SINGLE FEATURE -->
-                        <div class="col-md-4 col-sm-4">
-                            <div class="single-feature">
-                                <div class="icon green-text">
-                                    <span class="icon icon-money-regular"></span>
-                                    <!-- ICON -->
-                                </div>
-                                <h6 class="green-text uppercase">Fixed Price Projects</h6>
-                            </div>
-                        </div>
-
-                        <!-- SINGLE FEATURE -->
-                        <div class="col-md-4 col-sm-4">
-                            <div class="single-feature">
-                                <div class="icon purple-text">
-                                    <span class="icon icon-clock-regular"></span>
-                                    <!-- ICON -->
-                                </div>
-                                <h6 class="purple-text uppercase">Receive On Time</h6>
-                            </div>
-                        </div>
-
-                        <!-- SINGLE FEATURE -->
-                        <div class="col-md-4 col-sm-4">
-                            <div class="single-feature">
-                                <div class="icon yellow-text">
-                                    <span class="icon icon-happy-smiley-streamline"></span>
-                                    <!-- ICON -->
-                                </div>
-                                <h6 class="yellow-text uppercase">Satisfaction Guranteed</h6>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <!-- END OF 3 FEATURES -->
-
             </div>
         </div>
+
     </section>
 
     <!-- =========================

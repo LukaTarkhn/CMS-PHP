@@ -12,6 +12,50 @@ Author: Mizanur Rahman
 /*---------------------------------------
    1.1 HTML, BODY & PRE LOADER
 -----------------------------------------*/
+
+@font-face {
+  font-family: CITI-MT-Regular;
+  src: url(/fonts/CITI-MT-Regular.otf) format("opentype");
+}
+
+@font-face {
+  font-family: CITI-MT-Medium;
+  src: url(/fonts/CITI-MT-Medium.otf) format("opentype");
+}
+
+@font-face {
+  font-family: CITI-MT-Bold;
+  src: url(/fonts/CITI-MT-Bold.otf) format("opentype");
+}
+
+@font-face {
+  font-family: CITI-Nus-Regular;
+  src: url(/fonts/CITI-Nus-Regular.otf) format("opentype");
+}
+
+@font-face {
+  font-family: CITI-Nus-Medium;
+  src: url(/fonts/CITI-Nus-Medium.otf) format("opentype");
+}
+
+@font-face {
+  font-family: CITI-Nus-Bold;
+  src: url(/fonts/CITI-Nus-Bold.otf) format("opentype");
+}
+
+.MTRegular {
+  font-family: CITI-MT-Regular;
+}
+
+.NusMedium {
+  font-family: CITI-Nus-Medium;
+}
+
+.MTMedium {
+  font-family: CITI-MT-Medium;
+}
+
+
 html {
   font-size: 100%;
   box-sizing: border-box;
@@ -575,7 +619,7 @@ section {
   border: 2px solid #b27cf5;
 }
 .yellow-button {
-  color: #ffffff;
+  color: #2d3238;
   background: #feb960;
 }
 .yellow-button:hover,
@@ -584,7 +628,7 @@ section {
 .yellow-button:focus:hover,
 .yellow-button:focus {
   background-color: #ed9c34;
-  color: #ffffff;
+  color: #2d3238;
   outline: none;
 }
 .yellow-outline {
@@ -617,10 +661,10 @@ section {
   background: url(../images/backgrounds/1.jpg) no-repeat top;
   background-size: cover;
 }
-.home .color-overlay {
-  padding-top: 175px;
-  padding-bottom: 125px;
+.home .color-overlay-home {
+  padding-top: 38%;
 }
+
 .home .intro {
   margin-top: 62px;
   margin-bottom: 18px;
@@ -642,8 +686,13 @@ section {
   font-size: 45px;
   margin-bottom: 28px;
 }
+.color-overlay-home {
+  height: 100vh;
+  background: rgba(38, 39, 50, 0.10);
+}
+
 .color-overlay {
-  background: rgba(38, 39, 50, 0.85);
+  background: rgba(38, 39, 50, 0.70);
 }
 /* LOGO AND STICKY NAVIGATION */
 .sticky-navigation {

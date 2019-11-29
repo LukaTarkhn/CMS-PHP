@@ -38,28 +38,23 @@
         <div class="container">
             <div class="row">
 
-                <!-- FEATURED IMAGE AREA -->
-                <div class="col-lg-6 visible-lg">
-                    <div class="featured-image">
-                        <img src="/images/<?=$project->img?>" alt="">
-                        <!-- ABOUT US FEATURED IMAGE -->
-                        <div class="image-border">
-
-                        </div>
-                    </div>
-                </div>
-
                 <!-- ABOUT US BOX -->
-                <div class="col-lg-7 col-sm-12 overflow-box pull-right">
+                <div class="col-lg-12 col-sm-6 overflow-box pull-right">
                     <div class="about-box diffuse-shadow wow fadeInRight" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
 
                         <div class="about-content">
+                            <div class="featured-image">
+                                <img src="/images/<?=$current->img?>" alt="">
+                                <!-- ABOUT US FEATURED IMAGE -->
+                                <div class="image-border">
 
+                                </div>
+                            </div>
                             <!-- SECTION HEADING -->
-                            <h3 class="section-heading text-left MTMedium"><?=$project->title_geo?></h3>
+                            <h3 class="section-heading text-left MTMedium"><?=$current->title_geo?></h3>
 
                             <!-- PARAGRAPH -->
-                            <span class="text-left NusRegular"><?=$project->content_geo?></span>
+                            <span class="text-left NusRegular"><?=$current->content_geo?></span>
                         </div>
 
                         <div class="four-lines">

@@ -30,7 +30,6 @@ class UserController extends AppController
         if (!empty($_POST)) {
             $user = new User();
             if($user->login()){
-                $_SESSION['success'] = "You are logged in succesfull";
             } else {
                 $_SESSION['error'] = "You can't log in";
             }

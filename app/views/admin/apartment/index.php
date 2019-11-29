@@ -21,10 +21,22 @@
             <div class="box">
                 <div class="box-body">
                     <div class="table-responsive">
+                        <?php $sumPrice = 0 ?>
+                        <?php foreach ($apartments as $apartment): ?>
+                            <?php $sumPrice = $sumPrice + intval($apartment['sellprice']); ?>
+                        <?php endforeach; ?>
+                        <div class="info-box bg-success">
+                            <span class="info-box-icon"><i class="far fa-thumbs-up"></i></span>
+                            <div class="info-box-content">
+                                <span class="info-box-text">Sold apartments sum price</span>
+                                <span class="info-box-number"><?=$sumPrice?> GEL</span>
+                            </div>
+                        </div>
                         <table class="table table-bordered">
                             <thead class="thead-dark">
                             <tr>
                                 <th>Floor</th>
+                                <th>Apartment No.</th>
                                 <th>Area</th>
                                 <th>Sell Price</th>
                                 <th>Status</th>
@@ -32,10 +44,10 @@
                             </tr>
                             </thead>
                             <tbody>
-                            <?php $sumPrice = 0 ?>
                             <?php foreach ($apartments as $apartment): ?>
                                 <tr class="<?=$apartment['status'] ? 'sold' : '';?>">
                                     <th>floor <?=$apartment['floorid']?></th>
+                                    <th>Apartment No. <?=$apartment['apartmentno']?></th>
                                     <th><?=$apartment['kvmeter']?> kv </th>
                                     <th><?=$apartment['sellprice']?> GEL</th>
                                     <th><?=$apartment['status'] ? 'Sold' : 'For sale';?></th>
@@ -45,17 +57,10 @@
                                         </a>
                                     </th>
                                 </tr>
-                                <?php $sumPrice = $sumPrice + intval($apartment['sellprice']); ?>
                             <?php endforeach; ?>
                             </tbody>
                         </table>
-                            <div class="info-box bg-success">
-                                <span class="info-box-icon"><i class="far fa-thumbs-up"></i></span>
-                                <div class="info-box-content">
-                                    <span class="info-box-text">Sum</span>
-                                    <span class="info-box-number"><?=$sumPrice?> GEL</span>
-                                </div>
-                            </div>
+
                     </div>
                 </div>
             </div>

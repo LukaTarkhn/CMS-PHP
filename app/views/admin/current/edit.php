@@ -25,7 +25,7 @@
                         <label for="title">Main image</label>
                         <div class="box-body">
                             <div id="single" class="btn btn-success" data-url="current/add-image" data-name="single">Select Image</div>
-                            <p><small>Recomended size: 1000х800px</small></p>
+                            <p><small>Recomended size: 980x255px</small></p>
                             <div class="single">
                                 <img src="/images/<?=$current->img;?>" alt="" style="max-height: 150px;cursor: pointer" data-id="<?=$current->id?>">
                                 <?php ;?>

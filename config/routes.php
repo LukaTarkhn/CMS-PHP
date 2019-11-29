@@ -2,6 +2,7 @@
 
 use ibuild\Router;
 
+Router::add('^current/?(?P<id>[a-z0-9-]+)/?$', ['controller' => 'Current', 'action' => 'view']);
 Router::add('^project/?(?P<id>[a-z0-9-]+)/?$', ['controller' => 'Project', 'action' => 'view']);
 
 // default routes

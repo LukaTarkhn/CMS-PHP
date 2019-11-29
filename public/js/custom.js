@@ -152,16 +152,6 @@ jQuery(document).ready(function ($) {
 ================================= */
 
 $(document).ready(function () {
-
-	$("#feedbacks").owlCarousel({
-
-		navigation: false, // Show next and prev buttons
-		slideSpeed: 300,
-		paginationSpeed: 400,
-		singleItem: true
-
-	});
-
 	$("#project-slider").owlCarousel({
 
 		navigation: false, // Show next and prev buttons
@@ -170,8 +160,6 @@ $(document).ready(function () {
 		singleItem: true
 
 	});
-
-
 });
 
 /* =================================
@@ -222,6 +210,37 @@ $("#contact-form").submit(function (e) {
 	return false;
 });
 
+$("#call-form").submit(function (e) {
+	e.preventDefault();
+	var phone = $("#phone").val();
+	var dataString = 'name=' + phone;
+
+	function isValidPhone(phone) {
+		var pattern = new RegExp(/^[0-9]+$/);
+		return pattern.test(phone);
+	};
+
+	if (isValidPhone(phone)) {
+
+		$.ajax({
+			type: "POST",
+			url: "callmail.php",
+			data: dataString,
+			success: function () {
+				$('.callsuccess').fadeIn(1000);
+				$('.callerror').fadeOut(500);
+			}
+		});
+
+	} else {
+		if (!isValidPhone(phone)) {
+			$('.callerror').html('Invalid Number - Please insert only numbers').fadeIn(1000);
+			$('.callsuccess').fadeOut(500);
+		}
+	}
+
+	return false;
+});
 
 /* ================================
 ===  OTHER FIXES 		       ====

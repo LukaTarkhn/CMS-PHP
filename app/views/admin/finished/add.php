@@ -25,7 +25,7 @@
                         <label for="title">Main image</label>
                         <div class="box-body">
                             <div id="single" class="btn btn-success" data-url="finished/add-image" data-name="single">Select Image</div>
-                            <p><small>Recomended size: 1000х800px</small></p>
+                            <p><small>Recomended size: 340х350px</small></p>
                             <div class="single"></div>
                         </div>
                     </div>

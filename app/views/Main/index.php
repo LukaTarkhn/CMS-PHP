@@ -1,65 +1,84 @@
 <!-- =========================
  SECTION: HOME / HOMEPAGE
 ============================== -->
+
 <?php $lang = \ibuild\App::$app->getProperty('language');?>
 <?php if ($lang['code'] === 'GE'): ?>
 <div class="GE">
+    <!-- NAVIGATION -->
+    <div class="navbar navbar-inverse bs-docs-nav navbar-fixed-top sticky-navigation" role="navigation">
+
+        <div class="container">
+            <div class="navbar-header">
+
+                <!-- NAVBAR EXPAND COLLAPSE ON MOBILE -->
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation">
+                    <span class="sr-only">ნავიგაცია</span>
+                    <span class="icon icon-menu"></span>
+                </button>
+
+                <!-- LOGO -->
+                <a href="/">
+                    <img src="/images/logo.png" alt="LOGO" style="position: absolute; height: 70px; top: 2px;bottom: 3px;left: 100px">
+                </a>
+
+                <select id="languages" class="form-control" style="max-width: 80px; position: absolute; right: 10px; top: 20px;">
+                    <?php new \app\widgets\languages\Languages(); ?>
+                </select>
+            </div>
+
+            <div class="navbar-collapse collapse" id="navigation">
+                <!-- NAVIGATION LINK -->
+                <ul class="nav navbar-nav navbar-right main-navigation" id="internal-scroll">
+                    <li><a href="#home" class="MTRegular" style="font-size: 0.8vw;padding-left: 2px">მთავარი</a>
+                    </li>
+                    <li><a href="#section1" class="MTRegular" style="font-size: 0.8vw;padding-left: 2px">ჩვენ შესახებ</a>
+                    </li>
+                    <li><a href="#section2" class="MTRegular" style="font-size: 0.8vw;padding-left: 2px">ბინების დათვალიერება</a>
+                    </li>
+                    <li><a href="#section3" class="MTRegular" style="font-size: 0.8vw;padding-left: 2px">დასრულებული პროექტები</a>
+                    </li>
+                    <li><a href="#section8" class="MTRegular" style="font-size: 0.8vw;padding-left: 2px">რატომ ჩვენ</a>
+                    </li>
+                    <li><a href="#section9" class="MTRegular" style="font-size: 0.8vw;padding-left: 2px">მიმდინარე სამუშაოები</a>
+                    </li>
+                    <li><a href="#section10" class="MTRegular" style="font-size: 0.8vw;padding-left: 2px">კონტაქტი</a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+        <!-- /END CONTAINER -->
+    </div>
+    <!-- /END NAIVATION -->
+
     <section class="home fixed-bg" id="home">
-<!--        <div id="myCarousel" class="carousel slide" data-ride="carousel">-->
-<!--            <!-- Indicators -->-->
-<!--            <ol class="carousel-indicators">-->
-<!--                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>-->
-<!--                <li data-target="#myCarousel" data-slide-to="1"></li>-->
-<!--                <li data-target="#myCarousel" data-slide-to="2"></li>-->
-<!--            </ol>-->
-<!---->
-<!--            <!-- Wrapper for slides -->-->
-<!--            <div class="carousel-inner">-->
-<!--                <div class="item active home1">-->
-<!--                    <img src="../images/backgrounds/1.jpg">-->
-<!--                </div>-->
-<!---->
-<!--                <div class="item home2">-->
-<!--                    <img src="../images/backgrounds/2.jpg">-->
-<!--                </div>-->
-<!---->
-<!--                <div class="item home3">-->
-<!--                    <img src="../images/backgrounds/3.jpg" >-->
-<!--                </div>-->
-<!--            </div>-->
-<!---->
-<!--            <!-- Left and right controls -->-->
-<!--            <a class="left carousel-control" href="#myCarousel" data-slide="prev">-->
-<!--                <span class="glyphicon glyphicon-chevron-left"></span>-->
-<!--                <span class="sr-only">Previous</span>-->
-<!--            </a>-->
-<!--            <a class="right carousel-control" href="#myCarousel" data-slide="next">-->
-<!--                <span class="glyphicon glyphicon-chevron-right"></span>-->
-<!--                <span class="sr-only">Next</span>-->
-<!--            </a>-->
-<!---->
-<!--        </div>-->
         <div class="color-overlay-home">
             <!-- COLOR OVERLAY -->
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-10 col-lg-offset-1 col-md-12">
-
-
                         <!-- CALL TO ACTION -->
-                        <div class="cta smooth-scroll">
-                            <a href="#section3" class="btn btn-default standard-button red-button MTRegular">
-                                ჩვენი პროექტები
-                            </a>
-                            <a href="#section10" class="btn btn-default standard-button yellow-button MTRegular">
-                                მშენებლობა პირდაპირში
-                            </a>
-                            <a href="#section10" class="btn btn-default standard-button green-button MTRegular">
-                                ჩვენ დაგირეკავთ
-                            </a>
+                        <div class="cta smooth-scroll" style="margin-top: 130px;">
+                            <div class="social-btns">
+                                <a class="btn_ facebook tooltip" href="#section2" title="ბინების დათვალიერება">
+                                    <i class="fa fa-building" aria-hidden="true"></i>
+                                </a>
+                                <a class="btn_ google tooltip" href="#section4"  style="margin-top: 15px;" title="მშენებლობა პირდაპირ ეთერში">
+                                    <i class="fa fa-play" aria-hidden="true" style="margin-left:5px"></i>
+                                </a>
+                                <a class="btn_ skype tooltip" href="#section11"  style="margin-top: 15px;" title="ჩვენ დაგიკავშირდებით">
+                                    <i class="fa fa-phone" aria-hidden="true"></i>
+                                </a>
+                            </div>
                         </div>
+                    <div class="content-2">
+                        <span class="four" style="font-family: 'ArchyEDT-Bold', sans-serif;">
+                            ჩვენ ვართ <br>
+                            <img class="imgfour" src="/images/logo.png" alt="REAL PALACE">
+                        </span>
+                        <span class="five" style="font-family: 'ArchyEDT-Bold', sans-serif;">ჩვენ ვაშენებთ ხარისხიანად</span>
+                        <span class="six" style="font-family: 'ArchyEDT-Bold', sans-serif;">ჩვენ ვზრუნავთ ჩვენს კლიენტებზე</span>
                     </div>
-                </div>
             </div>
         </div>
 
@@ -76,9 +95,10 @@
                 <!-- FEATURED IMAGE AREA -->
                 <div class="col-lg-6 visible-lg">
                     <div class="featured-image red-gradient-overlay">
-                        <img src="images/about-us.jpg" alt="">
+                        <img src="images/aboutus.jfif" alt="">
                         <!-- ABOUT US FEATURED IMAGE -->
                         <div class="image-border">
+
                         </div>
                     </div>
                 </div>
@@ -90,12 +110,12 @@
                         <div class="about-content">
 
                             <!-- SECTION HEADING -->
-                            <h2 class="section-heading text-left">About Us.</h2>
+                            <h3 class="section-heading text-left MTMedium">ჩვენ შესახებ</h3>
 
                             <!-- PARAGRAPH -->
                             <?php if ($aboutus):  ?>
                                 <?php foreach ($aboutus as $about):  ?>
-                                    <p class="text-left"><?=$about->content_geo?></p>
+                                    <p class="text-left NusRegular"><?=$about->content_geo?></p>
                                 <?php endforeach;?>
                             <?php endif;  ?>
                         </div>
@@ -210,11 +230,11 @@
      SECTION: VIDEO SECTION
     ============================== -->
 
-    <section class="video-play fixed-bg">
+    <section id="section4" class="video-play fixed-bg">
         <div class="color-overlay">
 
             <!-- HEADING -->
-            <h3 class="white-text wow fadeInLeft" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">Explore Our Awesomeness</h3>
+            <h3 class="white-text wow fadeInLeft MTMedium" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">მშენებლობა პირდაპირ ეთერში</h3>
 
             <div class="row collapse" id="video-expand">
                 <div class="col-md-8 col-md-offset-2">
@@ -233,7 +253,7 @@
 
             <!-- TEXT -->
             <div class="play-text text white-text wow fadeInRight" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
-                <span class="click-play show">Click to play the video</span>
+                <span class="click-play show NusMedium">დააკლიკეთ ვიდეოს ჩასართავად</span>
             </div>
 
         </div>
@@ -248,9 +268,9 @@
             <div class="container">
                 <!-- SECTION HEADER -->
                 <div class="section-header">
-                    <h2>Finished projects</h2>
-                    <div class="sub-heading">
-                        We understand your requirement and provide quality works.
+                    <h3 class="MTMedium">დასრულებული პროექტები</h3>
+                    <div class="sub-heading NusRegular">
+                        ჩვენს მიერ შესრულებული პროექტების ჩამონათვალი, რომლებმაც უკვე იპოვეს თავისი მაცხოვრებელი
                     </div>
                 </div>
 
@@ -284,7 +304,7 @@
                                         </div>
 
                                         <div class="caption-text">
-                                            <h6 class="dark-text"><?=$finishedProject->title_geo?></h6>	<!-- PROJECT TITLE -->
+                                            <h6 class="dark-text NusMedium"><?=$finishedProject->title_geo?></h6>	<!-- PROJECT TITLE -->
                                         </div>
                                     </figcaption>
                                 </figure>
@@ -295,103 +315,6 @@
             </div>
         </section>
     <?php endif;  ?>
-    <!-- =========================
-     SECTION: TEAM
-    ============================== -->
-    <section class="team bgcolor-2" id="section4">
-        <div class="container">
-
-            <!-- SECTION NUMBER -->
-            <div class="section-number centered-number">
-                04
-            </div>
-
-            <!-- SECTION HEADER -->
-            <div class="section-header">
-                <h2>Our Team.</h2>
-                <div class="sub-heading">
-                    We understand your requirement and provide quality works.
-                </div>
-            </div>
-
-            <div class="row">
-
-                <!-- TEAM MEMBER LIST -->
-                <div class="member-list">
-
-                    <!-- SINGLE MEMBER -->
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                        <div class="single-member red-line-bottom diffuse-shadow wow fadeInLeft" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
-                            <div class="member-pic red-gradient-overlay">
-                                <div class="gradient">
-                                    <img src="images/team-members/1.jpg" alt="">
-                                    <!-- MEMBER IMAGE -->
-                                </div>
-                            </div>
-                            <h6 class="red-text">Michael Schmitt</h6>
-                            <!-- MEMBER NAME -->
-                            <div class="extra-small-text">
-                                Founder &amp; CEO
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- SINGLE MEMBER -->
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                        <div class="single-member green-line-bottom diffuse-shadow wow fadeInUp" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
-                            <div class="member-pic green-gradient-overlay">
-                                <div class="gradient">
-                                    <img src="images/team-members/2.jpg" alt="">
-                                    <!-- MEMBER IMAGE -->
-                                </div>
-                            </div>
-                            <h6 class="green-text">Michael Schmitt</h6>
-                            <!-- MEMBER NAME -->
-                            <div class="extra-small-text">
-                                Founder &amp; CEO
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- SINGLE MEMBER -->
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                        <div class="single-member purple-line-bottom diffuse-shadow wow fadeInDown" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
-                            <div class="member-pic purple-gradient-overlay">
-                                <div class="gradient">
-                                    <img src="images/team-members/3.jpg" alt="">
-                                    <!-- MEMBER IMAGE -->
-                                </div>
-                            </div>
-                            <h6 class="purple-text">Michael Schmitt</h6>
-                            <!-- MEMBER NAME -->
-                            <div class="extra-small-text">
-                                Founder &amp; CEO
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- SINGLE MEMBER -->
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                        <div class="single-member yellow-line-bottom diffuse-shadow wow fadeInRight" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
-                            <div class="member-pic yellow-gradient-overlay">
-                                <div class="gradient">
-                                    <img src="images/team-members/4.jpg" alt="">
-                                    <!-- MEMBER IMAGE -->
-                                </div>
-                            </div>
-                            <h6 class="yellow-text">Michael Schmitt</h6>
-                            <!-- MEMBER NAME -->
-                            <div class="extra-small-text">
-                                Founder &amp; CEO
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
-    </section>
 
     <!-- =========================
      SECTION: STATS
@@ -405,12 +328,12 @@
                     <div class="col-lg-3 col-md-3 col-sm-6 wow fadeInUp" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
 
                         <div class="stats-icon red-text">
-                            <span class="icon icon-graph-regular"></span>
+                            <span class="icon icon-cloud"></span>
                         </div>
 
-                        <h5 class="white-text">12,458+</h5>
-                        <div class="stats-text">
-                            Projects Completed
+                        <h5 class="white-text">6</h5>
+                        <div class="stats-text MTRegular">
+                            დასრულებული პროექტები
                         </div>
 
                         <div class="bottom-icon red-text">
@@ -423,12 +346,12 @@
                     <div class="col-lg-3 col-md-3 col-sm-6 wow fadeInUp" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.30s">
 
                         <div class="stats-icon green-text">
-                            <span class="icon icon-add-user-regular"></span>
+                            <span class="icon icon-way"></span>
                         </div>
 
-                        <h5 class="white-text">1,796+</h5>
-                        <div class="stats-text">
-                            Satisfied Clients
+                        <h5 class="white-text">2</h5>
+                        <div class="stats-text MTRegular">
+                           მიმდინარე პროექტები
                         </div>
 
                         <div class="bottom-icon green-text">
@@ -441,12 +364,12 @@
                     <div class="col-lg-3 col-md-3 col-sm-6 wow fadeInUp" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.45s">
 
                         <div class="stats-icon purple-text">
-                            <span class="icon icon-like"></span>
+                            <span class="icon icon-graph-regular"></span>
                         </div>
 
-                        <h5 class="white-text">1,000+</h5>
-                        <div class="stats-text">
-                            Positive Feedbacks
+                        <h5 class="white-text">1000+</h5>
+                        <div class="stats-text MTRegular">
+                            გაყიდული ბინები
                         </div>
 
                         <div class="bottom-icon purple-text">
@@ -458,16 +381,16 @@
                     <!-- STAT -->
                     <div class="col-lg-3 col-md-3 col-sm-6 wow fadeInUp" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="1s">
 
-                        <div class="stats-icon yellow-text">
-                            <span class="icon icon-gift-regular"></span>
+                        <div class="stats-icon green-text">
+                            <span class="icon icon-like"></span>
                         </div>
 
-                        <h5 class="white-text">1,500+</h5>
-                        <div class="stats-text">
-                            Freebies Released
+                        <h5 class="white-text">500+</h5>
+                        <div class="stats-text MTRegular">
+                            დასაქმებულთა რაოდენობა
                         </div>
 
-                        <div class="bottom-icon yellow-text">
+                        <div class="bottom-icon green-text">
                             <span class="icon icon-circle-slelected"></span>
                         </div>
 
@@ -484,17 +407,11 @@
     ============================== -->
     <section class="work-steps" id="section5">
         <div class="container">
-
-            <!-- SECTION NUMBER -->
-            <div class="section-number centered-number">
-                05
-            </div>
-
             <!-- SECTION HEADER -->
             <div class="section-header">
-                <h2>Work Steps.</h2>
-                <div class="sub-heading">
-                    We understand your requirement and provide quality works.
+                <h3 class="MTMedium">სამუშაო ნაბიჯები</h3>
+                <div class="sub-heading NusRegular">
+                    ჩვენ ყოველთვის ვაღწევთ უმაღლეს ხარისხს
                 </div>
             </div>
 
@@ -511,9 +428,9 @@
                             <!-- STEP NUMBER -->
 
                             <div class="content-area">
-                                <h4 class="text-left">Project Understanding</h4>
-                                <p class="text-left">
-                                    Buyer strategy incubator niche market startup. Entrepreneur non disclosure agreement MVP traction beta social media investor accelerator.
+                                <h5 class="text-left MTRegular">პროექტის შედგენა</h5>
+                                <p class="text-left NusRegular">
+                                    პროექტი იგეგმება დიდი ყურადღებით, გათვალისწინებულია ყველა ნიუანსი. პროექტის დაგეგმვაში ჩართულია ყველა საჭირო კომპეტენტური პირი.
                                 </p>
                             </div>
 
@@ -530,9 +447,9 @@
                             <!-- STEP NUMBER -->
 
                             <div class="content-area">
-                                <h4 class="text-left">Research &amp; Planning</h4>
-                                <p class="text-left">
-                                    Buyer strategy incubator niche market startup. Entrepreneur non disclosure agreement MVP traction beta social media investor accelerator.
+                                <h5 class="text-left MTRegular">ტერიტორიის შესწავლა</h5>
+                                <p class="text-left NusRegular">
+                                    ხდება ტერიტორიის შესწავლა ზომების დადგენა და გრუნტის შესწავლა გაუთვალისწინებელი შემთხვევების თავიდან ასარიდებლად.
                                 </p>
                             </div>
 
@@ -549,9 +466,9 @@
                             <!-- STEP NUMBER -->
 
                             <div class="content-area">
-                                <h4 class="text-left">Wireframe &amp; Design</h4>
-                                <p class="text-left">
-                                    Buyer strategy incubator niche market startup. Entrepreneur non disclosure agreement MVP traction beta social media investor accelerator.
+                                <h5 class="text-left MTRegular">გეგმა და პროექტის დიზაინი</h5>
+                                <p class="text-left NusRegular">
+                                    ხდება კორპუსის, სართულების და ბინების ნახაზების შედგენ ამის შემდეგ იქმენა 3D დიზაინი, ამ საქმიანობაში ასევე უმაღლესი დონის სპეციალისტები არიან ჩართული.
                                 </p>
                             </div>
 
@@ -568,9 +485,9 @@
                             <!-- STEP NUMBER -->
 
                             <div class="content-area">
-                                <h4 class="text-left">Development</h4>
-                                <p class="text-left">
-                                    Buyer strategy incubator niche market startup. Entrepreneur non disclosure agreement MVP traction beta social media investor accelerator.
+                                <h5 class="text-left MTRegular">მშენებლობა</h5>
+                                <p class="text-left NusRegular">
+                                    მშენებლობა იწყება ყველა ეტაპის წარმატებით გავლის შემდეგ, დაწყებული მშენებლობა არის მაღალი ხარისხის და ვადებში ჩაბარების გარანტი.
                                 </p>
                             </div>
 
@@ -583,266 +500,17 @@
     </section>
 
     <!-- =========================
-     SECTION: PRICING
-    ============================== -->
-    <section class="pricing bgcolor-2" id="section6">
-        <div class="container">
-
-            <!-- SECTION NUMBER -->
-            <div class="section-number centered-number">
-                06
-            </div>
-
-            <!-- SECTION HEADER -->
-            <div class="section-header">
-                <h2>Pricing Table.</h2>
-                <div class="sub-heading">
-                    We understand your requirement and provide quality works.
-                </div>
-            </div>
-
-            <div class="row packages">
-
-                <!-- SINGLE PACKAGE -->
-                <div class="col-lg-4 col-md-4">
-                    <div class="single-package green-line-top white-bg diffuse-shadow wow fadeInLeft" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
-
-                        <h5>Starter</h5>
-
-                        <div class="price-circle-green">
-                            <h4 class="white-text">$125</h4>
-                            <!-- PRICE -->
-                            <div class="extra-small-text white-text">
-                                Per Month
-                            </div>
-                        </div>
-
-                        <ul class="feature-list">
-                            <li><span class="strong">800GB</span> Online Storage</li>
-                            <li><span class="strong">20</span> Files Per Day</li>
-                            <li><span class="strong">2TB</span> Monthly Bandwidth</li>
-                            <li><span class="icon icon-icon-check"></span> Secure Platform</li>
-                            <li><span class="icon icon-icon-check"></span> Fast &amp; Reliable</li>
-                            <li><span class="icon icon-icon-check"></span> 24/7 Customer Support</li>
-                        </ul>
-
-                        <a href="" class="btn btn-default standard-button green-outline">Get Started</a>
-
-                    </div>
-                </div>
-
-                <!-- SINGLE PACKAGE -->
-                <div class="col-lg-4 col-md-4">
-                    <div class="single-package red-line-top white-bg diffuse-shadow wow fadeInUp" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
-                        <h5>Starter</h5>
-
-                        <div class="price-circle-red">
-                            <h4 class="white-text">$125</h4>
-                            <!-- PRICE -->
-                            <div class="extra-small-text white-text">
-                                Per Month
-                            </div>
-                        </div>
-
-                        <ul class="feature-list">
-                            <li><span class="strong">800GB</span> Online Storage</li>
-                            <li><span class="strong">20</span> Files Per Day</li>
-                            <li><span class="strong">2TB</span> Monthly Bandwidth</li>
-                            <li><span class="icon icon-icon-check"></span> Secure Platform</li>
-                            <li><span class="icon icon-icon-check"></span> Fast &amp; Reliable</li>
-                            <li><span class="icon icon-icon-check"></span> 24/7 Customer Support</li>
-                        </ul>
-
-                        <a href="" class="btn btn-default standard-button red-button">Get Started</a>
-
-                    </div>
-                </div>
-
-                <!-- SINGLE PACKAGE -->
-                <div class="col-lg-4 col-md-4">
-                    <div class="single-package purple-line-top white-bg diffuse-shadow wow fadeInRight" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
-                        <h5>Starter</h5>
-
-                        <div class="price-circle-purple">
-                            <h4 class="white-text">$125</h4>
-                            <!-- PRICE -->
-                            <div class="extra-small-text white-text">
-                                Per Month
-                            </div>
-                        </div>
-
-                        <ul class="feature-list">
-                            <li><span class="strong">800GB</span> Online Storage</li>
-                            <li><span class="strong">20</span> Files Per Day</li>
-                            <li><span class="strong">2TB</span> Monthly Bandwidth</li>
-                            <li><span class="icon icon-icon-check"></span> Secure Platform</li>
-                            <li><span class="icon icon-icon-check"></span> Fast &amp; Reliable</li>
-                            <li><span class="icon icon-icon-check"></span> 24/7 Customer Support</li>
-                        </ul>
-
-                        <a href="" class="btn btn-default standard-button purple-outline">Get Started</a>
-
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- =========================
      SECTION: TESTIMONIALS
     ============================== -->
     <section class="testimonials fixed-bg" id="section7">
         <div class="color-overlay">
             <div class="container">
 
-                <!-- SECTION NUMBER -->
-                <div class="section-number centered-number">
-                    07
-                </div>
-
                 <!-- SECTION HEADER -->
                 <div class="section-header">
-                    <h2 class="white-text">Testimonials.</h2>
-                    <div class="sub-heading white-text">
-                        We understand your requirement and provide quality works.
+                    <div class="sub-heading white-text" style="font-family: 'ArchyEDT-Bold', sans-serif; letter-spacing: 2px; color: orange">
+                       ჩვენ ვაშენებთ უახლესი ტექნოლოგიებისა და საუკეთესო მასალის გამოყენებით
                     </div>
-                </div>
-
-                <div id="feedbacks" class="owl-carousel owl-theme">
-
-                    <!-- START FIRST FEEDBACK -->
-                    <div class="row">
-                        <div class="single-feedback clearfix">
-
-                            <!-- CLIENT IMAGE FOR LARGE SCREEN -->
-                            <div class="col-lg-4 visible-lg">
-                                <div class="client-image wow fadeInUp" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
-                                    <img src="images/feedbacks/client-1.jpg" alt="">
-                                    <div class="image-border">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-8">
-                                <div class="feedback-content white-bg clearfix">
-
-                                    <div class="q-sign top">
-                                        “
-                                    </div>
-
-                                    <blockquote class="clearfix">
-                                        <p class="text-left">
-                                            Deployment ownership non-disclosure agreement vesting period crowdfunding success influencer partnership equity series A financing network effects user experience crowdsource. Burn rate stock bootstrapping direct mailing release client traction creative facebook monetization crowdfunding rockstar.
-                                        </p>
-
-                                        <cite class="pull-left text-left">
-                                            <!-- CLIENT IMAGE FOR SMALL SCREEN -->
-                                            <div class="client-image hidden-lg">
-                                                <img src="images/feedbacks/client-1.jpg" alt="">
-                                            </div>
-
-                                            <div class="client-details">
-
-                                                <div class="signature">
-                                                    <img src="images/feedbacks/signature-1.png" alt="">
-                                                </div>
-
-                                                <h6 class="dark-text">Melina Albrecht</h6>
-                                                <div class="extra-small-text">
-                                                    Founder, TingTong
-                                                </div>
-
-                                            </div>
-
-                                        </cite>
-                                    </blockquote>
-
-                                    <div class="q-sign bottom">
-                                        ”
-                                    </div>
-
-                                    <div class="four-lines">
-                                        <div class="line red-line-bottom">
-                                        </div>
-                                        <div class="line green-line-bottom">
-                                        </div>
-                                        <div class="line purple-line-bottom">
-                                        </div>
-                                        <div class="line yellow-line-bottom">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div> <!-- END FIRST FEEDBACK -->
-
-                    <!-- START SECOND FEEDBACK -->
-                    <div class="row">
-                        <div class="single-feedback clearfix">
-
-                            <!-- CLIENT IMAGE FOR LARGE SCREEN -->
-                            <div class="col-lg-4 visible-lg">
-                                <div class="client-image wow fadeInUp" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
-                                    <img src="images/feedbacks/client-2.jpg" alt="">
-                                    <div class="image-border">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-8">
-                                <div class="feedback-content white-bg clearfix">
-
-                                    <div class="q-sign top">
-                                        “
-                                    </div>
-
-                                    <blockquote class="clearfix">
-                                        <p class="text-left">
-                                            Deployment ownership non-disclosure agreement vesting period crowdfunding success influencer partnership equity series A financing network effects user experience crowdsource. Burn rate stock bootstrapping direct mailing release client traction creative facebook monetization crowdfunding rockstar.
-                                        </p>
-
-                                        <cite class="pull-left text-left">
-
-                                            <div class="client-image hidden-lg">
-                                                <img src="images/feedbacks/client-2.jpg" alt="">
-                                            </div>
-
-                                            <div class="client-details">
-                                                <div class="signature">
-                                                    <img src="images/feedbacks/signature-2.png" alt="">
-                                                </div>
-
-                                                <h6 class="dark-text">Alexander Weiß</h6>
-
-                                                <div class="extra-small-text">
-                                                    Founder, TingTong
-                                                </div>
-
-                                            </div>
-                                        </cite>
-                                    </blockquote>
-
-                                    <div class="q-sign bottom">
-                                        ”
-                                    </div>
-
-                                    <div class="four-lines">
-                                        <div class="line red-line-bottom">
-                                        </div>
-                                        <div class="line green-line-bottom">
-                                        </div>
-                                        <div class="line purple-line-bottom">
-                                        </div>
-                                        <div class="line yellow-line-bottom">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div> <!-- END SECOND FEEDBACK -->
-
-
                 </div>
             </div>
         </div>
@@ -861,9 +529,9 @@
 
             <!-- SECTION HEADER -->
             <div class="section-header">
-                <h2>Why Select Us?</h2>
-                <div class="sub-heading">
-                    We understand your requirement and provide quality works.
+                <h3 class="MTMedium">რატომ ჩვენ?</h3>
+                <div class="sub-heading NusMedium">
+                    ჩვენ ვითვალისწინებთ მშენებლობაში კლიენტის მოთხოვნებსა და სურვილებს
                 </div>
             </div>
 
@@ -984,10 +652,10 @@
                 <div class="col-lg-12">
 
                     <!-- HEADING -->
-                    <h4 class="wow fadeInLeft" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">Start your journey with us now</h4>
+                    <h4 class="wow fadeInLeft" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s" style="font-family: 'ArchyEDT-Bold', sans-serif;">შეიძინე შენი ახალი ბინა ჩვენთან</h4>
 
                     <!-- BUTTON -->
-                    <a href="" class="btn btn-default standard-button red-button wow fadeInRight" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">Get Started</a>
+                    <a href="#section11" class="btn btn-default standard-button red-button wow fadeInRight" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s" style="font-family: 'ArchyEDT-Bold', sans-serif;">კონტაქტი</a>
 
                 </div>
             </div>
@@ -999,136 +667,43 @@
     <!-- =========================
      SECTION: BLOG
     ============================== -->
+    <?php if ($currentWorks):  ?>
     <section class="blog bgcolor-2" id="section9">
         <div class="container">
 
-            <!-- SECTION NUMBER -->
-            <div class="section-number centered-number">
-                09
-            </div>
-
             <!-- SECTION HEADER -->
             <div class="section-header">
-                <h2>Our Blog</h2>
-                <div class="sub-heading">
-                    We understand your requirement and provide quality works.
+                <h3 class="MTMedium">მიმდინარე სამუშაოები</h3>
+                <div class="sub-heading NusMedium">
+                    ყოველთვის იქნებით ინფორმირებული მიმდინარე სამუშაოების შესახებ
                 </div>
             </div>
 
             <div class="row blog-posts">
-
-                <!-- FEATURED POST -->
-                <div class="col-lg-6 col-md-6">
-                    <div class="featured-post red-line-bottom white-bg diffuse-shadow text-left">
-
-                        <!-- FEATURED IMAGE -->
-                        <div class="post-featured-image dark-gradient-overlay">
-                            <img src="images/blog/featured-image.jpg" alt="Blog featured image">
-                        </div>
-
-                        <!-- POST AUTHOR AND DATE -->
-                        <div class="post-info">
-                            <div class="author uppercase red-text strong">
-                                Damian Schreiber
-                            </div>
-                            <div class="date extra-small-text white-text">
-                                December 10, 2015
-                            </div>
-                        </div>
-
-                        <!-- POST TITLE AND DETAILS -->
-                        <div class="post-content">
-                            <a href="">
-                                <h5 class="post-title">
-                                    Facebook’s CNN livestream will test its place in the second screen era </h5>
-                            </a>
-                            <p>
-                                Traction seed money infographic accelerator pivot value proposition ownership business-to-consumer iteration market analytics paradigm
-                            </p>
-                        </div>
-
-                    </div>
-                </div>
-
+                <?php foreach ($currentWorks as $currentWork):  ?>
                 <!-- REGULAR POSTS -->
-                <div class="col-lg-6 col-md-6">
+                <div class="col-lg-6 col-md-6" style="display: flex; flex-wrap: wrap">
                     <!-- SINGLE POST -->
                     <div class="regular-post green-line-bottom white-bg diffuse-shadow text-left wow fadeInUp" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
 
-                        <!-- AUTHOR AND DATE -->
-                        <div class="post-info">
-                            <div class="green-text uppercase">
-                                Damian Schreiber
-                            </div>
-                            <div class="date extra-small-text">
-                                December 10, 2015
-                            </div>
-                        </div>
-
                         <!-- POST TITLE AND DETAILS -->
                         <div class="post-content">
-                            <a href="">
-                                <h6 class="post-title">Google Street View adds virtual reality support</h6>
+                            <img style="height: 130px; width: 100%;" src="images/<?=$currentWork->img?>" alt="">
+                            <a href="/current/<?=$currentWork->id?>">
+                                <h6 class="post-title MTMedium"><?=$currentWork->title_geo?></h6>
                             </a>
                             <div>
-                                Traction seed money infographic accelerator pivot value proposition ownership business-to-consumer iteration market analytics paradigm
+                                <span class="NusRegular"><?=substr($currentWork->content_geo, 0, 500)?></span>
                             </div>
                         </div>
                     </div>
-
                     <!-- SINGLE POST -->
-                    <div class="regular-post purple-line-bottom white-bg diffuse-shadow text-left wow fadeInUp" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.25s">
-
-                        <!-- AUTHOR AND DATE -->
-                        <div class="post-info">
-                            <div class="purple-text uppercase">
-                                Damian Schreiber
-                            </div>
-                            <div class="date extra-small-text">
-                                December 10, 2015
-                            </div>
-                        </div>
-
-                        <!-- POST TITLE AND DETAILS -->
-                        <div class="post-content">
-                            <a href="">
-                                <h6 class="post-title">Google Street View adds virtual reality support</h6>
-                            </a>
-                            <div>
-                                Traction seed money infographic accelerator pivot value proposition ownership business-to-consumer iteration market analytics paradigm
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- SINGLE POST -->
-                    <div class="regular-post yellow-line-bottom white-bg diffuse-shadow text-left wow fadeInUp" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.35s">
-
-                        <!-- AUTHOR AND DATE -->
-                        <div class="post-info">
-                            <div class="yellow-text uppercase">
-                                Damian Schreiber
-                            </div>
-                            <div class="date extra-small-text">
-                                December 10, 2015
-                            </div>
-                        </div>
-
-                        <!-- POST TITLE AND DETAILS -->
-                        <div class="post-content">
-                            <a href="">
-                                <h6 class="post-title">Google Street View adds virtual reality support</h6>
-                            </a>
-                            <div>
-                                Traction seed money infographic accelerator pivot value proposition ownership business-to-consumer iteration market analytics paradigm
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
-
+                <?php endforeach; ?>
             </div>
         </div>
     </section>
+    <?php endif;  ?>
 </div>
 <?php elseif($lang['code'] === 'EN'):  ?>
 <div class="EN">
@@ -1250,95 +825,6 @@
     </section>
 
     <!-- =========================
-     SECTION: SERVICES
-    ============================== -->
-    <section class="our-focus bgcolor-2" id="section2">
-        <div class="container">
-
-            <!-- SECTION NUMBER -->
-            <div class="section-number centered-number">
-                02
-            </div>
-
-            <!-- SECTION HEADER -->
-            <div class="section-header">
-                <h2>Our Focus.</h2>
-                <div class="sub-heading">
-                    We understand your requirement and provide quality works.
-                </div>
-            </div>
-
-            <div class="row focuses">
-
-                <!-- SINGLE FOCUS COLUMN -->
-                <div class="col-lg-3 col-sm-6 col-xs-12">
-                    <div class="single-focus white-bg diffuse-shadow red-line-bottom wow fadeInLeft" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
-                        <!-- ICON -->
-                        <div class="icon red-text">
-                            <span class="icon icon-basic-postcard-multiple"></span>
-                        </div>
-                        <!-- HEADING -->
-                        <h5>Web Design</h5>
-                        <!-- DETAILS -->
-                        <p>
-                            Analytics release series A financing launch party interaction design android angel investor.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- SINGLE FOCUS COLUMN -->
-                <div class="col-lg-3 col-sm-6 col-xs-12">
-                    <div class="single-focus white-bg diffuse-shadow green-line-bottom wow fadeInUp" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
-                        <!-- ICON -->
-                        <div class="icon green-text">
-                            <span class="icon icon-basic-map"></span>
-                        </div>
-                        <!-- HEADING -->
-                        <h5>UX Design</h5>
-                        <!-- DETAILS -->
-                        <p>
-                            Analytics release series A financing launch party interaction design android angel investor.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- SINGLE FOCUS COLUMN -->
-                <div class="col-lg-3 col-sm-6 col-xs-12">
-                    <div class="single-focus white-bg diffuse-shadow purple-line-bottom wow fadeInDown" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
-                        <!-- ICON -->
-                        <div class="icon purple-text">
-                            <span class="icon icon-camera-regular"></span>
-                        </div>
-                        <!-- HEADING -->
-                        <h5>Photogrpahy</h5>
-                        <!-- DETAILS -->
-                        <p>
-                            Analytics release series A financing launch party interaction design android angel investor.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- SINGLE FOCUS COLUMN -->
-                <div class="col-lg-3 col-sm-6 col-xs-12">
-                    <div class="single-focus white-bg diffuse-shadow yellow-line-bottom wow fadeInRight" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
-                        <!-- ICON -->
-                        <div class="icon yellow-text">
-                            <span class="icon icon-unie16d"></span>
-                        </div>
-                        <!-- HEADING -->
-                        <h5>App Development</h5>
-                        <!-- DETAILS -->
-                        <p>
-                            Analytics release series A financing launch party interaction design android angel investor.
-                        </p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- =========================
      SECTION: VIDEO SECTION
     ============================== -->
 
@@ -1443,103 +929,6 @@
             </div>
         </section>
     <?php endif;  ?>
-    <!-- =========================
-     SECTION: TEAM
-    ============================== -->
-    <section class="team bgcolor-2" id="section4">
-        <div class="container">
-
-            <!-- SECTION NUMBER -->
-            <div class="section-number centered-number">
-                04
-            </div>
-
-            <!-- SECTION HEADER -->
-            <div class="section-header">
-                <h2>Our Team.</h2>
-                <div class="sub-heading">
-                    We understand your requirement and provide quality works.
-                </div>
-            </div>
-
-            <div class="row">
-
-                <!-- TEAM MEMBER LIST -->
-                <div class="member-list">
-
-                    <!-- SINGLE MEMBER -->
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                        <div class="single-member red-line-bottom diffuse-shadow wow fadeInLeft" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
-                            <div class="member-pic red-gradient-overlay">
-                                <div class="gradient">
-                                    <img src="images/team-members/1.jpg" alt="">
-                                    <!-- MEMBER IMAGE -->
-                                </div>
-                            </div>
-                            <h6 class="red-text">Michael Schmitt</h6>
-                            <!-- MEMBER NAME -->
-                            <div class="extra-small-text">
-                                Founder &amp; CEO
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- SINGLE MEMBER -->
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                        <div class="single-member green-line-bottom diffuse-shadow wow fadeInUp" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
-                            <div class="member-pic green-gradient-overlay">
-                                <div class="gradient">
-                                    <img src="images/team-members/2.jpg" alt="">
-                                    <!-- MEMBER IMAGE -->
-                                </div>
-                            </div>
-                            <h6 class="green-text">Michael Schmitt</h6>
-                            <!-- MEMBER NAME -->
-                            <div class="extra-small-text">
-                                Founder &amp; CEO
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- SINGLE MEMBER -->
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                        <div class="single-member purple-line-bottom diffuse-shadow wow fadeInDown" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
-                            <div class="member-pic purple-gradient-overlay">
-                                <div class="gradient">
-                                    <img src="images/team-members/3.jpg" alt="">
-                                    <!-- MEMBER IMAGE -->
-                                </div>
-                            </div>
-                            <h6 class="purple-text">Michael Schmitt</h6>
-                            <!-- MEMBER NAME -->
-                            <div class="extra-small-text">
-                                Founder &amp; CEO
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- SINGLE MEMBER -->
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                        <div class="single-member yellow-line-bottom diffuse-shadow wow fadeInRight" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
-                            <div class="member-pic yellow-gradient-overlay">
-                                <div class="gradient">
-                                    <img src="images/team-members/4.jpg" alt="">
-                                    <!-- MEMBER IMAGE -->
-                                </div>
-                            </div>
-                            <h6 class="yellow-text">Michael Schmitt</h6>
-                            <!-- MEMBER NAME -->
-                            <div class="extra-small-text">
-                                Founder &amp; CEO
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
-    </section>
 
     <!-- =========================
      SECTION: STATS
@@ -1729,114 +1118,6 @@
             </div>
         </div>
     </section>
-
-    <!-- =========================
-     SECTION: PRICING
-    ============================== -->
-    <section class="pricing bgcolor-2" id="section6">
-        <div class="container">
-
-            <!-- SECTION NUMBER -->
-            <div class="section-number centered-number">
-                06
-            </div>
-
-            <!-- SECTION HEADER -->
-            <div class="section-header">
-                <h2>Pricing Table.</h2>
-                <div class="sub-heading">
-                    We understand your requirement and provide quality works.
-                </div>
-            </div>
-
-            <div class="row packages">
-
-                <!-- SINGLE PACKAGE -->
-                <div class="col-lg-4 col-md-4">
-                    <div class="single-package green-line-top white-bg diffuse-shadow wow fadeInLeft" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
-
-                        <h5>Starter</h5>
-
-                        <div class="price-circle-green">
-                            <h4 class="white-text">$125</h4>
-                            <!-- PRICE -->
-                            <div class="extra-small-text white-text">
-                                Per Month
-                            </div>
-                        </div>
-
-                        <ul class="feature-list">
-                            <li><span class="strong">800GB</span> Online Storage</li>
-                            <li><span class="strong">20</span> Files Per Day</li>
-                            <li><span class="strong">2TB</span> Monthly Bandwidth</li>
-                            <li><span class="icon icon-icon-check"></span> Secure Platform</li>
-                            <li><span class="icon icon-icon-check"></span> Fast &amp; Reliable</li>
-                            <li><span class="icon icon-icon-check"></span> 24/7 Customer Support</li>
-                        </ul>
-
-                        <a href="" class="btn btn-default standard-button green-outline">Get Started</a>
-
-                    </div>
-                </div>
-
-                <!-- SINGLE PACKAGE -->
-                <div class="col-lg-4 col-md-4">
-                    <div class="single-package red-line-top white-bg diffuse-shadow wow fadeInUp" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
-                        <h5>Starter</h5>
-
-                        <div class="price-circle-red">
-                            <h4 class="white-text">$125</h4>
-                            <!-- PRICE -->
-                            <div class="extra-small-text white-text">
-                                Per Month
-                            </div>
-                        </div>
-
-                        <ul class="feature-list">
-                            <li><span class="strong">800GB</span> Online Storage</li>
-                            <li><span class="strong">20</span> Files Per Day</li>
-                            <li><span class="strong">2TB</span> Monthly Bandwidth</li>
-                            <li><span class="icon icon-icon-check"></span> Secure Platform</li>
-                            <li><span class="icon icon-icon-check"></span> Fast &amp; Reliable</li>
-                            <li><span class="icon icon-icon-check"></span> 24/7 Customer Support</li>
-                        </ul>
-
-                        <a href="" class="btn btn-default standard-button red-button">Get Started</a>
-
-                    </div>
-                </div>
-
-                <!-- SINGLE PACKAGE -->
-                <div class="col-lg-4 col-md-4">
-                    <div class="single-package purple-line-top white-bg diffuse-shadow wow fadeInRight" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
-                        <h5>Starter</h5>
-
-                        <div class="price-circle-purple">
-                            <h4 class="white-text">$125</h4>
-                            <!-- PRICE -->
-                            <div class="extra-small-text white-text">
-                                Per Month
-                            </div>
-                        </div>
-
-                        <ul class="feature-list">
-                            <li><span class="strong">800GB</span> Online Storage</li>
-                            <li><span class="strong">20</span> Files Per Day</li>
-                            <li><span class="strong">2TB</span> Monthly Bandwidth</li>
-                            <li><span class="icon icon-icon-check"></span> Secure Platform</li>
-                            <li><span class="icon icon-icon-check"></span> Fast &amp; Reliable</li>
-                            <li><span class="icon icon-icon-check"></span> 24/7 Customer Support</li>
-                        </ul>
-
-                        <a href="" class="btn btn-default standard-button purple-outline">Get Started</a>
-
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
     <!-- =========================
      SECTION: TESTIMONIALS
     ============================== -->
@@ -2556,7 +1837,7 @@
                                 <figure class="effect-zoe wow fadeInLeft" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
 
                                     <!-- PROJECT IMAGE and LINK -->
-                                    <a href="project/<?=$finishedProject->id?>" title="Click to view details" class="more"><img src="images/projects/1.jpg" alt="">
+                                    <a href="project/<?=$finishedProject->id?>" title="Click to view details" class="more"><img src="images/projects/<?=$finishedProject->img?>" alt="">
                                         <p class="description">
                                             <span class="icon icon-plus"></span>
                                         </p>
@@ -2874,113 +2155,6 @@
                     </div>
 
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- =========================
-     SECTION: PRICING
-    ============================== -->
-    <section class="pricing bgcolor-2" id="section6">
-        <div class="container">
-
-            <!-- SECTION NUMBER -->
-            <div class="section-number centered-number">
-                06
-            </div>
-
-            <!-- SECTION HEADER -->
-            <div class="section-header">
-                <h2>Pricing Table.</h2>
-                <div class="sub-heading">
-                    We understand your requirement and provide quality works.
-                </div>
-            </div>
-
-            <div class="row packages">
-
-                <!-- SINGLE PACKAGE -->
-                <div class="col-lg-4 col-md-4">
-                    <div class="single-package green-line-top white-bg diffuse-shadow wow fadeInLeft" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
-
-                        <h5>Starter</h5>
-
-                        <div class="price-circle-green">
-                            <h4 class="white-text">$125</h4>
-                            <!-- PRICE -->
-                            <div class="extra-small-text white-text">
-                                Per Month
-                            </div>
-                        </div>
-
-                        <ul class="feature-list">
-                            <li><span class="strong">800GB</span> Online Storage</li>
-                            <li><span class="strong">20</span> Files Per Day</li>
-                            <li><span class="strong">2TB</span> Monthly Bandwidth</li>
-                            <li><span class="icon icon-icon-check"></span> Secure Platform</li>
-                            <li><span class="icon icon-icon-check"></span> Fast &amp; Reliable</li>
-                            <li><span class="icon icon-icon-check"></span> 24/7 Customer Support</li>
-                        </ul>
-
-                        <a href="" class="btn btn-default standard-button green-outline">Get Started</a>
-
-                    </div>
-                </div>
-
-                <!-- SINGLE PACKAGE -->
-                <div class="col-lg-4 col-md-4">
-                    <div class="single-package red-line-top white-bg diffuse-shadow wow fadeInUp" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
-                        <h5>Starter</h5>
-
-                        <div class="price-circle-red">
-                            <h4 class="white-text">$125</h4>
-                            <!-- PRICE -->
-                            <div class="extra-small-text white-text">
-                                Per Month
-                            </div>
-                        </div>
-
-                        <ul class="feature-list">
-                            <li><span class="strong">800GB</span> Online Storage</li>
-                            <li><span class="strong">20</span> Files Per Day</li>
-                            <li><span class="strong">2TB</span> Monthly Bandwidth</li>
-                            <li><span class="icon icon-icon-check"></span> Secure Platform</li>
-                            <li><span class="icon icon-icon-check"></span> Fast &amp; Reliable</li>
-                            <li><span class="icon icon-icon-check"></span> 24/7 Customer Support</li>
-                        </ul>
-
-                        <a href="" class="btn btn-default standard-button red-button">Get Started</a>
-
-                    </div>
-                </div>
-
-                <!-- SINGLE PACKAGE -->
-                <div class="col-lg-4 col-md-4">
-                    <div class="single-package purple-line-top white-bg diffuse-shadow wow fadeInRight" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
-                        <h5>Starter</h5>
-
-                        <div class="price-circle-purple">
-                            <h4 class="white-text">$125</h4>
-                            <!-- PRICE -->
-                            <div class="extra-small-text white-text">
-                                Per Month
-                            </div>
-                        </div>
-
-                        <ul class="feature-list">
-                            <li><span class="strong">800GB</span> Online Storage</li>
-                            <li><span class="strong">20</span> Files Per Day</li>
-                            <li><span class="strong">2TB</span> Monthly Bandwidth</li>
-                            <li><span class="icon icon-icon-check"></span> Secure Platform</li>
-                            <li><span class="icon icon-icon-check"></span> Fast &amp; Reliable</li>
-                            <li><span class="icon icon-icon-check"></span> 24/7 Customer Support</li>
-                        </ul>
-
-                        <a href="" class="btn btn-default standard-button purple-outline">Get Started</a>
-
-                    </div>
-                </div>
-
             </div>
         </div>
     </section>

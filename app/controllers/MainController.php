@@ -9,15 +9,16 @@ class MainController extends AppController {
         $aboutus = \R::find('aboutus');
         $finishedProjects = \R::find('finished');
         $currentWorks = \R::find('current', 'ORDER BY id DESC LIMIT 8');
+        $floors = \R::find('floors');
 
         $this->setMeta(
             'Real Palace – Construction company',
             'utf-8',
-            'descriptions...',
-            'keyword 1, keyword 2',
+            'სამშენებლო კომპანია REAL PALACE, ჩვენ ვაშენებთ კორპუსებს ბათუმში და თბილისში, კორპუსების მშენებლობა ყოველთვის ჯდება ვადებში',
+            'სამშენებლო კომპანია, სამშენებლო კომპანია ბათუმში, REAL PALACE, realpalace.ge, მშენებარე ბინები ბათუმში',
             'lukatarkhnishvili.com'
         );
-        $this->set(compact('aboutus', 'finishedProjects', 'currentWorks'));
+        $this->set(compact('aboutus', 'finishedProjects', 'currentWorks', 'floors'));
 
     }
 }

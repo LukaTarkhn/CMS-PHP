@@ -12,9 +12,9 @@
             <div class="navbar-header">
 
                 <!-- NAVBAR EXPAND COLLAPSE ON MOBILE -->
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation" style="height: 35px; width: 35px; position: relative">
                     <span class="sr-only">ნავიგაცია</span>
-                    <span class="icon icon-menu"></span>
+                    <span class="icon icon-menu" style="font-size: 25px; position:absolute; top:3px; right: 4px;"></span>
                 </button>
 
                 <!-- LOGO -->
@@ -22,7 +22,7 @@
                     <img src="/images/logo.png" alt="LOGO" style="position: absolute; height: 70px; top: 2px;bottom: 3px;left: 100px">
                 </a>
 
-                <select id="languages" class="form-control" style="max-width: 80px; position: absolute; right: 10px; top: 20px;">
+                <select id="languages" class="form-control" style="max-width: 60px; position: absolute; right: 10px; top: 20px;">
                     <?php new \app\widgets\languages\Languages(); ?>
                 </select>
             </div>
@@ -142,88 +142,51 @@
     ============================== -->
     <section class="our-focus bgcolor-2" id="section2">
         <div class="container">
-
-            <!-- SECTION NUMBER -->
-            <div class="section-number centered-number">
-                02
-            </div>
-
             <!-- SECTION HEADER -->
             <div class="section-header">
-                <h2>Our Focus.</h2>
+                <h3 class="MTMedium">ბინების დათვალიერება</h3>
                 <div class="sub-heading">
-                    We understand your requirement and provide quality works.
+                   <span class="NusRegular">დაათვალიერეთ და შეიძინეთ ბინები</span>
                 </div>
             </div>
 
-            <div class="row focuses">
-
+            <div class="row focuses" style="display: flex; flex-wrap: nowrap">
                 <!-- SINGLE FOCUS COLUMN -->
-                <div class="col-lg-3 col-sm-6 col-xs-12">
-                    <div class="single-focus white-bg diffuse-shadow red-line-bottom wow fadeInLeft" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
-                        <!-- ICON -->
-                        <div class="icon red-text">
-                            <span class="icon icon-basic-postcard-multiple"></span>
-                        </div>
-                        <!-- HEADING -->
-                        <h5>Web Design</h5>
-                        <!-- DETAILS -->
-                        <p>
-                            Analytics release series A financing launch party interaction design android angel investor.
-                        </p>
+                <div class="col-lg-7 col-sm-7 col-xs-7">
+                    <div class="wow fadeInLeftBig" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
+                        <img src="images/forsell/forsell.png" alt="" style="width: 100%">
                     </div>
                 </div>
-
                 <!-- SINGLE FOCUS COLUMN -->
-                <div class="col-lg-3 col-sm-6 col-xs-12">
-                    <div class="single-focus white-bg diffuse-shadow green-line-bottom wow fadeInUp" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
-                        <!-- ICON -->
-                        <div class="icon green-text">
-                            <span class="icon icon-basic-map"></span>
-                        </div>
-                        <!-- HEADING -->
-                        <h5>UX Design</h5>
-                        <!-- DETAILS -->
-                        <p>
-                            Analytics release series A financing launch party interaction design android angel investor.
-                        </p>
+                <div class="col-lg-7 col-sm-7 col-xs-7 single-focus white-bg diffuse-shadow wow fadeInRightBig">
+                    <div class="sub-heading" style="margin-top: -50px; ">
+                        <span style="font-family: 'ArchyEDT-Bold', sans-serif; color: #64739d;">აირჩიეთ სართული</span>
+                        <hr>
+                    </div>
+                    <div data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s" style="display: flex; flex-wrap: wrap; justify-content: center">
+
+                        <?php  foreach ($floors as $floor): ?>
+                            <?php if ($floor->parking != 1):  ?>
+                                <a href="/floor/<?=$floor->id?>" class="floorbutton" style="font-family: 'ArchyEDT-Bold', sans-serif;">
+                                    <div class="onHoverImage"><img src="images/floors/<?=$floor->img?>" style="width: 100%" /></div>
+                                    სართული <?=$floor->floor?>
+                                </a>
+                            <?php endif; ?>
+                        <?php endforeach; ?>
+
+                        <?php $parkingfloor = 0 ?>
+                        <?php  foreach ($floors as $floor): ?>
+                            <?php $parkingfloor = $parkingfloor + 1 ?>
+                            <?php if ($floor->parking == 1):  ?>
+                                <a href="/floor/<?=$floor->id?>" class="floorbutton" style="font-family: 'ArchyEDT-Bold', sans-serif;">
+                                    <div class="onHoverImage"><img src="images/floors/parking/<?=$floor->img?>" style="width: 100%" /></div>
+                                    პარკინგი <?=$parkingfloor?>
+                                </a>
+                            <?php endif; ?>
+                        <?php endforeach; ?>
                     </div>
                 </div>
-
-                <!-- SINGLE FOCUS COLUMN -->
-                <div class="col-lg-3 col-sm-6 col-xs-12">
-                    <div class="single-focus white-bg diffuse-shadow purple-line-bottom wow fadeInDown" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
-                        <!-- ICON -->
-                        <div class="icon purple-text">
-                            <span class="icon icon-camera-regular"></span>
-                        </div>
-                        <!-- HEADING -->
-                        <h5>Photogrpahy</h5>
-                        <!-- DETAILS -->
-                        <p>
-                            Analytics release series A financing launch party interaction design android angel investor.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- SINGLE FOCUS COLUMN -->
-                <div class="col-lg-3 col-sm-6 col-xs-12">
-                    <div class="single-focus white-bg diffuse-shadow yellow-line-bottom wow fadeInRight" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
-                        <!-- ICON -->
-                        <div class="icon yellow-text">
-                            <span class="icon icon-unie16d"></span>
-                        </div>
-                        <!-- HEADING -->
-                        <h5>App Development</h5>
-                        <!-- DETAILS -->
-                        <p>
-                            Analytics release series A financing launch party interaction design android angel investor.
-                        </p>
-                    </div>
-                </div>
-
             </div>
-        </div>
     </section>
 
     <!-- =========================
@@ -522,11 +485,6 @@
     <section class="features" id="section8">
         <div class="container">
 
-            <!-- SECTION NUMBER -->
-            <div class="section-number centered-number">
-                08
-            </div>
-
             <!-- SECTION HEADER -->
             <div class="section-header">
                 <h3 class="MTMedium">რატომ ჩვენ?</h3>
@@ -545,12 +503,12 @@
                             <div class="icon red-text">
                                 <span class="icon icon-graph2"></span>	<!-- FEATURE ICON -->
                             </div>
-                            <h6>Business<br/>Growth</h6>	<!-- HEADING -->
+                            <h6 class="MTRegular">მიზეზი 1</h6>	<!-- HEADING -->
                         </div>
 
                         <!-- FEATURE DETAILS -->
-                        <p>
-                            Success scrum project funding marketing seed money prototype innovator direct hackathon android angel investor.
+                        <p class="NusRegular">
+                            მიზეზის აღწერა
                         </p>
                     </div>
                 </div>
@@ -563,12 +521,12 @@
                             <div class="icon green-text">
                                 <span class="icon icon-edit"></span>	<!-- FEATURE ICON -->
                             </div>
-                            <h6>Unlimited<br/>Revisions</h6>	<!-- HEADING -->
+                            <h6 class="MTRegular">მიზეზი 2</h6>	<!-- HEADING -->
                         </div>
 
                         <!-- FEATURE DETAILS -->
-                        <p>
-                            Technology founders churn rate niche market long tail release iteration burn rate backing. Churn rate accelerator.
+                        <p class="NusRegular">
+                            მიზეზის აღწერა
                         </p>
                     </div>
                 </div>
@@ -581,12 +539,12 @@
                             <div class="icon purple-text">
                                 <span class="icon icon-exapnd2"></span>	<!-- FEATURE ICON -->
                             </div>
-                            <h6>Ultimate<br/>Perfection</h6>	<!-- HEADING -->
+                            <h6 class="MTRegular">მიზეზი 3</h6>	<!-- HEADING -->
                         </div>
 
                         <!-- FEATURE DETAILS -->
-                        <p>
-                            Deployment ownership non-disclosure agreement vesting period crowdfunding success influencer partnership.
+                        <p class="NusRegular">
+                            მიზეზის აღწერა
                         </p>
                     </div>
                 </div>
@@ -599,12 +557,12 @@
                             <div class="icon yellow-text">
                                 <span class="icon icon-display1"></span>	<!-- FEATURE ICON -->
                             </div>
-                            <h6>Smart<br/>Experience</h6>	<!-- HEADING -->
+                            <h6 class="MTRegular">მიზეზი 4</h6>	<!-- HEADING -->
                         </div>
 
                         <!-- FEATURE DETAILS -->
-                        <p>
-                            Success scrum project funding marketing seed money prototype innovator direct hackathon android angel investor.
+                        <p class="NusRegular">
+                            მიზეზის აღწერა
                         </p>
                     </div>
                 </div>
@@ -617,12 +575,12 @@
                             <div class="icon red-text">
                                 <span class="icon icon-date"></span>	<!-- FEATURE ICON -->
                             </div>
-                            <h6>Strict<br/>Deadline</h6>	<!-- HEADING -->
+                            <h6 class="MTRegular">მიზეზი 5</h6>	<!-- HEADING -->
                         </div>
 
                         <!-- FEATURE DETAILS -->
-                        <p>
-                            Technology founders churn rate niche market long tail release iteration burn rate backing. Churn rate accelerator.
+                        <p class="NusRegular">
+                            მიზეზის აღწერა
                         </p>
                     </div>
                 </div>
@@ -635,12 +593,12 @@
                             <div class="icon green-text">
                                 <span class="icon icon-medal"></span>	<!-- FEATURE ICON -->
                             </div>
-                            <h6>Reputed<br/>Company</h6>	<!-- HEADING -->
+                            <h6 class="MTRegular">მიზეზი 6</h6>	<!-- HEADING -->
                         </div>
 
                         <!-- FEATURE DETAILS -->
-                        <p>
-                            Deployment ownership non-disclosure agreement vesting period crowdfunding success influencer partnership.
+                        <p class="NusRegular">
+                            მიზეზის აღწერა
                         </p>
                     </div>
                 </div>

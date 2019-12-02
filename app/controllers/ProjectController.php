@@ -13,7 +13,14 @@ class ProjectController extends AppController
             throw  new \Exception('Page not found', 404);
         }
 
-        $this->setMeta($project->title, 'utf-8', $project->title, $project->title, 'lukatarkhnishvili.com');
+        $this->setMeta(
+            $project->title,
+            'utf-8',
+            $project->title,
+            $project->title,
+            'lukatarkhnishvili.com'
+        );
+
         $this->set(compact('project'));
     }
 }

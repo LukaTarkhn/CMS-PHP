@@ -34,7 +34,7 @@
                     </select>
                     <div class="box-footer">
                         <input type="hidden" name="id" value="<?=$apartments->id?>">
-                        <button type="submit" class="btn btn-primary">Edit</button>
+                        <button type="submit" class="btn btn-primary">Save</button>
                     </div>
                 </form>
             </div>

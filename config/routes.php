@@ -1,7 +1,8 @@
 <?php
 
 use ibuild\Router;
-
+Router::add('^apartment/?(?P<id>[a-z0-9-]+)/?$', ['controller' => 'Apartment', 'action' => 'view']);
+Router::add('^floor/?(?P<id>[a-z0-9-]+)/?$', ['controller' => 'Floor', 'action' => 'view']);
 Router::add('^current/?(?P<id>[a-z0-9-]+)/?$', ['controller' => 'Current', 'action' => 'view']);
 Router::add('^project/?(?P<id>[a-z0-9-]+)/?$', ['controller' => 'Project', 'action' => 'view']);
 

@@ -147,20 +147,6 @@ jQuery(document).ready(function ($) {
 	});
 });
 
-/* ================================
-===  TESTIMONIALS              ====
-================================= */
-
-$(document).ready(function () {
-	$("#project-slider").owlCarousel({
-
-		navigation: false, // Show next and prev buttons
-		slideSpeed: 300,
-		paginationSpeed: 400,
-		singleItem: true
-
-	});
-});
 
 /* =================================
 ===  CONTACT FORM          ====

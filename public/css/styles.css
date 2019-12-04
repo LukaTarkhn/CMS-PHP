@@ -27,49 +27,54 @@ body::-webkit-scrollbar-thumb {
 @font-face {
   font-family: CITI-MT-Regular;
   src: url(/fonts/CITI-MT-Regular.otf) format("opentype");
+  font-display: swap;
 }
 
 @font-face {
   font-family: CITI-MT-Medium;
   src: url(/fonts/CITI-MT-Medium.otf) format("opentype");
+  font-display: swap;
 }
 
 @font-face {
   font-family: CITI-MT-Bold;
   src: url(/fonts/CITI-MT-Bold.otf) format("opentype");
+  font-display: swap;
 }
 
 @font-face {
   font-family: CITI-Nus-Regular;
   src: url(/fonts/CITI-Nus-Regular.otf) format("opentype");
+  font-display: swap;
 }
 
 @font-face {
   font-family: CITI-Nus-Medium;
   src: url(/fonts/CITI-Nus-Medium.otf) format("opentype");
+  font-display: swap;
 }
 
 @font-face {
   font-family: CITI-Nus-Bold;
   src: url(/fonts/CITI-Nus-Bold.otf) format("opentype");
+  font-display: swap;
 }
 
 .MTRegular {
-  font-family: CITI-MT-Regular;
+  font-family: CITI-MT-Regular, sans-serif;
 }
 
 .NusMedium {
-  font-family: CITI-Nus-Medium;
+  font-family: CITI-Nus-Medium, sans-serif;
 }
 
 .NusRegular {
-  font-family: CITI-Nus-Regular;
+  font-family: CITI-Nus-Regular, sans-serif;
 }
 
 .MTMedium {
-  font-family: CITI-MT-Medium;
+  font-family: CITI-MT-Medium, sans-serif;
 }
-
 
 html {
   font-size: 100%;
@@ -389,8 +394,8 @@ strong,
   top: 0;
   left: 0;
   opacity: 0.5;
-  background: -webkit-linear-gradient(top, rgba(255, 0, 0, 0) 0%, rgba(252, 95, 69, 0.6) 100%);
-  background: linear-gradient(to bottom, rgba(255, 0, 0, 0) 0%, rgba(252, 95, 69, 0.6) 100%);
+  background: -webkit-linear-gradient(top, rgba(255, 0, 0, 0) 0%, rgba(252, 95, 69, 0.2) 100%);
+  background: linear-gradient(to bottom, rgba(255, 0, 0, 0) 0%, rgba(252, 95, 69, 0.2) 100%);
   -webkit-transition: all ease 0.25s;
   transition: all ease 0.25s;
 }
@@ -867,7 +872,7 @@ a:hover>.onHoverImage { display: block; }
 
 .home {
   background: url(../images/backgrounds/1.jpg) no-repeat top;
-  background-size: 100%;
+  background-size: 100% 100%;
   transition: background-size 3s ease;
 }
 

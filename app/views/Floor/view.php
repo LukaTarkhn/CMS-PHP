@@ -78,9 +78,9 @@
                                 <?php  foreach ($apartments as $apartment): ?>
                                 <?php if ($floor->floor == $apartment->floorid):  ?>
                                 <?php if ($apartment->status == 1):  ?>
-                                <a href="/apartment/<?=$apartment->id?>" class="soldbutton" style="font-family: 'ArchyEDT-Bold', sans-serif;" title="გაყიდულია">
+                                <a href="/apartment/<?=$apartment->id?>" class="soldbutton" style="font-family: 'ArchyEDT-Bold', sans-serif;"  title="გაყიდულია">
                                     <?php elseif ($apartment->status == 0): ?>
-                                    <a href="/apartment/<?=$apartment->id?>" class="floorbutton" style="font-family: 'ArchyEDT-Bold', sans-serif;" title="არის გაყიდვაში">
+                                    <a href="/apartment/<?=$apartment->id?>" class="floorbutton" style="font-family: 'ArchyEDT-Bold', sans-serif;"  title="არის გაყიდვაში">
                                         <?php endif; ?>
                                         <div class="onHoverImage"><img src="/images/floors/apartments/<?=$apartment->img?>" style="width: 100%" /></div>
                                         აპარტამენტი №<?=$apartment->apartmentno?>/<?=$apartment->kvmeter?>მ2
@@ -97,7 +97,7 @@
                             <div class="col-lg-12">
 
                                 <!-- HEADING -->
-                                <h4 class="wow fadeInLeft" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s" style="font-family: 'ArchyEDT-Bold', sans-serif;">ფართის შესაძენად დაგვიკავშირდით</h4>
+                                <h4 class="wow fadeInLeft" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s" style="font-family: 'ArchyEDT-Bold', sans-serif;" >ფართის შესაძენად დაგვიკავშირდით</h4>
 
                                 <span><br>
                                     +995 577 22 47 47 <br>
@@ -107,7 +107,7 @@
                                 </span>
 
                                 <!-- BUTTON -->
-                                <a href="#section11" class="btn btn-default standard-button red-button wow fadeInRight" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s" style="font-family: 'ArchyEDT-Bold', sans-serif;">კონტაქტი</a>
+                                <a href="#section11" class="btn btn-default standard-button red-button wow fadeInRight" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s" style="font-family: 'ArchyEDT-Bold', sans-serif;" >კონტაქტი</a>
 
                             </div>
                         </div>
@@ -194,9 +194,9 @@
                                 <?php  foreach ($apartments as $apartment): ?>
                                 <?php if ($floor->floor == $apartment->floorid):  ?>
                                 <?php if ($apartment->status == 1):  ?>
-                                <a href="/apartment/<?=$apartment->id?>" class="soldbutton" style="font-family: 'ArchyEDT-Bold', sans-serif;" title="Sold">
+                                <a href="/apartment/<?=$apartment->id?>" class="soldbutton" style="font-family: 'ArchyEDT-Bold', sans-serif;"  title="Sold">
                                     <?php elseif ($apartment->status == 0): ?>
-                                    <a href="/apartment/<?=$apartment->id?>" class="floorbutton" style="font-family: 'ArchyEDT-Bold', sans-serif;" title="For sale">
+                                    <a href="/apartment/<?=$apartment->id?>" class="floorbutton" style="font-family: 'ArchyEDT-Bold', sans-serif;"  title="For sale">
                                         <?php endif; ?>
                                         <div class="onHoverImage"><img src="/images/floors/apartments/<?=$apartment->img?>" style="width: 100%" /></div>
                                         Apartment №<?=$apartment->apartmentno?>/<?=$apartment->kvmeter?>M2
@@ -213,7 +213,7 @@
                             <div class="col-lg-12">
 
                                 <!-- HEADING -->
-                                <h4 class="wow fadeInLeft" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s" style="font-family: 'ArchyEDT-Bold', sans-serif;">Contact us to purchase space</h4>
+                                <h4 class="wow fadeInLeft" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s" style="font-family: 'ArchyEDT-Bold', sans-serif;" >Contact us to purchase space</h4>
 
                                 <span><br>
                                     +995 577 22 47 47 <br>
@@ -223,7 +223,7 @@
                                 </span>
 
                                 <!-- BUTTON -->
-                                <a href="#section11" class="btn btn-default standard-button red-button wow fadeInRight" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s" style="font-family: 'ArchyEDT-Bold', sans-serif;">Contact</a>
+                                <a href="#section11" class="btn btn-default standard-button red-button wow fadeInRight" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s" style="font-family: 'ArchyEDT-Bold', sans-serif;" >Contact</a>
 
                             </div>
                         </div>
@@ -310,9 +310,9 @@
                                 <?php  foreach ($apartments as $apartment): ?>
                                 <?php if ($floor->floor == $apartment->floorid):  ?>
                                 <?php if ($apartment->status == 1):  ?>
-                                <a href="/apartment/<?=$apartment->id?>" class="soldbutton" style="font-family: 'ArchyEDT-Bold', sans-serif;" title="ПРОДАНО">
+                                <a href="/apartment/<?=$apartment->id?>" class="soldbutton" style="font-family: 'ArchyEDT-Bold', sans-serif;"  title="ПРОДАНО">
                                     <?php elseif ($apartment->status == 0): ?>
-                                    <a href="/apartment/<?=$apartment->id?>" class="floorbutton" style="font-family: 'ArchyEDT-Bold', sans-serif;" title="Продается">
+                                    <a href="/apartment/<?=$apartment->id?>" class="floorbutton" style="font-family: 'ArchyEDT-Bold', sans-serif;"  title="Продается">
                                         <?php endif; ?>
                                         <div class="onHoverImage"><img src="/images/floors/apartments/<?=$apartment->img?>" style="width: 100%" /></div>
                                         Квартира №<?=$apartment->apartmentno?>/<?=$apartment->kvmeter?>М2
@@ -329,7 +329,7 @@
                             <div class="col-lg-12">
 
                                 <!-- HEADING -->
-                                <h4 class="wow fadeInLeft" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s" style="font-family: 'ArchyEDT-Bold', sans-serif;">Свяжитесь с нами для покупки</h4>
+                                <h4 class="wow fadeInLeft" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s" style="font-family: 'ArchyEDT-Bold', sans-serif;" >Свяжитесь с нами для покупки</h4>
 
                                 <span><br>
                                     +995 577 22 47 47 <br>
@@ -339,7 +339,7 @@
                                 </span>
 
                                 <!-- BUTTON -->
-                                <a href="#section11" class="btn btn-default standard-button red-button wow fadeInRight" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s" style="font-family: 'ArchyEDT-Bold', sans-serif;">Контакт</a>
+                                <a href="#section11" class="btn btn-default standard-button red-button wow fadeInRight" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s" style="font-family: 'ArchyEDT-Bold', sans-serif;" >Контакт</a>
 
                             </div>
                         </div>

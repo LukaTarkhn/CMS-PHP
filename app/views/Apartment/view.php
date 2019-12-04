@@ -79,7 +79,7 @@
                                 <div class="col-lg-12">
 
                                     <!-- HEADING -->
-                                    <h4 class="wow fadeInLeft" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s" style="font-family: 'ArchyEDT-Bold', sans-serif;">ფართის შესაძენად დაგვიკავშირდით</h4>
+                                    <h4 class="wow fadeInLeft" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s" style="font-family: 'ArchyEDT-Bold', sans-serif;" >ფართის შესაძენად დაგვიკავშირდით</h4>
 
                                     <span><br>
                                             +995 577 22 47 47 <br>
@@ -89,7 +89,7 @@
                                         </span>
 
                                     <!-- BUTTON -->
-                                    <a href="#section11" class="btn btn-default standard-button red-button wow fadeInRight" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s" style="font-family: 'ArchyEDT-Bold', sans-serif;">კონტაქტი</a>
+                                    <a href="#section11" class="btn btn-default standard-button red-button wow fadeInRight" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s" style="font-family: 'ArchyEDT-Bold', sans-serif;" >კონტაქტი</a>
 
                                 </div>
                             </div>
@@ -178,7 +178,7 @@
                                 <div class="col-lg-12">
 
                                     <!-- HEADING -->
-                                    <h4 class="wow fadeInLeft" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s" style="font-family: 'ArchyEDT-Bold', sans-serif;">Contact us to purchase area</h4>
+                                    <h4 class="wow fadeInLeft" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s" style="font-family: 'ArchyEDT-Bold', sans-serif;" >Contact us to purchase area</h4>
 
                                     <span><br>
                                             +995 577 22 47 47 <br>
@@ -188,7 +188,7 @@
                                         </span>
 
                                     <!-- BUTTON -->
-                                    <a href="#section11" class="btn btn-default standard-button red-button wow fadeInRight" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s" style="font-family: 'ArchyEDT-Bold', sans-serif;">Contact</a>
+                                    <a href="#section11" class="btn btn-default standard-button red-button wow fadeInRight" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s" style="font-family: 'ArchyEDT-Bold', sans-serif;" >Contact</a>
 
                                 </div>
                             </div>
@@ -277,7 +277,7 @@
                                 <div class="col-lg-12">
 
                                     <!-- HEADING -->
-                                    <h4 class="wow fadeInLeft" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s" style="font-family: 'ArchyEDT-Bold', sans-serif;">Свяжитесь с нами для покупки места</h4>
+                                    <h4 class="wow fadeInLeft" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s" style="font-family: 'ArchyEDT-Bold', sans-serif;" >Свяжитесь с нами для покупки места</h4>
 
                                     <span><br>
                                             +995 577 22 47 47 <br>
@@ -287,7 +287,7 @@
                                         </span>
 
                                     <!-- BUTTON -->
-                                    <a href="#section11" class="btn btn-default standard-button red-button wow fadeInRight" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s" style="font-family: 'ArchyEDT-Bold', sans-serif;">Контакт</a>
+                                    <a href="#section11" class="btn btn-default standard-button red-button wow fadeInRight" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s" style="font-family: 'ArchyEDT-Bold', sans-serif;" >Контакт</a>
 
                                 </div>
                             </div>

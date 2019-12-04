@@ -71,12 +71,12 @@
                         </div>
                     </div>
 <!--                    <div class="content-2">-->
-<!--                        <span class="four" style="font-family: 'ArchyEDT-Bold', sans-serif;">-->
+<!--                        <span class="four" style="font-family: 'ArchyEDT-Bold', sans-serif;" >-->
 <!--                            ჩვენ ვართ <br>-->
 <!--                            <img class="imgfour" src="/images/logo.png" alt="REAL PALACE">-->
 <!--                        </span>-->
-<!--                        <span class="five" style="font-family: 'ArchyEDT-Bold', sans-serif;">ჩვენ ვაშენებთ ხარისხიანად</span>-->
-<!--                        <span class="six" style="font-family: 'ArchyEDT-Bold', sans-serif;">ჩვენ ვზრუნავთ ჩვენს კლიენტებზე</span>-->
+<!--                        <span class="five" style="font-family: 'ArchyEDT-Bold', sans-serif;" >ჩვენ ვაშენებთ ხარისხიანად</span>-->
+<!--                        <span class="six" style="font-family: 'ArchyEDT-Bold', sans-serif;" >ჩვენ ვზრუნავთ ჩვენს კლიენტებზე</span>-->
 <!--                    </div>-->
                 </div>
             </div>
@@ -146,7 +146,7 @@
             <div class="section-header">
                 <h3 class="MTMedium">ბინების დათვალიერება</h3>
                 <div class="sub-heading">
-                   <span class="NusRegular">დაათვალიერეთ და შეიძინეთ ბინები</span>
+                   <span class="NusRegular">დაათვალიერეთ და შეიძინეთ ბინები <b style="color: #64739d">Black Sea Tower</b>-ში</span>
                 </div>
             </div>
 
@@ -154,7 +154,7 @@
                 <!-- SINGLE FOCUS COLUMN -->
                 <div class="col-lg-7 col-sm-7 col-xs-7">
                     <div class="wow fadeInLeftBig" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
-                        <img src="images/forsell/forsell.png" alt="" style="width: 100%">
+                        <img src="images/forsell/forsell.png" alt="" style="width: 100%; margin-top: 25%">
                     </div>
                 </div>
                 <!-- SINGLE FOCUS COLUMN -->
@@ -167,7 +167,7 @@
 
                         <?php  foreach ($floors as $floor): ?>
                             <?php if ($floor->parking != 1):  ?>
-                                <a href="/floor/<?=$floor->id?>" class="floorbutton" style="font-family: 'ArchyEDT-Bold', sans-serif;">
+                                <a href="/floor/<?=$floor->id?>" class="floorbutton" style="font-family: 'ArchyEDT-Bold', sans-serif;" >
                                     <div class="onHoverImage"><img src="images/floors/<?=$floor->img?>" style="width: 100%" /></div>
                                     სართული <?=$floor->floor?>
                                 </a>
@@ -178,7 +178,7 @@
                         <?php  foreach ($floors as $floor): ?>
                             <?php $parkingfloor = $parkingfloor + 1 ?>
                             <?php if ($floor->parking == 1):  ?>
-                                <a href="/floor/<?=$floor->id?>" class="floorbutton" style="font-family: 'ArchyEDT-Bold', sans-serif;">
+                                <a href="/floor/<?=$floor->id?>" class="floorbutton" style="font-family: 'ArchyEDT-Bold', sans-serif;" >
                                     <div class="onHoverImage"><img src="images/floors/parking/<?=$floor->img?>" style="width: 100%" /></div>
                                     პარკინგი <?=$parkingfloor?>
                                 </a>
@@ -202,17 +202,15 @@
             <div class="row collapse" id="video-expand">
                 <div class="col-md-8 col-md-offset-2">
                     <div class="embed-responsive embed-responsive-16by9">
-
                         <!-- EMBED VIDEO -->
-                        <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/PTYyM6xyedg?rel=0&amp;controls=1&amp;showinfo=0&amp;autoplay=0" frameborder="0" allowfullscreen>
+                        <iframe id="embed" class="embed-responsive-item" width="560" height="315"  src="about:blank" frameborder="0" allowfullscreen>
                         </iframe> <!-- KEEP &amp;autoplay="0" AT THE END -->
-
                     </div>
                 </div>
             </div>
 
             <!-- PLAY BUTTON -->
-            <a class="play-button" data-toggle="collapse" href="#video-expand"><span class="icon icon-music-play-button"></span></a>
+            <a class="play-button" id="play-button" data-toggle="collapse" href="#video-expand"><span class="icon icon-music-play-button"></span></a>
 
             <!-- TEXT -->
             <div class="play-text text white-text wow fadeInRight" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
@@ -610,10 +608,10 @@
                 <div class="col-lg-12">
 
                     <!-- HEADING -->
-                    <h4 class="wow fadeInLeft" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s" style="font-family: 'ArchyEDT-Bold', sans-serif;">შეიძინე შენი ახალი ბინა ჩვენთან</h4>
+                    <h4 class="wow fadeInLeft" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s" style="font-family: 'ArchyEDT-Bold', sans-serif;" >შეიძინე შენი ახალი ბინა ჩვენთან</h4>
 
                     <!-- BUTTON -->
-                    <a href="#section11" class="btn btn-default standard-button red-button wow fadeInRight" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s" style="font-family: 'ArchyEDT-Bold', sans-serif;">კონტაქტი</a>
+                    <a href="#section11" class="btn btn-default standard-button red-button wow fadeInRight" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s" style="font-family: 'ArchyEDT-Bold', sans-serif;" >კონტაქტი</a>
 
                 </div>
             </div>
@@ -732,12 +730,12 @@
                             </div>
                         </div>
                         <!--                    <div class="content-2">-->
-                        <!--                        <span class="four" style="font-family: 'ArchyEDT-Bold', sans-serif;">-->
+                        <!--                        <span class="four" style="font-family: 'ArchyEDT-Bold', sans-serif;" >-->
                         <!--                            ჩვენ ვართ <br>-->
                         <!--                            <img class="imgfour" src="/images/logo.png" alt="REAL PALACE">-->
                         <!--                        </span>-->
-                        <!--                        <span class="five" style="font-family: 'ArchyEDT-Bold', sans-serif;">ჩვენ ვაშენებთ ხარისხიანად</span>-->
-                        <!--                        <span class="six" style="font-family: 'ArchyEDT-Bold', sans-serif;">ჩვენ ვზრუნავთ ჩვენს კლიენტებზე</span>-->
+                        <!--                        <span class="five" style="font-family: 'ArchyEDT-Bold', sans-serif;" >ჩვენ ვაშენებთ ხარისხიანად</span>-->
+                        <!--                        <span class="six" style="font-family: 'ArchyEDT-Bold', sans-serif;" >ჩვენ ვზრუნავთ ჩვენს კლიენტებზე</span>-->
                         <!--                    </div>-->
                     </div>
                 </div>
@@ -828,7 +826,7 @@
 
                             <?php  foreach ($floors as $floor): ?>
                                 <?php if ($floor->parking != 1):  ?>
-                                    <a href="/floor/<?=$floor->id?>" class="floorbutton" style="font-family: 'ArchyEDT-Bold', sans-serif;">
+                                    <a href="/floor/<?=$floor->id?>" class="floorbutton" style="font-family: 'ArchyEDT-Bold', sans-serif;" >
                                         <div class="onHoverImage"><img src="images/floors/<?=$floor->img?>" style="width: 100%" /></div>
                                         Floor <?=$floor->floor?>
                                     </a>
@@ -839,7 +837,7 @@
                             <?php  foreach ($floors as $floor): ?>
                                 <?php $parkingfloor = $parkingfloor + 1 ?>
                                 <?php if ($floor->parking == 1):  ?>
-                                    <a href="/floor/<?=$floor->id?>" class="floorbutton" style="font-family: 'ArchyEDT-Bold', sans-serif;">
+                                    <a href="/floor/<?=$floor->id?>" class="floorbutton" style="font-family: 'ArchyEDT-Bold', sans-serif;" >
                                         <div class="onHoverImage"><img src="images/floors/parking/<?=$floor->img?>" style="width: 100%" /></div>
                                         Parking <?=$parkingfloor?>
                                     </a>
@@ -863,11 +861,9 @@
                 <div class="row collapse" id="video-expand">
                     <div class="col-md-8 col-md-offset-2">
                         <div class="embed-responsive embed-responsive-16by9">
-
                             <!-- EMBED VIDEO -->
-                            <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/PTYyM6xyedg?rel=0&amp;controls=1&amp;showinfo=0&amp;autoplay=0" frameborder="0" allowfullscreen>
+                            <iframe id="embed" class="embed-responsive-item" width="560" height="315" src="about:blank" frameborder="0" allowfullscreen>
                             </iframe> <!-- KEEP &amp;autoplay="0" AT THE END -->
-
                         </div>
                     </div>
                 </div>
@@ -1271,10 +1267,10 @@
                     <div class="col-lg-12">
 
                         <!-- HEADING -->
-                        <h4 class="wow fadeInLeft" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s" style="font-family: 'ArchyEDT-Bold', sans-serif;">Buy your new apartment with us</h4>
+                        <h4 class="wow fadeInLeft" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s" style="font-family: 'ArchyEDT-Bold', sans-serif;" >Buy your new apartment with us</h4>
 
                         <!-- BUTTON -->
-                        <a href="#section11" class="btn btn-default standard-button red-button wow fadeInRight" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s" style="font-family: 'ArchyEDT-Bold', sans-serif;">Contact</a>
+                        <a href="#section11" class="btn btn-default standard-button red-button wow fadeInRight" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s" style="font-family: 'ArchyEDT-Bold', sans-serif;" >Contact</a>
 
                     </div>
                 </div>
@@ -1393,12 +1389,12 @@
                             </div>
                         </div>
                         <!--                    <div class="content-2">-->
-                        <!--                        <span class="four" style="font-family: 'ArchyEDT-Bold', sans-serif;">-->
+                        <!--                        <span class="four" style="font-family: 'ArchyEDT-Bold', sans-serif;" >-->
                         <!--                            ჩვენ ვართ <br>-->
                         <!--                            <img class="imgfour" src="/images/logo.png" alt="REAL PALACE">-->
                         <!--                        </span>-->
-                        <!--                        <span class="five" style="font-family: 'ArchyEDT-Bold', sans-serif;">ჩვენ ვაშენებთ ხარისხიანად</span>-->
-                        <!--                        <span class="six" style="font-family: 'ArchyEDT-Bold', sans-serif;">ჩვენ ვზრუნავთ ჩვენს კლიენტებზე</span>-->
+                        <!--                        <span class="five" style="font-family: 'ArchyEDT-Bold', sans-serif;" >ჩვენ ვაშენებთ ხარისხიანად</span>-->
+                        <!--                        <span class="six" style="font-family: 'ArchyEDT-Bold', sans-serif;" >ჩვენ ვზრუნავთ ჩვენს კლიენტებზე</span>-->
                         <!--                    </div>-->
                     </div>
                 </div>
@@ -1489,7 +1485,7 @@
 
                             <?php  foreach ($floors as $floor): ?>
                                 <?php if ($floor->parking != 1):  ?>
-                                    <a href="/floor/<?=$floor->id?>" class="floorbutton" style="font-family: 'ArchyEDT-Bold', sans-serif;">
+                                    <a href="/floor/<?=$floor->id?>" class="floorbutton" style="font-family: 'ArchyEDT-Bold', sans-serif;" >
                                         <div class="onHoverImage"><img src="images/floors/<?=$floor->img?>" style="width: 100%" /></div>
                                         Этаж <?=$floor->floor?>
                                     </a>
@@ -1500,7 +1496,7 @@
                             <?php  foreach ($floors as $floor): ?>
                                 <?php $parkingfloor = $parkingfloor + 1 ?>
                                 <?php if ($floor->parking == 1):  ?>
-                                    <a href="/floor/<?=$floor->id?>" class="floorbutton" style="font-family: 'ArchyEDT-Bold', sans-serif;">
+                                    <a href="/floor/<?=$floor->id?>" class="floorbutton" style="font-family: 'ArchyEDT-Bold', sans-serif;" >
                                         <div class="onHoverImage"><img src="images/floors/parking/<?=$floor->img?>" style="width: 100%" /></div>
                                         Парковка <?=$parkingfloor?>
                                     </a>
@@ -1524,11 +1520,9 @@
                 <div class="row collapse" id="video-expand">
                     <div class="col-md-8 col-md-offset-2">
                         <div class="embed-responsive embed-responsive-16by9">
-
                             <!-- EMBED VIDEO -->
-                            <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/PTYyM6xyedg?rel=0&amp;controls=1&amp;showinfo=0&amp;autoplay=0" frameborder="0" allowfullscreen>
+                            <iframe id="embed" class="embed-responsive-item" width="560" height="315" src="about:blank" frameborder="0" allowfullscreen>
                             </iframe> <!-- KEEP &amp;autoplay="0" AT THE END -->
-
                         </div>
                     </div>
                 </div>
@@ -1932,10 +1926,10 @@
                     <div class="col-lg-12">
 
                         <!-- HEADING -->
-                        <h4 class="wow fadeInLeft" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s" style="font-family: 'ArchyEDT-Bold', sans-serif;">Купите новую квартиру у нас</h4>
+                        <h4 class="wow fadeInLeft" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s" style="font-family: 'ArchyEDT-Bold', sans-serif;" >Купите новую квартиру у нас</h4>
 
                         <!-- BUTTON -->
-                        <a href="#section11" class="btn btn-default standard-button red-button wow fadeInRight" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s" style="font-family: 'ArchyEDT-Bold', sans-serif;">Контакт</a>
+                        <a href="#section11" class="btn btn-default standard-button red-button wow fadeInRight" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s" style="font-family: 'ArchyEDT-Bold', sans-serif;" >Контакт</a>
 
                     </div>
                 </div>

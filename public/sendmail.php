@@ -10,8 +10,6 @@ if ( isset($_POST['email']) && isset($_POST['name']) && isset($_POST['subject'])
       exit;
     }
   }
-
-
 $headers = "From: " . $_POST["name"] . "<" . $_POST["email"] . ">" . "\r\n";
 $headers .= "Reply-To: " . $_POST["email"] . "\r\n";
 $headers .= "X-Mailer: PHP/" . phpversion();

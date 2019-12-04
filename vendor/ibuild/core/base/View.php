@@ -30,12 +30,13 @@ class View {
     public function render ($data) {
         if(is_array($data)) extract($data);
         $viewFile = APP . "/views/{$this->prefix}{$this->controller}/{$this->view}.php";
-        if(is_file($viewFile)) {
+        $viewFileNoBack = str_replace('\\', '/', $viewFile);
+        if(is_file($viewFileNoBack)) {
             ob_start();
-            require_once $viewFile;
+            require_once $viewFileNoBack;
             $content = ob_get_clean();
         } else {
-            throw new \Exception("{$viewFile} not found", 500);
+            throw new \Exception("{$viewFileNoBack} not found", 500);
         }
         if($this->layout !== false) {
             $layoutFile = APP . "/views/layouts/{$this->layout}.php";

@@ -22,7 +22,7 @@ $body = "#phone: " . $phone;
 
 
   //
-  mail( "lukatarkhnishvili.gmail.com", $body, $headers );
+  mail( "lukatarkhnishvili@gmail.com", $body, $headers );
 
 }
 ?>

@@ -1,28 +1,10 @@
+
 <?php
-
-if ( isset($_POST['phone']) && filter_var($_POST['phone'], FILTER_VALIDATE_EMAIL) ) {
-
-  // detect & prevent header injections
-  $test = "/(content-type|bcc:|cc:|to:)/i";
-  foreach ( $_POST as $key => $val ) {
-    if ( preg_match( $test, $val ) ) {
-      exit;
-    }
-  }
-
-
-$headers = "X-Mailer: PHP/" . phpversion();
-$headers .= "Content-Type: text/html; charset=utf-8\r\n";
-$headers .= "X-Priority: 1\r\n";
-
-$phone = $_POST['phone'];
-
-
-$body = "#phone: " . $phone;
-
-
-  //
-  mail( "lukatarkhnishvili@gmail.com", $body, $headers );
-
-}
+  $phone = $_POST['phone'];
+  $message = $_POST['message'];
+  $formcontent="\n Phone: $phone";
+  $subject = "Call me (Real Palace)";
+  $recipient = "realpalace2012@gmail.com";
+  mail($recipient, $subject, $formcontent) or die("Error!");
+  echo "Thank You!";
 ?>

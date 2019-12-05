@@ -76,20 +76,27 @@
                             <div data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s" style="display: flex; flex-wrap: wrap; justify-content: center">
 
                                 <?php  foreach ($apartments as $apartment): ?>
-                                <?php if ($floor->floor == $apartment->floorid):  ?>
-                                <?php if ($apartment->status == 1):  ?>
-                                <a href="/apartment/<?=$apartment->id?>" class="soldbutton" style="font-family: 'ArchyEDT-Bold', sans-serif;"  title="გაყიდულია">
-                                    <?php elseif ($apartment->status == 0): ?>
-                                    <a href="/apartment/<?=$apartment->id?>" class="floorbutton" style="font-family: 'ArchyEDT-Bold', sans-serif;"  title="არის გაყიდვაში">
+                                    <?php if ($floor->floor == $apartment->floorid):  ?>
+                                        <?php if ($apartment->status == 1):  ?>
+                                            <a href="/apartment/<?=$apartment->id?>" class="soldbutton" style="font-family: 'ArchyEDT-Bold', sans-serif;"  title="გაყიდულია">
+                                                <div class="onHoverImage">
+                                                    <img src="/images/floors/apartments/<?=$apartment->img?>" style="width: 100%" alt="Image not found" />
+                                                </div>
+                                                აპარტამენტი №<?=$apartment->apartmentno?>/<?=$apartment->kvmeter?>მ2
+                                            </a>
+                                        <?php elseif ($apartment->status == 0): ?>
+                                            <a href="/apartment/<?=$apartment->id?>" class="floorbutton" style="font-family: 'ArchyEDT-Bold', sans-serif;"  title="არის გაყიდვაში">
+                                                <div class="onHoverImage">
+                                                    <img src="/images/floors/apartments/<?=$apartment->img?>" style="width: 100%" alt="Image not found" />
+                                                </div>
+                                                აპარტამენტი №<?=$apartment->apartmentno?>/<?=$apartment->kvmeter?>მ2
+                                            </a>
                                         <?php endif; ?>
-                                        <div class="onHoverImage"><img src="/images/floors/apartments/<?=$apartment->img?>" style="width: 100%" /></div>
-                                        აპარტამენტი №<?=$apartment->apartmentno?>/<?=$apartment->kvmeter?>მ2
-                                    </a>
-
                                     <?php endif; ?>
-                                    <?php endforeach; ?>
+                                <?php endforeach; ?>
                             </div>
                         </div>
+
                     <?php endif; ?>
 
                     <?php if ($floor->parking == 1 || $floor->floor == 0 || $floor->floor == 1):  ?>

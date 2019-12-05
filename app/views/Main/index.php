@@ -248,7 +248,7 @@
                                     <a href="/project/<?=$finishedProject->id?>" title="Click to view details">
                                         <img src="images/<?=$finishedProject->img?>" alt="">
                                         <p class="description">
-                                            <span class="icon icon-plus"></span>
+                                            <span class="fa fa-eye"></span>
                                         </p>
                                     </a>
 
@@ -716,7 +716,7 @@
                     <!-- COLOR OVERLAY -->
                     <div class="container">
                         <!-- CALL TO ACTION -->
-                        <div class="cta smooth-scroll" style="margin-top: 130px;">
+                        <div class="cta smooth-scroll" style="top: 130px">
                             <div class="social-btns">
                                 <a class="btn_ facebook tooltip" href="#section2" title="Apartments">
                                     <i class="fa fa-building" aria-hidden="true"></i>
@@ -729,14 +729,6 @@
                                 </a>
                             </div>
                         </div>
-                        <!--                    <div class="content-2">-->
-                        <!--                        <span class="four" style="font-family: 'ArchyEDT-Bold', sans-serif;" >-->
-                        <!--                            ჩვენ ვართ <br>-->
-                        <!--                            <img class="imgfour" src="/images/logo.png" alt="REAL PALACE">-->
-                        <!--                        </span>-->
-                        <!--                        <span class="five" style="font-family: 'ArchyEDT-Bold', sans-serif;" >ჩვენ ვაშენებთ ხარისხიანად</span>-->
-                        <!--                        <span class="six" style="font-family: 'ArchyEDT-Bold', sans-serif;" >ჩვენ ვზრუნავთ ჩვენს კლიენტებზე</span>-->
-                        <!--                    </div>-->
                     </div>
                 </div>
 
@@ -907,7 +899,7 @@
                                         <a href="/project/<?=$finishedProject->id?>" title="Click to view details">
                                             <img src="images/<?=$finishedProject->img?>" alt="">
                                             <p class="description">
-                                                <span class="icon icon-plus"></span>
+                                                <span class="fa fa-eye"></span>
                                             </p>
                                         </a>
 
@@ -1566,7 +1558,7 @@
                                         <a href="/project/<?=$finishedProject->id?>" title="Click to view details">
                                             <img src="images/<?=$finishedProject->img?>" alt="">
                                             <p class="description">
-                                                <span class="icon icon-plus"></span>
+                                                <span class="fa fa-eye"></span>
                                             </p>
                                         </a>
 

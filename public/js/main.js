@@ -19,30 +19,30 @@ window.addEventListener('load', function() {
 
     var headchange = function() {
         setTimeout(function() {
-            home.style.backgroundImage = 'url(../images/backgrounds/1.jpg)';
+            home.style.backgroundImage = 'url(../images/backgrounds/1.jpg), url(../images/backgrounds/1.1.jpg), url(../images/backgrounds/1.2.jpg)';
+            home.style.backgroundSize = '100% 100%';
+        }, 0);
+        setTimeout(function() {
+            home.style.backgroundImage = 'url(../images/backgrounds/1.jpg), url(../images/backgrounds/1.1.jpg), url(../images/backgrounds/1.2.jpg)';
             home.style.backgroundSize = '300% 300%';
         }, delay + 4700);
         setTimeout(function() {
-            home.style.backgroundImage = 'url(../images/backgrounds/1.1.jpg)';
+            home.style.backgroundImage = 'url(../images/backgrounds/1.1.jpg), url(../images/backgrounds/1.jpg), url(../images/backgrounds/1.2.jpg)';
             home.style.backgroundSize = '100% 100%';
         }, delay + 5700);
         setTimeout(function() {
-            home.style.backgroundImage = 'url(../images/backgrounds/1.1.jpg)';
+            home.style.backgroundImage = 'url(../images/backgrounds/1.1.jpg), url(../images/backgrounds/1.jpg), url(../images/backgrounds/1.2.jpg)';
             home.style.backgroundSize = '300% 300%';
         }, delay + 12700);
         setTimeout(function() {
-            home.style.backgroundImage = 'url(../images/backgrounds/1.2.jpg)';
+            home.style.backgroundImage = 'url(../images/backgrounds/1.2.jpg), url(../images/backgrounds/1.1.jpg), url(../images/backgrounds/1.jpg)';
             home.style.backgroundSize = '100% 100%';
         }, delay + 13700);
         setTimeout(function() {
-            home.style.backgroundImage = 'url(../images/backgrounds/1.2.jpg)';
+            home.style.backgroundImage = 'url(../images/backgrounds/1.2.jpg), url(../images/backgrounds/1.1.jpg), url(../images/backgrounds/1.jpg)';
             home.style.backgroundSize = '300% 300%';
         }, delay + 20700);
-        setTimeout(function() {
-            home.style.backgroundImage = 'url(../images/backgrounds/1.jpg)';
-            home.style.backgroundSize = '100% 100%';
-        }, delay + 21700);
     };
     headchange();
-    setInterval(headchange, delay + 29000);
+    setInterval(headchange, delay + 24000);
 });

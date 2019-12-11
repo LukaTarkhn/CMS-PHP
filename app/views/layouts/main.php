@@ -8,7 +8,7 @@
     <meta property="og:title" content="Black Sea Towers" />
     <meta property="og:image" content="../images/backgrounds/1.jpg" />
     <meta property="og:url" content="https://realpalace.ge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+
 
 
     <!-- FAV ICONS and WEBFONT -->
@@ -167,7 +167,9 @@
                         </div>
                     </div>
                 </div>
-
+                <a href="https://www.google.com/maps/dir//41.6369948,41.6204987/@41.636817,41.6189501,17z/data=!4m2!4m1!3e0" target="_blank">
+                    <img src="/images/favicons/locationonmap.png" alt="" style="width: 100%">
+                </a>
                 <div class="four-lines">
                     <div class="line red-line-bottom">
                     </div>
@@ -178,7 +180,6 @@
                     <div class="line yellow-line-bottom">
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
@@ -318,7 +319,9 @@
                         </div>
                     </div>
                 </div>
-
+                <a href="https://www.google.com/maps/dir//41.6369948,41.6204987/@41.636817,41.6189501,17z/data=!4m2!4m1!3e0" target="_blank">
+                    <img src="/images/favicons/locationonmap.png" alt="" style="width: 100%">
+                </a>
                 <div class="four-lines">
                     <div class="line red-line-bottom">
                     </div>
@@ -470,7 +473,9 @@
                         </div>
                     </div>
                 </div>
-
+                <a href="https://www.google.com/maps/dir//41.6369948,41.6204987/@41.636817,41.6189501,17z/data=!4m2!4m1!3e0" target="_blank">
+                    <img src="/images/favicons/locationonmap.png" alt="" style="width: 100%">
+                </a>
                 <div class="four-lines">
                     <div class="line red-line-bottom">
                     </div>

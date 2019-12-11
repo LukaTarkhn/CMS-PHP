@@ -94,6 +94,15 @@
                     </li>
 
                     <li class="nav-item has-treeview menu-open">
+                        <a href="<?=ADMIN;?>/offers" class="nav-link">
+                            <i class="nav-icon fas fa-balance-scale-left"></i>
+                            <p>
+                                Offers
+                            </p>
+                        </a>
+                    </li>
+
+                    <li class="nav-item has-treeview menu-open">
                         <a href="<?=ADMIN;?>/aboutus" class="nav-link">
                             <i class="nav-icon fas fa-text-height"></i>
                             <p>

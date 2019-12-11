@@ -3,7 +3,7 @@
     <div class="container-fluid">
         <div class="row mb-2">
             <div class="col-sm-6">
-                <h1 class="m-0 text-dark">Apartment edit</h1>
+                <h1 class="m-0 text-dark">Add new offer</h1>
             </div><!-- /.col -->
         </div><!-- /.row -->
     </div><!-- /.container-fluid -->
@@ -20,22 +20,27 @@
                         <h5><i class="icon fas fa-check"></i><?=$_SESSION['success']; unset($_SESSION['success']);?></h5>
                     </div>
                 <?php endif; ?>
-                <form action="<?=ADMIN;?>/apartment/edit" method="post" data-toggle="validator">
+                <form action="<?=ADMIN;?>/offers/add" method="post" data-toggle="validator">
                     <div class="box-body">
                         <div class="form-group">
-                            <label for="title">Sell price</label>
-                            <input type="text" class="form-control" name="sellprice" id="sellprice" value="<?=$apartments->sellprice?>" required>
+                            <label for="title">Title</label>
+                            <input type="text" class="form-control" name="title" id="title" value="" required>
                         </div>
                     </div>
-
-                    <select class="form-control" name="status" id="status">
-                        <option <?=$apartments->status ? 'selected' : ''?> value="1">Sold</option>
-                        <option <?=$apartments->status ? '' : 'selected'?> value="0">For sale</option>
-                        <option <?=$apartments->status == 2 ? 'selected' : ''?> value="2">Booked</option>
-                    </select>
+                    <div class="box-body">
+                        <div class="form-group">
+                            <label for="title">Sale</label>
+                            <input type="number" class="form-control" name="sale" id="sale" value="" required>
+                        </div>
+                    </div>
+                    <div class="box-body">
+                        <div class="form-group">
+                            <label for="title">Mini text</label>
+                            <input type="text" class="form-control" name="text" id="text" value="" required>
+                        </div>
+                    </div>
                     <div class="box-footer">
-                        <input type="hidden" name="id" value="<?=$apartments->id?>">
-                        <button type="submit" class="btn btn-primary">Save</button>
+                        <button type="submit" class="btn btn-primary">Add</button>
                     </div>
                 </form>
             </div>

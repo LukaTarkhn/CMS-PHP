@@ -3,9 +3,7 @@
     <div class="container-fluid">
         <div class="row mb-2">
             <div class="col-sm-6">
-                <h1 class="m-0 text-dark">Apartments list</h1>
-                <a href="<?=ADMIN;?>/apartment/sold" class="btn btn-success">Sold apartments</a>
-                <a href="<?=ADMIN;?>/apartment/booked" class="btn btn-warning">Booked apartments</a>
+                <h1 class="m-0 text-dark">Sold apartments list</h1>
             </div><!-- /.col -->
         </div><!-- /.row -->
     </div><!-- /.container-fluid -->

@@ -1,5 +1,5 @@
 $('#languages').change(function () {
-    window.location = 'languages/change?lang=' + $(this).val();
+    window.location = '/languages/change?lang=' + $(this).val();
 });
 
 
@@ -11,7 +11,7 @@ $('#play-button').click(function(){
 window.addEventListener('load', function() {
 
     var home = document.querySelector('.home');
-    delay = 900;
+    delay = 0;
 
     setTimeout(function() {
         $('.headcontent').addClass('loaded');
@@ -21,7 +21,7 @@ window.addEventListener('load', function() {
         setTimeout(function() {
             home.style.backgroundImage = 'url(../images/backgrounds/1.jpg), url(../images/backgrounds/1.1.jpg), url(../images/backgrounds/1.2.jpg)';
             home.style.backgroundSize = '100% 100%';
-        }, 0);
+        }, delay);
         setTimeout(function() {
             home.style.backgroundImage = 'url(../images/backgrounds/1.jpg), url(../images/backgrounds/1.1.jpg), url(../images/backgrounds/1.2.jpg)';
             home.style.backgroundSize = '300% 300%';
@@ -44,5 +44,30 @@ window.addEventListener('load', function() {
         }, delay + 20700);
     };
     headchange();
-    setInterval(headchange, delay + 24000);
+    setInterval(headchange, delay + 21700);
+});
+
+window.addEventListener('load', function() {
+
+    var offerimg = document.querySelector('.offerimg');
+    del = 0;
+
+    setTimeout(function() {
+        $('.headcontent').addClass('loaded');
+    }, 1500);
+
+    var headchange = function() {
+        setTimeout(function() {
+            offerimg.style.transform = 'rotate(0)';
+            offerimg.style.width = '210px';
+        }, del);
+        setTimeout(function() {
+            offerimg.style.transform = 'rotate(-20deg)';
+            offerimg.style.width = '250px';
+        }, del + 5500);
+
+
+    };
+    headchange();
+    setInterval(headchange, delay + 8200);
 });

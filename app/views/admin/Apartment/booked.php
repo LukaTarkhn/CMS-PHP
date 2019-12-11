@@ -3,9 +3,7 @@
     <div class="container-fluid">
         <div class="row mb-2">
             <div class="col-sm-6">
-                <h1 class="m-0 text-dark">Apartments list</h1>
-                <a href="<?=ADMIN;?>/apartment/sold" class="btn btn-success">Sold apartments</a>
-                <a href="<?=ADMIN;?>/apartment/booked" class="btn btn-warning">Booked apartments</a>
+                <h1 class="m-0 text-dark">Booked apartments list</h1>
             </div><!-- /.col -->
         </div><!-- /.row -->
     </div><!-- /.container-fluid -->
@@ -27,13 +25,6 @@
                         <?php foreach ($apartments as $apartment): ?>
                             <?php $sumPrice = $sumPrice + intval($apartment['sellprice']); ?>
                         <?php endforeach; ?>
-                        <div class="info-box bg-success">
-                            <span class="info-box-icon"><i class="far fa-thumbs-up"></i></span>
-                            <div class="info-box-content">
-                                <span class="info-box-text">Sold apartments sum price</span>
-                                <span class="info-box-number"><?=$sumPrice?> USD</span>
-                            </div>
-                        </div>
                         <table class="table table-bordered">
                             <thead class="thead-dark">
                             <tr>

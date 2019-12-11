@@ -15,6 +15,18 @@ class ApartmentController extends AppController
         $this->set(compact('apartments'));
     }
 
+    public function soldAction() {
+        $apartments = \R::findAll('apartments', 'status = 1');
+        $this->setMeta('Apartments');
+        $this->set(compact('apartments'));
+    }
+
+    public function bookedAction() {
+        $apartments = \R::findAll('apartments', 'status = 2');
+        $this->setMeta('Apartments');
+        $this->set(compact('apartments'));
+    }
+
     public function editAction() {
         if(!empty($_POST)) {
             $id = $this->getRequestID(false);

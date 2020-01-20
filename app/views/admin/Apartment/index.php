@@ -4,6 +4,8 @@
         <div class="row mb-2">
             <div class="col-sm-6">
                 <h1 class="m-0 text-dark">Apartments list</h1>
+                <a href="<?=ADMIN;?>/apartment/sold" class="btn btn-success">Sold apartments</a>
+                <a href="<?=ADMIN;?>/apartment/booked" class="btn btn-warning">Booked apartments</a>
             </div><!-- /.col -->
         </div><!-- /.row -->
     </div><!-- /.container-fluid -->
@@ -29,7 +31,7 @@
                             <span class="info-box-icon"><i class="far fa-thumbs-up"></i></span>
                             <div class="info-box-content">
                                 <span class="info-box-text">Sold apartments sum price</span>
-                                <span class="info-box-number"><?=$sumPrice?> GEL</span>
+                                <span class="info-box-number"><?=$sumPrice?> USD</span>
                             </div>
                         </div>
                         <table class="table table-bordered">
@@ -45,12 +47,16 @@
                             </thead>
                             <tbody>
                             <?php foreach ($apartments as $apartment): ?>
-                                <tr class="<?=$apartment['status'] ? 'sold' : '';?>">
+                                <tr style="<?=$apartment['status'] == 2 ? 'background: #FFC46B' : '';?>" class="<?=$apartment['status'] ? 'sold' : '';?>">
                                     <th>floor <?=$apartment['floorid']?></th>
                                     <th>Apartment No. <?=$apartment['apartmentno']?></th>
-                                    <th><?=$apartment['kvmeter']?> kv </th>
-                                    <th><?=$apartment['sellprice']?> GEL</th>
-                                    <th><?=$apartment['status'] ? 'Sold' : 'For sale';?></th>
+                                    <th><?=$apartment['kvmeter']?> m<sup>2</sup> </th>
+                                    <th><?=$apartment['sellprice']?> USD</th>
+                                    <?php if($apartment['status'] != 2) : ?>
+                                        <th><?=$apartment['status'] ? 'Sold' : 'For sale';?></th>
+                                    <?php else : ?>
+                                        <th>Booked</th>
+                                    <?php endif; ?>
                                     <th>
                                         <a href="<?=ADMIN;?>/apartment/edit?id=<?=$apartment['id']?>">
                                             <i class="fa fa-fw fa-edit text-primary"></i>

@@ -10,6 +10,7 @@ class MainController extends AppController {
         $finishedProjects = \R::find('finished');
         $currentWorks = \R::find('current', 'ORDER BY id DESC LIMIT 8');
         $floors = \R::find('floors');
+        $offers = \R::find('offers');
 
         $this->setMeta(
             'Real Palace – Construction company',
@@ -18,7 +19,7 @@ class MainController extends AppController {
             'სამშენებლო კომპანია, სამშენებლო კომპანია ბათუმში, REAL PALACE, realpalace.ge, მშენებარე ბინები ბათუმში',
             'lukatarkhnishvili.com'
         );
-        $this->set(compact('aboutus', 'finishedProjects', 'currentWorks', 'floors'));
+        $this->set(compact('aboutus', 'finishedProjects', 'currentWorks', 'floors', 'offers'));
 
     }
 }

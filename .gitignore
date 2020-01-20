@@ -1,5 +1,8 @@
-*.txt
+.idea/.gitignore
+.idea/htdocs.iml
+.idea/localhost.iml
+.idea/misc.xml
+.idea/modules.xml
+.idea/php.xml
+.idea/vcs.xml
 .gitignore
-tmp/errors.log
-gabordemooij
-.idea

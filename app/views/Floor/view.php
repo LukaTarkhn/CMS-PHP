@@ -51,17 +51,21 @@
                     <?php endif; ?>
                 </div>
 
-                <div class="row focuses" style="display: flex; flex-wrap: nowrap">
+                <div class="row focuses" style="display: flex; flex-wrap: wrap; justify-content: center" >
                     <!-- SINGLE FOCUS COLUMN -->
-                    <div class="col-lg-7 col-sm-7 col-xs-7">
+                    <div class="col-lg-12 col-sm-12 col-xs-12">
                         <div class="wow fadeInLeftBig" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
-                            <?php if ($floor->parking != 1):  ?>
-                                <a href="/images/floors/<?=$floor->img?>" download>
-                                    <img src="/images/floors/<?=$floor->img?>" alt="" style="width: 100%">
+                            <?php if ($floor->parking != 1 && $floor->id > 11):  ?>
+                                <a href="/images/floors/gegma.jpg" download>
+                                    <img src="/images/floors/gegma.jpg" alt="" style="width: 100%">
                                 </a>
                             <?php elseif ($floor->parking == 1): ?>
                                 <a href="/images/floors/parking/<?=$floor->img?>" download>
                                     <img src="/images/floors/parking/<?=$floor->img?>" alt="" style="width: 100%">
+                                </a>
+                            <?php elseif ($floor->id < 12): ?>
+                                <a href="/images/floors/<?=$floor->img?>" download>
+                                    <img src="/images/floors/<?=$floor->img?>" alt="" style="width: 100%">
                                 </a>
                             <?php endif; ?>
                         </div>
@@ -79,15 +83,15 @@
                                     <?php if ($floor->floor == $apartment->floorid):  ?>
                                         <?php if ($apartment->status == 1):  ?>
                                             <a href="/apartment/<?=$apartment->id?>" class="soldbutton" style="font-family: 'ArchyEDT-Bold', sans-serif;"  title="გაყიდულია">
-                                                <div class="onHoverImage">
-                                                    <img src="/images/floors/apartments/<?=$apartment->img?>" style="width: 100%" alt="Image not found" />
+                                                <div class="onHoverImageInner">
+                                                    <img src="/images/floors/apartments/<?=$apartment->img?>" style="width: 100%; border-radius: 10px" alt="Image not found" />
                                                 </div>
                                                 აპარტამენტი №<?=$apartment->apartmentno?>/<?=$apartment->kvmeter?>მ2
                                             </a>
                                         <?php elseif ($apartment->status == 0): ?>
                                             <a href="/apartment/<?=$apartment->id?>" class="floorbutton" style="font-family: 'ArchyEDT-Bold', sans-serif;"  title="არის გაყიდვაში">
-                                                <div class="onHoverImage">
-                                                    <img src="/images/floors/apartments/<?=$apartment->img?>" style="width: 100%" alt="Image not found" />
+                                                <div class="onHoverImageInner">
+                                                    <img src="/images/floors/apartments/<?=$apartment->img?>" style="width: 100%; border-radius: 10px" alt="Image not found" />
                                                 </div>
                                                 აპარტამენტი №<?=$apartment->apartmentno?>/<?=$apartment->kvmeter?>მ2
                                             </a>
@@ -174,17 +178,21 @@
                     <?php endif; ?>
                 </div>
 
-                <div class="row focuses" style="display: flex; flex-wrap: nowrap">
+                <div class="row focuses" style="display: flex; flex-wrap: wrap; justify-content: center" >
                     <!-- SINGLE FOCUS COLUMN -->
-                    <div class="col-lg-7 col-sm-7 col-xs-7">
+                    <div class="col-lg-12 col-sm-12 col-xs-12">
                         <div class="wow fadeInLeftBig" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
-                            <?php if ($floor->parking != 1):  ?>
-                                <a href="/images/floors/<?=$floor->img?>" download>
-                                    <img src="/images/floors/<?=$floor->img?>" alt="" style="width: 100%">
+                            <?php if ($floor->parking != 1 && $floor->id > 11):  ?>
+                                <a href="/images/floors/gegma.jpg" download>
+                                    <img src="/images/floors/gegma.jpg" alt="" style="width: 100%">
                                 </a>
                             <?php elseif ($floor->parking == 1): ?>
                                 <a href="/images/floors/parking/<?=$floor->img?>" download>
                                     <img src="/images/floors/parking/<?=$floor->img?>" alt="" style="width: 100%">
+                                </a>
+                            <?php elseif ($floor->id < 12): ?>
+                                <a href="/images/floors/<?=$floor->img?>" download>
+                                    <img src="/images/floors/<?=$floor->img?>" alt="" style="width: 100%">
                                 </a>
                             <?php endif; ?>
                         </div>
@@ -199,20 +207,27 @@
                             <div data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s" style="display: flex; flex-wrap: wrap; justify-content: center">
 
                                 <?php  foreach ($apartments as $apartment): ?>
-                                <?php if ($floor->floor == $apartment->floorid):  ?>
-                                <?php if ($apartment->status == 1):  ?>
-                                <a href="/apartment/<?=$apartment->id?>" class="soldbutton" style="font-family: 'ArchyEDT-Bold', sans-serif;"  title="Sold">
-                                    <?php elseif ($apartment->status == 0): ?>
-                                    <a href="/apartment/<?=$apartment->id?>" class="floorbutton" style="font-family: 'ArchyEDT-Bold', sans-serif;"  title="For sale">
+                                    <?php if ($floor->floor == $apartment->floorid):  ?>
+                                        <?php if ($apartment->status == 1):  ?>
+                                            <a href="/apartment/<?=$apartment->id?>" class="soldbutton" style="font-family: 'ArchyEDT-Bold', sans-serif;"  title="SOLD">
+                                                <div class="onHoverImageInner">
+                                                    <img src="/images/floors/apartments/<?=$apartment->img?>" style="width: 100%; border-radius: 10px" alt="Image not found" />
+                                                </div>
+                                                Apartment №<?=$apartment->apartmentno?>/<?=$apartment->kvmeter?>M2
+                                            </a>
+                                        <?php elseif ($apartment->status == 0): ?>
+                                            <a href="/apartment/<?=$apartment->id?>" class="floorbutton" style="font-family: 'ArchyEDT-Bold', sans-serif;"  title="Not sold">
+                                                <div class="onHoverImageInner">
+                                                    <img src="/images/floors/apartments/<?=$apartment->img?>" style="width: 100%; border-radius: 10px" alt="Image not found" />
+                                                </div>
+                                                Apartment №<?=$apartment->apartmentno?>/<?=$apartment->kvmeter?>M2
+                                            </a>
                                         <?php endif; ?>
-                                        <div class="onHoverImage"><img src="/images/floors/apartments/<?=$apartment->img?>" style="width: 100%" /></div>
-                                        Apartment №<?=$apartment->apartmentno?>/<?=$apartment->kvmeter?>M2
-                                    </a>
-
                                     <?php endif; ?>
-                                    <?php endforeach; ?>
+                                <?php endforeach; ?>
                             </div>
                         </div>
+
                     <?php endif; ?>
 
                     <?php if ($floor->parking == 1 || $floor->floor == 0 || $floor->floor == 1):  ?>
@@ -290,17 +305,21 @@
                     <?php endif; ?>
                 </div>
 
-                <div class="row focuses" style="display: flex; flex-wrap: nowrap">
+                <div class="row focuses" style="display: flex; flex-wrap: wrap; justify-content: center" >
                     <!-- SINGLE FOCUS COLUMN -->
-                    <div class="col-lg-7 col-sm-7 col-xs-7">
+                    <div class="col-lg-12 col-sm-12 col-xs-12">
                         <div class="wow fadeInLeftBig" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
-                            <?php if ($floor->parking != 1):  ?>
-                                <a href="/images/floors/<?=$floor->img?>" download>
-                                    <img src="/images/floors/<?=$floor->img?>" alt="" style="width: 100%">
+                            <?php if ($floor->parking != 1 && $floor->id > 11):  ?>
+                                <a href="/images/floors/gegma.jpg" download>
+                                    <img src="/images/floors/gegma.jpg" alt="" style="width: 100%">
                                 </a>
                             <?php elseif ($floor->parking == 1): ?>
                                 <a href="/images/floors/parking/<?=$floor->img?>" download>
                                     <img src="/images/floors/parking/<?=$floor->img?>" alt="" style="width: 100%">
+                                </a>
+                            <?php elseif ($floor->id < 12): ?>
+                                <a href="/images/floors/<?=$floor->img?>" download>
+                                    <img src="/images/floors/<?=$floor->img?>" alt="" style="width: 100%">
                                 </a>
                             <?php endif; ?>
                         </div>
@@ -315,20 +334,27 @@
                             <div data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s" style="display: flex; flex-wrap: wrap; justify-content: center">
 
                                 <?php  foreach ($apartments as $apartment): ?>
-                                <?php if ($floor->floor == $apartment->floorid):  ?>
-                                <?php if ($apartment->status == 1):  ?>
-                                <a href="/apartment/<?=$apartment->id?>" class="soldbutton" style="font-family: 'ArchyEDT-Bold', sans-serif;"  title="ПРОДАНО">
-                                    <?php elseif ($apartment->status == 0): ?>
-                                    <a href="/apartment/<?=$apartment->id?>" class="floorbutton" style="font-family: 'ArchyEDT-Bold', sans-serif;"  title="Продается">
+                                    <?php if ($floor->floor == $apartment->floorid):  ?>
+                                        <?php if ($apartment->status == 1):  ?>
+                                            <a href="/apartment/<?=$apartment->id?>" class="soldbutton" style="font-family: 'ArchyEDT-Bold', sans-serif;"  title="ПРОДАНО">
+                                                <div class="onHoverImageInner">
+                                                    <img src="/images/floors/apartments/<?=$apartment->img?>" style="width: 100%; border-radius: 10px" alt="Image not found" />
+                                                </div>
+                                                Квартира №<?=$apartment->apartmentno?>/<?=$apartment->kvmeter?>М2
+                                            </a>
+                                        <?php elseif ($apartment->status == 0): ?>
+                                            <a href="/apartment/<?=$apartment->id?>" class="floorbutton" style="font-family: 'ArchyEDT-Bold', sans-serif;"  title="Продается">
+                                                <div class="onHoverImageInner">
+                                                    <img src="/images/floors/apartments/<?=$apartment->img?>" style="width: 100%; border-radius: 10px" alt="Image not found" />
+                                                </div>
+                                                Квартира №<?=$apartment->apartmentno?>/<?=$apartment->kvmeter?>М2
+                                            </a>
                                         <?php endif; ?>
-                                        <div class="onHoverImage"><img src="/images/floors/apartments/<?=$apartment->img?>" style="width: 100%" /></div>
-                                        Квартира №<?=$apartment->apartmentno?>/<?=$apartment->kvmeter?>М2
-                                    </a>
-
                                     <?php endif; ?>
-                                    <?php endforeach; ?>
+                                <?php endforeach; ?>
                             </div>
                         </div>
+
                     <?php endif; ?>
 
                     <?php if ($floor->parking == 1 || $floor->floor == 0 || $floor->floor == 1):  ?>

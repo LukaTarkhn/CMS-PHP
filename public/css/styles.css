@@ -494,7 +494,12 @@ h6 {
   font-size: 18px;
   line-height: 26px;
 }
-
+.main-logo {
+  position: absolute;
+  height: 70px;
+  top: 2px;
+  bottom: 3px;
+}
 /* SECTION NUMBER, HEADER AND BG */
 .section-number {
   font-weight: 700;
@@ -679,7 +684,8 @@ section {
 /*BUTTONS*/
 .social-btns .btn_,
 .social-btns .btn_:before,
-.social-btns .btn_ .fa {
+.social-btns .btn_ .fa,
+.social-btns .btn_ .icon {
   transition: all 0.35s;
   transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
 }
@@ -687,26 +693,30 @@ section {
   top: 90%;
   left: -110%;
 }
-.social-btns .btn_ .fa {
+.social-btns .btn_ .fa,
+.social-btns .btn_ .icon{
   -webkit-transform: scale(0.8);
   transform: scale(0.8);
 }
 .social-btns .btn_.facebook:before {
   background-color: #3b5998;
 }
-.social-btns .btn_.facebook .fa {
+.social-btns .btn_.facebook .fa,
+.social-btns .btn_.facebook .icon{
   color: #3b5998;
 }
 .social-btns .btn_.twitter:before {
   background-color: #3cf;
 }
-.social-btns .btn_.twitter .fa {
+.social-btns .btn_.twitter .fa,
+.social-btns .btn_.twitter .icon {
   color: #3cf;
 }
 .social-btns .btn_.google:before {
   background-color: #dc4a38;
 }
-.social-btns .btn_.google .fa {
+.social-btns .btn_.google .fa,
+.social-btns .btn_.google .icon{
   color: #dc4a38;
 }
 .social-btns .btn_.dribbble:before {
@@ -756,6 +766,7 @@ section {
   border-radius: 36%;
   box-shadow: 0 5px 15px -5px rgba(0,0,0,0.1);
   opacity: 0.99;
+  z-index: 0;
 }
 .social-btns .btn_:before {
   content: '';
@@ -765,9 +776,41 @@ section {
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-.social-btns .btn_ .fa {
+.social-btns .btn_ .fa,
+.social-btns .btn_ .icon{
   font-size: 38px;
   vertical-align: middle;
+}
+
+.fa-video:before {
+  content: "\f03d";
+}
+
+.apartmentImg {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.offerimg {
+  -webkit-transition: all 300ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+  -moz-transition: all 300ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+  -ms-transition: all 300ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+  -o-transition: all 300ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+  transition: all 300ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+  position: absolute;
+  top: 100px;
+  right: 30px;
+}
+
+.conditionimg {
+  -webkit-transition: all 300ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+  -moz-transition: all 300ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+  -ms-transition: all 300ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+  -o-transition: all 300ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+  transition: all 300ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+  position: absolute;
+  bottom: 50px;
+  right: 30px;
 }
 
 .floorbutton, .soldbutton {
@@ -811,15 +854,35 @@ select {
   appearance: none;       /* Remove default arrow */
 }
 /*-BUTTONS*/
+
+/*-BUTTONS*/
+.onHoverImageInner {
+  position:absolute;
+  bottom: 103%;
+  right: 0;
+  left: 3%;
+  width: 95%;
+
+}
+
 .onHoverImage {
   position:absolute;
   top: 0;
   width: 95%;
   left:-95%;
 }
+.conditionimg {
+  width: 150px;
+}
 
+.offerimg {
+  width: 210px;
+}
 a>.onHoverImage { display: none; }
 a:hover>.onHoverImage { display: block; }
+
+a>.onHoverImageInner { display: none; }
+a:hover>.onHoverImageInner { display: block; }
 /*text*/
 
 .content-2 {
@@ -980,6 +1043,10 @@ a:hover>.onHoverImage { display: block; }
   position: relative;
   padding-top: 114px;
   padding-bottom: 150px;
+}
+.focuses {
+  display: flex;
+  flex-wrap: nowrap
 }
 .focuses .single-focus {
   padding-left: 28px;
@@ -1314,6 +1381,10 @@ figure.effect-zoe:hover p.icon-links a:first-child {
   margin-bottom: 90px;
 }
 
+.tooltip { 
+  z-index: 0 !important;
+}
+
 /*---------------------------------------
    2.8 SECTION: WORK STEPS
 -----------------------------------------*/
@@ -1607,9 +1678,9 @@ figure.effect-zoe:hover p.icon-links a:first-child {
   margin-top: 75px;
 }
 .feature-box {
-  margin-bottom: 70px;
   padding-right: 20px;
   padding-left: 20px;
+  height: 200px;
 }
 .feature-box .feature-header {
   margin-bottom: 26px;
@@ -1718,7 +1789,7 @@ figure.effect-zoe:hover p.icon-links a:first-child {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
   margin-left: -7px;
-  padding: 0 25px 0 25px;
+  padding: 1px 25px 0 25px;
 }
 .mailchimp-success,
 .mailchimp-error,
@@ -1807,4 +1878,102 @@ figure.effect-zoe:hover p.icon-links a:first-child {
 
 .fixed-bg {
   background-attachment: fixed;
+}
+/*buttons*/
+
+
+.play-btn {
+  width: 130px;
+  height: 130px;
+  background: radial-gradient( rgba(0, 128, 255, 0.6) 60%, rgba(255, 255, 255, 1) 62%);
+  border-radius: 50%;
+  position: absolute;
+  display: block;
+  left: 30px;
+  margin-top: 350px;
+  box-shadow: 0px 0px 25px 3px rgba(0, 128, 255, 0.6);
+}
+
+.aboutimageM {
+  display: none;
+}
+
+.floorsImage {
+  width: 100%;
+  margin-top: 25%
+}
+
+/* triangle */
+.play-btn::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translateX(-40%) translateY(-50%);
+  transform: translateX(-40%) translateY(-50%);
+  transform-origin: center center;
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 25px solid #fff;
+  z-index: 100;
+  -webkit-transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+/* pulse wave */
+.play-btn:before {
+  content: "";
+  position: absolute;
+  width: 150%;
+  height: 150%;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+  -webkit-animation: pulsate1 2s;
+  animation: pulsate1 2s;
+  -webkit-animation-direction: forwards;
+  animation-direction: forwards;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: steps;
+  animation-timing-function: steps;
+  opacity: 1;
+  border-radius: 50%;
+  border: 5px solid rgba(255, 255, 255, .75);
+  top: -26%;
+  left: -26%;
+  background: rgba(198, 16, 0, 0);
+}
+
+@-webkit-keyframes pulsate1 {
+  0% {
+    -webkit-transform: scale(0.6);
+    transform: scale(0.6);
+    opacity: 1;
+    box-shadow: inset 0px 0px 25px 3px rgba(255, 255, 255, 0.75), 0px 0px 25px 10px rgba(255, 255, 255, 0.75);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 0;
+    box-shadow: none;
+
+  }
+}
+
+@keyframes pulsate1 {
+  0% {
+    -webkit-transform: scale(0.6);
+    transform: scale(0.6);
+    opacity: 1;
+    box-shadow: inset 0px 0px 25px 3px rgba(255, 255, 255, 0.75), 0px 0px 25px 10px rgba(255, 255, 255, 0.75);
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1);
+    opacity: 0;
+    box-shadow: none;
+
+  }
 }

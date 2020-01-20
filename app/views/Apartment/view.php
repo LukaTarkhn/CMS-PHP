@@ -44,18 +44,18 @@
                     </div>
                 </div>
 
-                <div class="row focuses" style="display: flex; flex-wrap: nowrap">
+                <div class="row focuses">
                     <!-- SINGLE FOCUS COLUMN -->
-                    <div class="col-lg-7 col-sm-7 col-xs-7">
+                    <div class="col-lg-12 col-sm-12 col-xs-12">
                         <div class="wow fadeInLeftBig" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
                             <a href="/images/floors/apartments/<?=$apartment->img?>" download>
-                                <img src="/images/floors/apartments/<?=$apartment->img?>" alt="" style="width: 100%">
+                                <img src="/images/floors/apartments/<?=$apartment->img?>" class="apartmentImg">
                             </a>
                         </div>
                     </div>
 
                     <!-- SINGLE FOCUS COLUMN -->
-                    <div class="col-lg-7 col-sm-7 col-xs-7 single-focus white-bg diffuse-shadow wow fadeInRightBig" style="height: 100%">
+                    <div class="col-lg-8 col-sm-8 col-xs-8 single-focus white-bg diffuse-shadow wow fadeInRightBig" style="height: 100%">
                         <div class="sub-heading" style="margin-top: -50px; ">
                             <span style="font-family: 'ArchyEDT-Bold', sans-serif; color: #64739d;">ინფორმაცია</span>
                             <hr>
@@ -145,16 +145,16 @@
 
                 <div class="row focuses" style="display: flex; flex-wrap: nowrap">
                     <!-- SINGLE FOCUS COLUMN -->
-                    <div class="col-lg-7 col-sm-7 col-xs-7">
+                    <div class="col-lg-12 col-sm-12 col-xs-12">
                         <div class="wow fadeInLeftBig" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
                             <a href="/images/floors/apartments/<?=$apartment->img?>" download>
-                                <img src="/images/floors/apartments/<?=$apartment->img?>" alt="" style="width: 100%">
+                                <img src="/images/floors/apartments/<?=$apartment->img?>" class="apartmentImg">
                             </a>
                         </div>
                     </div>
 
                     <!-- SINGLE FOCUS COLUMN -->
-                    <div class="col-lg-7 col-sm-7 col-xs-7 single-focus white-bg diffuse-shadow wow fadeInRightBig" style="height: 100%">
+                    <div class="col-lg-8 col-sm-8 col-xs-8 single-focus white-bg diffuse-shadow wow fadeInRightBig" style="height: 100%">
                         <div class="sub-heading" style="margin-top: -50px; ">
                             <span style="font-family: 'ArchyEDT-Bold', sans-serif; color: #64739d;">Information</span>
                             <hr>
@@ -244,16 +244,16 @@
 
                 <div class="row focuses" style="display: flex; flex-wrap: nowrap">
                     <!-- SINGLE FOCUS COLUMN -->
-                    <div class="col-lg-7 col-sm-7 col-xs-7">
+                    <div class="col-lg-12 col-sm-12 col-xs-12">
                         <div class="wow fadeInLeftBig" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
                             <a href="/images/floors/apartments/<?=$apartment->img?>" download>
-                                <img src="/images/floors/apartments/<?=$apartment->img?>" alt="" style="width: 100%">
+                                <img src="/images/floors/apartments/<?=$apartment->img?>" class="apartmentImg">
                             </a>
                         </div>
                     </div>
 
                     <!-- SINGLE FOCUS COLUMN -->
-                    <div class="col-lg-7 col-sm-7 col-xs-7 single-focus white-bg diffuse-shadow wow fadeInRightBig" style="height: 100%">
+                    <div class="col-lg-8 col-sm-8 col-xs-8 single-focus white-bg diffuse-shadow wow fadeInRightBig" style="height: 100%">
                         <div class="sub-heading" style="margin-top: -50px; ">
                             <span style="font-family: 'ArchyEDT-Bold', sans-serif; color: #64739d;">Информация</span>
                             <hr>

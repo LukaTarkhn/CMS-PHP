@@ -31,6 +31,7 @@
                     <select class="form-control" name="status" id="status">
                         <option <?=$apartments->status ? 'selected' : ''?> value="1">Sold</option>
                         <option <?=$apartments->status ? '' : 'selected'?> value="0">For sale</option>
+                        <option <?=$apartments->status == 2 ? 'selected' : ''?> value="2">Booked</option>
                     </select>
                     <div class="box-footer">
                         <input type="hidden" name="id" value="<?=$apartments->id?>">

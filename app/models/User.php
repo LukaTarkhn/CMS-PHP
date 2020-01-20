@@ -27,9 +27,9 @@ class User extends AppModel
         $password = !empty(trim($_POST['password'])) ? trim($_POST['password']) : null;
         if($username && $password){
             if($isAdmin) {
-                $user = \R::findOne('users', "username = ? AND role = 'admin'", [$username]);
+                $user = \R::findOne('users', "username = ? AND password = ? AND role = 'admin'", [$username, $password]);
             }else {
-                $user = \R::findOne('users', "username = ?", [$username]);
+                $user = \R::findOne('users', "username = ? AND password = ?", [$username, $password]);
             }
             if($user) {
                     foreach ($user as $k => $v) {

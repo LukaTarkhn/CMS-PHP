@@ -4,11 +4,12 @@
 <head>
     <!-- TITLE AND META -->
     <?=$this->getMeta();?>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta property="og:site_name" content="Real Palace - სამშენებლო კომპანია" />
     <meta property="og:title" content="Black Sea Towers" />
     <meta property="og:image" content="../images/backgrounds/1.jpg" />
     <meta property="og:url" content="https://realpalace.ge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+
 
 
     <!-- FAV ICONS and WEBFONT -->
@@ -25,11 +26,11 @@
     <!-- STYLESHEETS -->
     <link type='text/css' rel="stylesheet" href="/public/css/styles.css">
     <link type='text/css' rel="stylesheet" href="/public/css/responsive.css">
-
+    <link type='text/css' rel="stylesheet" href="/public/css/magnific-popup.css">
+    <link rel="stylesheet" href="/public/css/images-compare.css"/>
     <!--[if lt IE 9]>
     <script type='text/javascript' src="/public/js/html5shiv.js"></script>
     <![endif]-->
-
 </head>
 <?php $lang = \ibuild\App::$app->getProperty('language');?>
 <?php if ($lang['code'] === 'GE'): ?>
@@ -97,19 +98,11 @@
                     <form id="contact-form" class="contact-form">
                         <div class="row">
 
-                            <div class="col-lg-6 col-md-6">
-                                <input type="text" id="name" name="name" class="input-field" style="font-family: 'ArchyEDT-Bold', sans-serif;"  placeholder="სახელი" required>
-                            </div>
-
-                            <div class="col-lg-6 col-md-6">
+                            <div class="col-lg-12 col-md-12">
                                 <input type="email" id="email" name="email" class="input-field" style="font-family: 'ArchyEDT-Bold', sans-serif;"  placeholder="თქვენი ელ.ფოსტა" required>
                             </div>
 
-                            <div class="col-lg-6 col-md-6">
-                                <input type="text" id="subject" name="subject" class="input-field" style="font-family: 'ArchyEDT-Bold', sans-serif;"  placeholder="სათაური" required>
-                            </div>
-
-                            <div class="col-lg-6 col-md-6">
+                            <div class="col-lg-12 col-md-12">
                                 <input type="text" id="phone" name="phone" class="input-field" style="font-family: 'ArchyEDT-Bold', sans-serif;"  placeholder="ტელეფონის ნომერი" required>
                             </div>
 
@@ -149,9 +142,9 @@
                         <div class="footer-col">
                             <h6 style="color: #00acea" class="MTRegular">დაგვიკავშირდით</h6>
                             <p class="white-text">
-                                +995 577 22 47 47 <br>
-                                +995 514 67 47 47 <br>
-                                +995 514 65 47 47 <br>
+                            <a href="tel:995577224747" style="color: white;">+995 577 22 47 47 <br></a>
+                            <a href="tel:995514674747" style="color: white;">+995 514 67 47 47 <br></a>
+                            <a href="tel:995514654747" style="color: white;">+995 514 65 47 47 <br></a>
                                 realpalace2012@gmail.com
                             </p>
                         </div>
@@ -161,13 +154,15 @@
                         <div class="footer-col">
                             <h6 class="yellow-text MTRegular">სოც.ქსელები</h6>
                             <div class="social-icons">
-                                <a href="https://www.facebook.com/BuildingCompanyREALPALACE/"><span class="icon icon-sb-facebook"></span></a>
-                                <a href=""><span class="icon icon-sb-instagram"></span></a>
+                                <a href="https://www.facebook.com/BuildingCompanyREALPALACE/" target="_blank"><span class="icon icon-sb-facebook"></span></a>
+                                <a href="https://www.instagram.com/black_sea_towers/" target="_blank"><span class="icon icon-sb-instagram"></span></a>
                             </div>
                         </div>
                     </div>
                 </div>
-
+                <a href="https://www.google.com/maps/dir//41.6369948,41.6204987/@41.636817,41.6189501,17z/data=!4m2!4m1!3e0" target="_blank">
+                    <img src="/images/favicons/locationonmap.png" alt="" style="width: 100%">
+                </a>
                 <div class="four-lines">
                     <div class="line red-line-bottom">
                     </div>
@@ -178,7 +173,6 @@
                     <div class="line yellow-line-bottom">
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
@@ -248,19 +242,11 @@
                     <form id="contact-form" class="contact-form">
                         <div class="row">
 
-                            <div class="col-lg-6 col-md-6">
-                                <input type="text" id="name" name="name" class="input-field" style="font-family: 'ArchyEDT-Bold', sans-serif;"  placeholder="Name" required>
-                            </div>
-
-                            <div class="col-lg-6 col-md-6">
+                            <div class="col-lg-12 col-md-12">
                                 <input type="email" id="email" name="email" class="input-field" style="font-family: 'ArchyEDT-Bold', sans-serif;"  placeholder="Email" required>
                             </div>
 
-                            <div class="col-lg-6 col-md-6">
-                                <input type="text" id="subject" name="subject" class="input-field" style="font-family: 'ArchyEDT-Bold', sans-serif;"  placeholder="Subject" required>
-                            </div>
-
-                            <div class="col-lg-6 col-md-6">
+                            <div class="col-lg-12 col-md-12">
                                 <input type="text" id="phone" name="phone" class="input-field" style="font-family: 'ArchyEDT-Bold', sans-serif;"  placeholder="Phone number" required>
                             </div>
 
@@ -300,9 +286,9 @@
                         <div class="footer-col">
                             <h6 style="color: #00acea" class="MTRegular">Contact us</h6>
                             <p class="white-text">
-                                +995 577 22 47 47 <br>
-                                +995 514 67 47 47 <br>
-                                +995 514 65 47 47 <br>
+                            <a href="tel:995577224747" style="color: white;">+995 577 22 47 47 <br></a>
+                            <a href="tel:995514674747" style="color: white;">+995 514 67 47 47 <br></a>
+                            <a href="tel:995514654747" style="color: white;">+995 514 65 47 47 <br></a>
                                 realpalace2012@gmail.com
                             </p>
                         </div>
@@ -312,13 +298,15 @@
                         <div class="footer-col">
                             <h6 class="yellow-text MTRegular">Social networks</h6>
                             <div class="social-icons">
-                                <a href="https://www.facebook.com/BuildingCompanyREALPALACE/"><span class="icon icon-sb-facebook"></span></a>
-                                <a href=""><span class="icon icon-sb-instagram"></span></a>
+                                <a href="https://www.facebook.com/BuildingCompanyREALPALACE/" target="_blank"><span class="icon icon-sb-facebook"></span></a>
+                                <a href="https://www.instagram.com/black_sea_towers/" target="_blank"><span class="icon icon-sb-instagram"></span></a>
                             </div>
                         </div>
                     </div>
                 </div>
-
+                <a href="https://www.google.com/maps/dir//41.6369948,41.6204987/@41.636817,41.6189501,17z/data=!4m2!4m1!3e0" target="_blank">
+                    <img src="/images/favicons/locationonmap.png" alt="" style="width: 100%">
+                </a>
                 <div class="four-lines">
                     <div class="line red-line-bottom">
                     </div>
@@ -394,30 +382,24 @@
                 <div class="col-lg-8 col-lg-offset-2">
 
                     <!-- MAIL SUCCESS MESSAGE - ERROR MESSAGE AVAILABLE IN custom.js -->
-                    <h6 class="successText green-text MTMedium" style="background: #e5f2f9">Ваше сообщение было отправлено, мы скоро ответим</h6>
+                    <h6 class="success green-text MTMedium" style="background: #e5f2f9">Ваше сообщение было отправлено, мы скоро ответим</h6>
                     <h6 class="error red-text"></h6>
 
                     <form id="contact-form" class="contact-form">
                         <div class="row">
 
-                            <div class="col-lg-6 col-md-6">
-                                <input type="text" id="name" name="name" class="input-field" style="font-family: 'ArchyEDT-Bold', sans-serif;"  placeholder="Имя" required>
-                            </div>
 
-                            <div class="col-lg-6 col-md-6">
+                            <div class="col-lg-12 col-md-12">
                                 <input type="email" id="email" name="email" class="input-field" style="font-family: 'ArchyEDT-Bold', sans-serif;"  placeholder="Электронный адрес" required>
                             </div>
 
-                            <div class="col-lg-6 col-md-6">
-                                <input type="text" id="subject" name="subject" class="input-field" style="font-family: 'ArchyEDT-Bold', sans-serif;"  placeholder="Тема" required>
-                            </div>
 
-                            <div class="col-lg-6 col-md-6">
+                            <div class="col-lg-12 col-md-12">
                                 <input type="text" id="phone" name="phone" class="input-field" style="font-family: 'ArchyEDT-Bold', sans-serif;"  placeholder="Номер телефона" required>
                             </div>
 
                             <div class="col-lg-12">
-                                <textarea name="message" id="message" class="input-field" rows="8" style="font-family: 'ArchyEDT-Bold', sans-serif;"  placeholder="Текст тут" required></textarea>
+                                <textarea name="message" id="message" class="input-field" rows="8" style="font-family: 'ArchyEDT-Bold', sans-serif;"  placeholder="Поле для сообщения" required></textarea>
                             </div>
 
                             <button type="submit" value="Send" class="btn btn-default standard-button red-button" style="font-family: 'ArchyEDT-Bold', sans-serif;" >Отправить</button>
@@ -452,9 +434,9 @@
                         <div class="footer-col">
                             <h6 style="color: #00acea" class="MTRegular">Свяжитесь с нами</h6>
                             <p class="white-text">
-                                +995 577 22 47 47 <br>
-                                +995 514 67 47 47 <br>
-                                +995 514 65 47 47 <br>
+                            <a href="tel:995577224747" style="color: white;">+995 577 22 47 47 <br></a>
+                            <a href="tel:995514674747" style="color: white;">+995 514 67 47 47 <br></a>
+                            <a href="tel:995514654747" style="color: white;">+995 514 65 47 47 <br></a>
                                 realpalace2012@gmail.com
                             </p>
                         </div>
@@ -464,13 +446,15 @@
                         <div class="footer-col">
                             <h6 class="yellow-text MTRegular">Социальные сети</h6>
                             <div class="social-icons">
-                                <a href="https://www.facebook.com/BuildingCompanyREALPALACE/"><span class="icon icon-sb-facebook"></span></a>
-                                <a href=""><span class="icon icon-sb-instagram"></span></a>
+                                <a href="https://www.facebook.com/BuildingCompanyREALPALACE/" target="_blank"><span class="icon icon-sb-facebook"></span></a>
+                                <a href="https://www.instagram.com/black_sea_towers/" target="_blank"><span class="icon icon-sb-instagram"></span></a>
                             </div>
                         </div>
                     </div>
                 </div>
-
+                <a href="https://www.google.com/maps/dir//41.6369948,41.6204987/@41.636817,41.6189501,17z/data=!4m2!4m1!3e0" target="_blank">
+                    <img src="/images/favicons/locationonmap.png" alt="" style="width: 100%">
+                </a>
                 <div class="four-lines">
                     <div class="line red-line-bottom">
                     </div>
@@ -491,11 +475,60 @@
  JS SCRIPTS
 ============================== -->
     <script type='text/javascript' src="/public/js/jquery-1.11.3.min.js"></script>
+    <script type='text/javascript' src="/public/js/jquery.magnific-popup.min.js"></script>
     <script type='text/javascript' src="/public/js/third-party-scripts.js"></script>
     <script type='text/javascript' src="/public/js/custom.js"></script>
     <script type='text/javascript' src="/public/js/main.js"></script>
     <script type='text/javascript' src="/public/js/jquery.min.js"></script>
     <script type='text/javascript' src="/public/js/wow.min.js"></script>
+
+    <script type="text/javascript" src="/public/js/hammer2.0.8.js"></script>
+    <script type="text/javascript" src="/public/js/jquery.images-compare.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            var imagesCompareElement = $('.js-img-compare').imagesCompare();
+            var imagesCompare = imagesCompareElement.data('imagesCompare');
+            var events = imagesCompare.events();
+
+            imagesCompare.on(events.changed, function (event) {
+                console.log(events.changed);
+                console.log(event.ratio);
+                if (event.ratio < 0.4) {
+                    console.log('We see more than half of the back image');
+                }
+                if (event.ratio > 0.6) {
+                    console.log('We see more than half of the front image');
+                }
+
+                if (event.ratio <= 0) {
+                    console.log('We see completely back image');
+                }
+
+                if (event.ratio >= 1) {
+                    console.log('We see completely front image');
+                }
+            });
+
+            $('.js-front-btn').on('click', function (event) {
+                event.preventDefault();
+                imagesCompare.setValue(1, true);
+            });
+
+            $('.js-back-btn').on('click', function (event) {
+                event.preventDefault();
+                imagesCompare.setValue(0, true);
+            });
+
+            $('.js-toggle-btn').on('click', function (event) {
+                event.preventDefault();
+                if (imagesCompare.getValue() >= 0 && imagesCompare.getValue() < 1) {
+                    imagesCompare.setValue(1, true);
+                } else {
+                    imagesCompare.setValue(0, true);
+                }
+            });
+        });
+    </script>
 
     </body>
 </html>

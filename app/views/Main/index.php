@@ -13,11 +13,11 @@
                 <!-- NAVBAR EXPAND COLLAPSE ON MOBILE -->
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation" style="height: 35px; width: 35px; position: relative">
                     <span class="sr-only">ნავიგაცია</span>
-                    <span class="icon icon-menu" style="font-size: 25px; position:absolute; top:3px; right: 4px;"></span>
+                    <span class="icon icon-menu"></span>
                 </button>
 
                 <!-- LOGO -->
-                <a href="/">
+                <a href="/ka">
                     <img src="/images/logo.png" alt="LOGO" class="main-logo">
                 </a>
 
@@ -735,11 +735,11 @@
                     <!-- NAVBAR EXPAND COLLAPSE ON MOBILE -->
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation" style="height: 35px; width: 35px; position: relative">
                         <span class="sr-only">Navigation</span>
-                        <span class="icon icon-menu" style="font-size: 25px; position:absolute; top:3px; right: 4px;"></span>
+                        <span class="icon icon-menu"></span>
                     </button>
 
                     <!-- LOGO -->
-                    <a href="/">
+                    <a href="/en">
                         <img src="/images/logo.png" alt="LOGO" class="main-logo">
                     </a>
 
@@ -1448,11 +1448,11 @@
                     <!-- NAVBAR EXPAND COLLAPSE ON MOBILE -->
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation" style="height: 35px; width: 35px; position: relative">
                         <span class="sr-only">Навигация</span>
-                        <span class="icon icon-menu" style="font-size: 25px; position:absolute; top:3px; right: 4px;"></span>
+                        <span class="icon icon-menu"></span>
                     </button>
 
                     <!-- LOGO -->
-                    <a href="/">
+                    <a href="/ru">
                         <img src="/images/logo.png" alt="LOGO" class="main-logo">
                     </a>
 

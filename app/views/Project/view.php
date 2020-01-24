@@ -20,15 +20,15 @@
                     </button>
 
                     <!-- LOGO -->
-                    <a href="/">
-                        <img src="/images/logo.png" alt="LOGO" style="height: 70px; margin-top: 5px;margin-bottom: 3px;">
+                    <a href="/ka">
+                        <img src="/images/logo.png" alt="LOGO" class="inner-main-logo">
                     </a>
                 </div>
 
                 <div class="navbar-collapse collapse" id="navigation">
                     <!-- NAVIGATION LINK -->
                     <ul class="nav navbar-nav navbar-right main-navigation" id="internal-scroll">
-                        <li><a href="/" class="MTRegular">მთავარ გვერდზე დაბრუნება</a>
+                        <li><a href="/ka" class="MTRegular">მთავარ გვერდზე დაბრუნება</a>
                         </li>
                         <li><a href="#section10" class="MTRegular">კონტაქტი</a>
                         </li>
@@ -101,15 +101,15 @@
                     </button>
 
                     <!-- LOGO -->
-                    <a href="/">
-                        <img src="/images/logo.png" alt="LOGO" style="height: 70px; margin-top: 5px;margin-bottom: 3px;">
+                    <a href="/en">
+                        <img src="/images/logo.png" alt="LOGO" class="inner-main-logo">
                     </a>
                 </div>
 
                 <div class="navbar-collapse collapse" id="navigation">
                     <!-- NAVIGATION LINK -->
                     <ul class="nav navbar-nav navbar-right main-navigation" id="internal-scroll">
-                        <li><a href="/" class="MTRegular">Return to home page</a>
+                        <li><a href="/en" class="MTRegular">Return to home page</a>
                         </li>
                         <li><a href="#section10" class="MTRegular">Contact</a>
                         </li>
@@ -182,15 +182,15 @@
                     </button>
 
                     <!-- LOGO -->
-                    <a href="/">
-                        <img src="/images/logo.png" alt="LOGO" style="height: 70px; margin-top: 5px;margin-bottom: 3px;">
+                    <a href="/ru">
+                        <img src="/images/logo.png" alt="LOGO" class="inner-main-logo">
                     </a>
                 </div>
 
                 <div class="navbar-collapse collapse" id="navigation">
                     <!-- NAVIGATION LINK -->
                     <ul class="nav navbar-nav navbar-right main-navigation" id="internal-scroll">
-                        <li><a href="/" class="MTRegular">Вернуться на главную страницу</a>
+                        <li><a href="/ru" class="MTRegular">Вернуться на главную страницу</a>
                         </li>
                         <li><a href="#section10" class="MTRegular">Контакт</a>
                         </li>

@@ -20,7 +20,6 @@ class Languages {
         $this->languages = App::$app->getProperty('languages');
         $this->language = App::$app->getProperty('language');
         echo $this->getHtml();
-
     }
 
     public static  function  getLanguages() {
@@ -35,6 +34,7 @@ class Languages {
         }
         $language = $languages[$key];
         $language['code'] = $key;
+
         return $language;
     }
 

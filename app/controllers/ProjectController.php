@@ -12,14 +12,32 @@ class ProjectController extends AppController
         if(!$project) {
             throw  new \Exception('Page not found', 404);
         }
-
-        $this->setMeta(
-            $project->title,
-            'utf-8',
-            $project->title,
-            $project->title,
-            'lukatarkhnishvili.com'
-        );
+        $lang = \ibuild\App::$app->getProperty('language');
+        if ($lang['code'] === 'RU') {
+            $this->setMeta(
+                $project->title_rus,
+                'utf-8',
+                $project->title_rus,
+                $project->title_rus,
+                'lukatarkhnishvili.com'
+            );
+        } elseif ($lang['code'] === 'EN') {
+            $this->setMeta(
+                $project->title_eng,
+                'utf-8',
+                $project->title_eng,
+                $project->title_eng,
+                'lukatarkhnishvili.com'
+            );
+        } else {
+            $this->setMeta(
+                $project->title_geo,
+                'utf-8',
+                $project->title_geo,
+                $project->title_geo,
+                'lukatarkhnishvili.com'
+            );
+        }
 
         $this->set(compact('project'));
     }

@@ -20,15 +20,15 @@
                     </button>
 
                     <!-- LOGO -->
-                    <a href="/">
-                        <img src="/images/logo.png" alt="LOGO" style="height: 70px; margin-top: 5px;margin-bottom: 3px;">
+                    <a href="/ka">
+                        <img src="/images/logo.png" alt="LOGO" class="inner-main-logo">
                     </a>
                 </div>
 
                 <div class="navbar-collapse collapse" id="navigation">
                     <!-- NAVIGATION LINK -->
                     <ul class="nav navbar-nav navbar-right main-navigation" id="internal-scroll">
-                        <li><a href="/" class="MTRegular">მთავარ გვერდზე დაბრუნება</a>
+                        <li><a href="/ka" class="MTRegular">მთავარ გვერდზე დაბრუნება</a>
                         </li>
                         <li><a href="#section10" class="MTRegular">კონტაქტი</a>
                         </li>
@@ -46,7 +46,7 @@
                 <div class="row">
 
                     <!-- ABOUT US BOX -->
-                    <div class="col-lg-12 col-sm-6 overflow-box pull-right">
+                    <div class="col-lg-12 col-sm-12 overflow-box pull-right">
                         <div class="about-box diffuse-shadow wow fadeInRight" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
 
                             <div class="about-content">
@@ -96,15 +96,15 @@
                     </button>
 
                     <!-- LOGO -->
-                    <a href="/">
-                        <img src="/images/logo.png" alt="LOGO" style="height: 70px; margin-top: 5px;margin-bottom: 3px;">
+                    <a href="/en">
+                        <img src="/images/logo.png" alt="LOGO" class="inner-main-logo">
                     </a>
                 </div>
 
                 <div class="navbar-collapse collapse" id="navigation">
                     <!-- NAVIGATION LINK -->
                     <ul class="nav navbar-nav navbar-right main-navigation" id="internal-scroll">
-                        <li><a href="/" class="MTRegular">Return to home page</a>
+                        <li><a href="/en" class="MTRegular">Return to home page</a>
                         </li>
                         <li><a href="#section10" class="MTRegular">Contact</a>
                         </li>
@@ -122,7 +122,7 @@
                 <div class="row">
 
                     <!-- ABOUT US BOX -->
-                    <div class="col-lg-12 col-sm-6 overflow-box pull-right">
+                    <div class="col-lg-12 col-sm-12 overflow-box pull-right">
                         <div class="about-box diffuse-shadow wow fadeInRight" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
 
                             <div class="about-content">
@@ -172,15 +172,15 @@
                     </button>
 
                     <!-- LOGO -->
-                    <a href="/">
-                        <img src="/images/logo.png" alt="LOGO" style="height: 70px; margin-top: 5px;margin-bottom: 3px;">
+                    <a href="/ru">
+                        <img src="/images/logo.png" alt="LOGO" class="inner-main-logo">
                     </a>
                 </div>
 
                 <div class="navbar-collapse collapse" id="navigation">
                     <!-- NAVIGATION LINK -->
                     <ul class="nav navbar-nav navbar-right main-navigation" id="internal-scroll">
-                        <li><a href="/" class="MTRegular">Вернуться на главную страницу</a>
+                        <li><a href="/ru" class="MTRegular">Вернуться на главную страницу</a>
                         </li>
                         <li><a href="#section10" class="MTRegular">Контакт</a>
                         </li>
@@ -198,7 +198,7 @@
                 <div class="row">
 
                     <!-- ABOUT US BOX -->
-                    <div class="col-lg-12 col-sm-6 overflow-box pull-right">
+                    <div class="col-lg-12 col-sm-12 overflow-box pull-right">
                         <div class="about-box diffuse-shadow wow fadeInRight" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
 
                             <div class="about-content">

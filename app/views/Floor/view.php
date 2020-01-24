@@ -14,15 +14,15 @@
                     </button>
 
                     <!-- LOGO -->
-                    <a href="/">
-                        <img src="/images/logo.png" alt="LOGO" style="height: 70px; margin-top: 5px;margin-bottom: 3px;">
+                    <a href="/ka">
+                        <img src="/images/logo.png" alt="LOGO" class="inner-main-logo">
                     </a>
                 </div>
 
                 <div class="navbar-collapse collapse" id="navigation">
                     <!-- NAVIGATION LINK -->
                     <ul class="nav navbar-nav navbar-right main-navigation" id="internal-scroll">
-                        <li><a href="/" class="MTRegular">მთავარ გვერდზე დაბრუნება</a>
+                        <li><a href="/ka" class="MTRegular">მთავარ გვერდზე დაბრუნება</a>
                         </li>
                         <li><a href="#section10" class="MTRegular">კონტაქტი</a>
                         </li>
@@ -34,7 +34,7 @@
             <!-- /END CONTAINER -->
         </div>
         <!-- /END NAIVATION -->
-        <section class="our-focus bgcolor-2" id="section2">
+        <section class="our-focus bgcolor-2" id="section">
             <div class="container">
                 <!-- SECTION HEADER -->
                 <div class="section-header">
@@ -72,7 +72,7 @@
                     </div>
                     <?php if ($floor->parking != 1 && $floor->floor != 0 && $floor->floor != 1):  ?>
                         <!-- SINGLE FOCUS COLUMN -->
-                        <div class="col-lg-7 col-sm-7 col-xs-7 single-focus white-bg diffuse-shadow wow fadeInRightBig" style="height: 100%">
+                        <div class="col-lg-7 col-sm-12 col-xs-12 single-focus white-bg diffuse-shadow wow fadeInRightBig" style="height: 100%">
                             <div class="sub-heading" style="margin-top: -50px; ">
                                 <span style="font-family: 'ArchyEDT-Bold', sans-serif; color: #64739d;">აირჩიეთ ბინა</span>
                                 <hr>
@@ -82,14 +82,14 @@
                                 <?php  foreach ($apartments as $apartment): ?>
                                     <?php if ($floor->floor == $apartment->floorid):  ?>
                                         <?php if ($apartment->status == 1):  ?>
-                                            <a href="/apartment/<?=$apartment->id?>" class="soldbutton" style="font-family: 'ArchyEDT-Bold', sans-serif;"  title="გაყიდულია">
+                                            <a href="/ka/apartment/<?=$apartment->id?>" class="soldbutton" style="font-family: 'ArchyEDT-Bold', sans-serif;"  title="გაყიდულია">
                                                 <div class="onHoverImageInner">
                                                     <img src="/images/floors/apartments/<?=$apartment->img?>" style="width: 100%; border-radius: 10px" alt="Image not found" />
                                                 </div>
                                                 აპარტამენტი №<?=$apartment->apartmentno?>/<?=$apartment->kvmeter?>მ2
                                             </a>
                                         <?php elseif ($apartment->status == 0): ?>
-                                            <a href="/apartment/<?=$apartment->id?>" class="floorbutton" style="font-family: 'ArchyEDT-Bold', sans-serif;"  title="არის გაყიდვაში">
+                                            <a href="/ka/apartment/<?=$apartment->id?>" class="floorbutton" style="font-family: 'ArchyEDT-Bold', sans-serif;"  title="არის გაყიდვაში">
                                                 <div class="onHoverImageInner">
                                                     <img src="/images/floors/apartments/<?=$apartment->img?>" style="width: 100%; border-radius: 10px" alt="Image not found" />
                                                 </div>
@@ -141,15 +141,15 @@
                     </button>
 
                     <!-- LOGO -->
-                    <a href="/">
-                        <img src="/images/logo.png" alt="LOGO" style="height: 70px; margin-top: 5px;margin-bottom: 3px;">
+                    <a href="/en">
+                        <img src="/images/logo.png" alt="LOGO" class="inner-main-logo">
                     </a>
                 </div>
 
                 <div class="navbar-collapse collapse" id="navigation">
                     <!-- NAVIGATION LINK -->
                     <ul class="nav navbar-nav navbar-right main-navigation" id="internal-scroll">
-                        <li><a href="/" class="MTRegular">Return to home page</a>
+                        <li><a href="/en" class="MTRegular">Return to home page</a>
                         </li>
                         <li><a href="#section10" class="MTRegular">Contact</a>
                         </li>
@@ -161,7 +161,7 @@
             <!-- /END CONTAINER -->
         </div>
         <!-- /END NAIVATION -->
-        <section class="our-focus bgcolor-2" id="section2">
+        <section class="our-focus bgcolor-2" id="section">
             <div class="container">
                 <!-- SECTION HEADER -->
                 <div class="section-header">
@@ -199,7 +199,7 @@
                     </div>
                     <?php if ($floor->parking != 1 && $floor->floor != 0 && $floor->floor != 1):  ?>
                         <!-- SINGLE FOCUS COLUMN -->
-                        <div class="col-lg-7 col-sm-7 col-xs-7 single-focus white-bg diffuse-shadow wow fadeInRightBig" style="height: 100%">
+                        <div class="col-lg-7 col-sm-12 col-xs-12 single-focus white-bg diffuse-shadow wow fadeInRightBig" style="height: 100%">
                             <div class="sub-heading" style="margin-top: -50px; ">
                                 <span style="font-family: 'ArchyEDT-Bold', sans-serif; color: #64739d;">Select an apartment</span>
                                 <hr>
@@ -209,14 +209,14 @@
                                 <?php  foreach ($apartments as $apartment): ?>
                                     <?php if ($floor->floor == $apartment->floorid):  ?>
                                         <?php if ($apartment->status == 1):  ?>
-                                            <a href="/apartment/<?=$apartment->id?>" class="soldbutton" style="font-family: 'ArchyEDT-Bold', sans-serif;"  title="SOLD">
+                                            <a href="/en/apartment/<?=$apartment->id?>" class="soldbutton" style="font-family: 'ArchyEDT-Bold', sans-serif;"  title="SOLD">
                                                 <div class="onHoverImageInner">
                                                     <img src="/images/floors/apartments/<?=$apartment->img?>" style="width: 100%; border-radius: 10px" alt="Image not found" />
                                                 </div>
                                                 Apartment №<?=$apartment->apartmentno?>/<?=$apartment->kvmeter?>M2
                                             </a>
                                         <?php elseif ($apartment->status == 0): ?>
-                                            <a href="/apartment/<?=$apartment->id?>" class="floorbutton" style="font-family: 'ArchyEDT-Bold', sans-serif;"  title="Not sold">
+                                            <a href="/en/apartment/<?=$apartment->id?>" class="floorbutton" style="font-family: 'ArchyEDT-Bold', sans-serif;"  title="Not sold">
                                                 <div class="onHoverImageInner">
                                                     <img src="/images/floors/apartments/<?=$apartment->img?>" style="width: 100%; border-radius: 10px" alt="Image not found" />
                                                 </div>
@@ -268,15 +268,15 @@
                     </button>
 
                     <!-- LOGO -->
-                    <a href="/">
-                        <img src="/images/logo.png" alt="LOGO" style="height: 70px; margin-top: 5px;margin-bottom: 3px;">
+                    <a href="/ru">
+                        <img src="/images/logo.png" alt="LOGO" class="inner-main-logo">
                     </a>
                 </div>
 
                 <div class="navbar-collapse collapse" id="navigation">
                     <!-- NAVIGATION LINK -->
                     <ul class="nav navbar-nav navbar-right main-navigation" id="internal-scroll">
-                        <li><a href="/" class="MTRegular">Вернуться на главную страницу</a>
+                        <li><a href="/ru" class="MTRegular">Вернуться на главную страницу</a>
                         </li>
                         <li><a href="#section10" class="MTRegular">Контакт</a>
                         </li>
@@ -288,7 +288,7 @@
             <!-- /END CONTAINER -->
         </div>
         <!-- /END NAIVATION -->
-        <section class="our-focus bgcolor-2" id="section2">
+        <section class="our-focus bgcolor-2" id="section">
             <div class="container">
                 <!-- SECTION HEADER -->
                 <div class="section-header">
@@ -326,7 +326,7 @@
                     </div>
                     <?php if ($floor->parking != 1 && $floor->floor != 0 && $floor->floor != 1):  ?>
                         <!-- SINGLE FOCUS COLUMN -->
-                        <div class="col-lg-7 col-sm-7 col-xs-7 single-focus white-bg diffuse-shadow wow fadeInRightBig" style="height: 100%">
+                        <div class="col-lg-7 col-sm-12 col-xs-12 single-focus white-bg diffuse-shadow wow fadeInRightBig" style="height: 100%">
                             <div class="sub-heading" style="margin-top: -50px; ">
                                 <span style="font-family: 'ArchyEDT-Bold', sans-serif; color: #64739d;">Выберите квартиру</span>
                                 <hr>
@@ -336,14 +336,14 @@
                                 <?php  foreach ($apartments as $apartment): ?>
                                     <?php if ($floor->floor == $apartment->floorid):  ?>
                                         <?php if ($apartment->status == 1):  ?>
-                                            <a href="/apartment/<?=$apartment->id?>" class="soldbutton" style="font-family: 'ArchyEDT-Bold', sans-serif;"  title="ПРОДАНО">
+                                            <a href="/ru/apartment/<?=$apartment->id?>" class="soldbutton" style="font-family: 'ArchyEDT-Bold', sans-serif;"  title="ПРОДАНО">
                                                 <div class="onHoverImageInner">
                                                     <img src="/images/floors/apartments/<?=$apartment->img?>" style="width: 100%; border-radius: 10px" alt="Image not found" />
                                                 </div>
                                                 Квартира №<?=$apartment->apartmentno?>/<?=$apartment->kvmeter?>М2
                                             </a>
                                         <?php elseif ($apartment->status == 0): ?>
-                                            <a href="/apartment/<?=$apartment->id?>" class="floorbutton" style="font-family: 'ArchyEDT-Bold', sans-serif;"  title="Продается">
+                                            <a href="/ru/apartment/<?=$apartment->id?>" class="floorbutton" style="font-family: 'ArchyEDT-Bold', sans-serif;"  title="Продается">
                                                 <div class="onHoverImageInner">
                                                     <img src="/images/floors/apartments/<?=$apartment->img?>" style="width: 100%; border-radius: 10px" alt="Image not found" />
                                                 </div>

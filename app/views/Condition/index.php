@@ -15,15 +15,15 @@
                     </button>
 
                     <!-- LOGO -->
-                    <a href="/">
-                        <img src="/images/logo.png" alt="LOGO" style="height: 70px; margin-top: 5px;margin-bottom: 3px;">
+                    <a href="/ka">
+                        <img src="/images/logo.png" alt="LOGO" class="inner-main-logo">
                     </a>
                 </div>
 
                 <div class="navbar-collapse collapse" id="navigation">
                     <!-- NAVIGATION LINK -->
                     <ul class="nav navbar-nav navbar-right main-navigation" id="internal-scroll">
-                        <li><a href="/" class="MTRegular">მთავარ გვერდზე დაბრუნება</a>
+                        <li><a href="/ka" class="MTRegular">მთავარ გვერდზე დაბრუნება</a>
                         </li>
                         <li><a href="#section10" class="MTRegular">კონტაქტი</a>
                         </li>
@@ -35,7 +35,7 @@
             <!-- /END CONTAINER -->
         </div>
         <!-- /END NAIVATION -->
-        <section class="our-focus bgcolor-2" id="section2">
+        <section class="our-focus bgcolor-2" id="section">
 
                 <h3 class="section-heading text-center MTMedium">
                     <span style="background: #0C2C3C; color: #fff; padding: 5px 20px; border-top-left-radius: 50px; border-bottom-right-radius: 50px">აპარტამენტების ჩაბარების კონდიცია</span>
@@ -123,15 +123,15 @@
                     </button>
 
                     <!-- LOGO -->
-                    <a href="/">
-                        <img src="/images/logo.png" alt="LOGO" style="height: 70px; margin-top: 5px;margin-bottom: 3px;">
+                    <a href="/en">
+                        <img src="/images/logo.png" alt="LOGO" class="inner-main-logo">
                     </a>
                 </div>
 
                 <div class="navbar-collapse collapse" id="navigation">
                     <!-- NAVIGATION LINK -->
                     <ul class="nav navbar-nav navbar-right main-navigation" id="internal-scroll">
-                        <li><a href="/" class="MTRegular">Return to home page</a>
+                        <li><a href="/en" class="MTRegular">Return to home page</a>
                         </li>
                         <li><a href="#section10" class="MTRegular">Contact</a>
                         </li>
@@ -143,7 +143,7 @@
             <!-- /END CONTAINER -->
         </div>
         <!-- /END NAIVATION -->
-        <section class="our-focus bgcolor-2" id="section2">
+        <section class="our-focus bgcolor-2" id="section">
 
             <h3 class="section-heading text-center MTMedium">
                 <span style="background: #0C2C3C; color: #fff; padding: 5px 20px; border-top-left-radius: 50px; border-bottom-right-radius: 50px">APARTMENT HANDOVER CONDITIONS</span>
@@ -230,15 +230,15 @@
                     </button>
 
                     <!-- LOGO -->
-                    <a href="/">
-                        <img src="/images/logo.png" alt="LOGO" style="height: 70px; margin-top: 5px;margin-bottom: 3px;">
+                    <a href="/ru">
+                        <img src="/images/logo.png" alt="LOGO" class="inner-main-logo">
                     </a>
                 </div>
 
                 <div class="navbar-collapse collapse" id="navigation">
                     <!-- NAVIGATION LINK -->
                     <ul class="nav navbar-nav navbar-right main-navigation" id="internal-scroll">
-                        <li><a href="/" class="MTRegular">Вернуться на главную страницу</a>
+                        <li><a href="/ru" class="MTRegular">Вернуться на главную страницу</a>
                         </li>
                         <li><a href="#section10" class="MTRegular">Контакт</a>
                         </li>
@@ -250,7 +250,7 @@
             <!-- /END CONTAINER -->
         </div>
         <!-- /END NAIVATION -->
-        <section class="our-focus bgcolor-2" id="section2">
+        <section class="our-focus bgcolor-2" id="section">
 
             <h3 class="section-heading text-center MTMedium">
                 <span style="background: #0C2C3C; color: #fff; padding: 5px 20px; border-top-left-radius: 50px; border-bottom-right-radius: 50px">УСЛОВИЯ СДАЧИ АПАРТАМЕНТОВ</span>

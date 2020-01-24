@@ -1,7 +1,25 @@
+<?php $lang = \ibuild\App::$app->getProperty('language');?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="<?=$lang['code']?>">
 
 <head>
+    <?php if ($lang['code'] === 'GE'): ?>
+    <link rel="alternate" hreflang="en" href="https://realpalace.ge/en" />
+    <link rel="alternate" hreflang="ru" href="https://realpalace.ge/ru" />
+
+    <link rel="canonical" href="https://realpalace.ge/ka" />
+    <?php elseif($lang['code'] === 'EN'):  ?>
+        <link rel="alternate" hreflang="ka" href="https://realpalace.ge/ka" />
+        <link rel="alternate" hreflang="ru" href="https://realpalace.ge/ru" />
+
+        <link rel="canonical" href="https://realpalace.ge/en" />
+    <?php elseif($lang['code'] === 'RU'):  ?>
+        <link rel="alternate" hreflang="ka" href="https://realpalace.ge/ka" />
+        <link rel="alternate" hreflang="en" href="https://realpalace.ge/en" />
+
+        <link rel="canonical" href="https://realpalace.ge/ru" />
+    <?php endif;  ?>
+
     <!-- TITLE AND META -->
     <?=$this->getMeta();?>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
@@ -9,7 +27,8 @@
     <meta property="og:title" content="Black Sea Towers" />
     <meta property="og:image" content="../images/backgrounds/1.jpg" />
     <meta property="og:url" content="https://realpalace.ge" />
-
+    <meta property="og:type" content="website" />
+    <meta name="resource-type" content="document"/>
 
 
     <!-- FAV ICONS and WEBFONT -->
@@ -32,7 +51,7 @@
     <script type='text/javascript' src="/public/js/html5shiv.js"></script>
     <![endif]-->
 </head>
-<?php $lang = \ibuild\App::$app->getProperty('language');?>
+
 <?php if ($lang['code'] === 'GE'): ?>
     <body>
 

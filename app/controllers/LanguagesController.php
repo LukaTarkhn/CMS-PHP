@@ -6,8 +6,7 @@ namespace app\controllers;
 
 class LanguagesController extends AppController
 {
-
-    public  function changeAction() {
+    public static function changeAction() {
         $languages = !empty($_GET['lang']) ? $_GET['lang'] : null;
         if ($languages) {
             $lang = \R::findOne('languages', 'code = ?', [$languages]);
@@ -17,5 +16,4 @@ class LanguagesController extends AppController
         }
         redirect();
     }
-
 }

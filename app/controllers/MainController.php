@@ -11,14 +11,17 @@ class MainController extends AppController {
         $currentWorks = \R::find('current', 'ORDER BY id DESC LIMIT 8');
         $floors = \R::find('floors');
         $offers = \R::find('offers');
+        $lang = \ibuild\App::$app->getProperty('language');
 
-        $this->setMeta(
-            'Real Palace – Construction company',
-            'utf-8',
-            'სამშენებლო კომპანია REAL PALACE, ჩვენ ვაშენებთ კორპუსებს ბათუმში და თბილისში, კორპუსების მშენებლობა ყოველთვის ჯდება ვადებში',
-            'სამშენებლო კომპანია, სამშენებლო კომპანია ბათუმში, REAL PALACE, realpalace.ge, მშენებარე ბინები ბათუმში',
-            'lukatarkhnishvili.com'
-        );
+        if ($lang['code'] === 'RU') {
+            redirect('/ru');
+        } elseif ($lang['code'] === 'EN') {
+            redirect('/en');
+        } elseif ($lang['code'] === 'GE') {
+            redirect('/ka');
+        }
+
+
         $this->set(compact('aboutus', 'finishedProjects', 'currentWorks', 'floors', 'offers'));
 
     }

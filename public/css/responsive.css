@@ -8,6 +8,81 @@
     width: 100%;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
+    margin-bottom: -50px;
+  }
+
+  .about-us {
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+
+  .about-content {
+    margin-top: 0;
+    margin-bottom: -70px;
+  }
+
+  #section2 {
+    padding-top: 50px;
+    padding-bottom: 0;
+  }
+
+  .portfolio {
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+
+  .pricing {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .features .cta-bottom {
+    margin-top: 0;
+  }
+
+  .features .cta-bottom h4{
+    font-size: 17px;
+  }
+
+
+  .features .feature-grid{
+    margin-top: 15px;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .features .feature-grid .feature-box{
+    padding-right: 0;
+    padding-left: 0;
+    height: 150px;
+  }
+  .features {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .blog {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .subscribe-section {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .get-in-touch {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .work-steps {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .floorsImage {
+    margin-top: 0 !important;
   }
   .overflow-box {
     margin-left: 0;
@@ -64,15 +139,30 @@
 
 @media screen and (max-width: 800px) {
   .conditionimg {
-    width: 100px;
+    width: 70px;
   }
 
   .offerimg {
-    width: 140px;
+    width: 100px;
+  }
+
+  .play-btn {
+    width: 70px;
+    height: 70px;
   }
 
   .play-btn, .conditionimg {
     bottom: 80px;
+  }
+
+  .social-btns .btn_ {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+  }
+  .social-btns .btn_ .fa,
+  .social-btns .btn_ .icon{
+    font-size: 32px;
   }
 }
 
@@ -96,12 +186,58 @@
     width: 100%;
     max-width: 100%;
   }
+
+  .work-steps .steps .step-1-image,
+  .work-steps .steps .step-2-image,
+  .work-steps .steps .step-3-image,
+  .work-steps .steps .step-4-image{
+    background: none;
+  }
+
+  #section h4 {
+    font-size: 18px;
+  }
+
+  .focuses .floorbutton,
+  .focuses .soldbutton{
+    width: 90px;
+    padding: 5px;
+    letter-spacing: 0;
+    margin-right: 4px;
+    font-size: 15px;
+  }
+
+  .js-img-compare {
+    width: 100% !important;
+  }
+  .conditionTxt {
+    font-size: 15px !important;
+  }
 }
 
 /* SECREEN WIDTH undeer 992px */
 @media screen and (max-width: 991px) {
   .footer-col {
     text-align: center !important;
+  }
+
+  .no-gutters {
+    overflow: hidden;
+  }
+
+  .get-in-touch a img {
+    width: 200% !important;
+    margin-left: -150px;
+    height: 220px;
+  }
+
+  .get-in-touch .footer-col {
+    padding-bottom: 0;
+    padding-top: 15px;
+  }
+
+  .footer {
+    margin-top: 0;
   }
 }
 
@@ -118,6 +254,43 @@
   .subscribe-form .standard-button {
     margin-left: 0;
     border-radius: 30px;
+  }
+
+  .video-play h3 {
+    font-size: 20px;
+  }
+  .video-play .play-button {
+    font-size: 60px;
+  }
+  .video-play .color-overlay {
+    padding-top: 10px;
+    padding-bottom: 40px;
+  }
+
+  .our-focus .about-content .text-left {
+    margin-bottom: 0;
+  }
+
+  .our-focus .about-content .section-heading {
+    font-size: 18px;
+  }
+
+  .our-focus .about-content p {
+    font-size: 16px !important;
+    margin-top: 0;
+  }
+
+  .our-focus .about-content:first-child {
+    padding-top: 0 !important;
+  }
+
+  .our-focus {
+    padding-top: 70px;
+    padding-bottom: 0;
+  }
+
+  .our-focus .about-box .four-lines {
+    padding-top: 70px;
   }
 }
 
@@ -149,6 +322,9 @@
 @media (max-width: 991px) {
   .main-logo {
     margin-left: -73px;
+  }
+  .inner-main-logo {
+    margin-left: -70px;
   }
   .floorsImage {
     width: 100%;
@@ -233,5 +409,11 @@
 
   .standard-button {
     border-radius: 2px;
+  }
+
+  .js-front-btn,
+  .js-back-btn,
+  .images-compare-label{
+    font-size: 12px;
   }
 }

@@ -494,12 +494,59 @@ h6 {
   font-size: 18px;
   line-height: 26px;
 }
-.main-logo {
+.main-logo,
+.inner-main-logo{
   position: absolute;
   height: 70px;
   top: 2px;
   bottom: 3px;
 }
+
+
+.flags {
+  width: 25px;
+}
+
+.langdropbtn {
+  padding: 6px 10px;
+  font-size: 16px;
+  cursor: pointer;
+  max-width: 60px;
+  border: none;
+  border-radius: 4px;
+  text-align: center
+}
+
+.langdropbtn:focus {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.langdropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.langdropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  width: 100%;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.langdropdown-content a {
+  color: black;
+  padding: 5px 9px;
+  text-decoration: none;
+  display: block;
+}
+
+.langdropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
 /* SECTION NUMBER, HEADER AND BG */
 .section-number {
   font-weight: 700;
@@ -827,6 +874,14 @@ section {
   border-radius: 4px;
   padding: 10px 20px;
   letter-spacing: 2px;
+}
+
+.conditionTxt {
+  background: #0C2C3C;
+  color: #fff;
+  padding: 5px 20px;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
 }
 
 .soldbutton {
@@ -1261,6 +1316,20 @@ figure.effect-zoe p.icon-links a span::before {
 figure.effect-zoe h6 {
   display: inline-block;
 }
+
+.icon-menu {
+  font-size: 25px;
+  position:absolute;
+  top:3px;
+  right: 4px;
+}
+
+.navbar-toggle {
+  height: 35px;
+  width: 35px;
+  position: relative;
+}
+
 figure.effect-zoe:hover p.description {
   opacity: 1;
 }
@@ -1702,8 +1771,6 @@ figure.effect-zoe:hover p.icon-links a:first-child {
 }
 .cta-bottom h4 {
   display: inline-block;
-  margin-right: 25px;
-  margin-top: 30px;
 }
 .cta-bottom .standard-button {
   margin-top: 20px;

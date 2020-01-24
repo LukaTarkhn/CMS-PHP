@@ -253,3 +253,20 @@ window.addEventListener('load', function() {
     headchange();
     setInterval(headchange, delay + 8200);
 });
+
+function changeLang() {
+    document.getElementById("langDrop").classList.toggle("show");
+}
+
+window.onclick = function(event) {
+    if (!event.target.matches('.drp')) {
+        var dropdowns = document.getElementsByClassName("langdropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+        }
+    }
+}

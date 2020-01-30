@@ -66,6 +66,9 @@
                                 <div class="col-lg-12">
                                     <?php if ($apartment->status == 1 ): ?>
                                         <h4 class="wow fadeInLeft" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s" style="margin-top: -180px; color: #9f1447; font-family: 'ArchyEDT-Bold', sans-serif;">აპარტამენტი № <?=$apartment->apartmentno ?> - უკვე გაყიდულია</h4>
+                                    <?php elseif ($apartment->status == 2): ?>
+                                        <h4 class="wow fadeInLeft" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s" style="margin-top: -180px; color: #f5d849; font-family: 'ArchyEDT-Bold', sans-serif;">დაჯავშნილია</h4>
+                                        <br>
                                     <?php else: ?>
                                         <h4 class="wow fadeInLeft" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s" style="margin-top: -180px; color: #00c054; font-family: 'ArchyEDT-Bold', sans-serif;">გაყიდვაშია</h4>
                                         <br>
@@ -165,6 +168,9 @@
                                 <div class="col-lg-12">
                                     <?php if ($apartment->status == 1 ): ?>
                                         <h4 class="wow fadeInLeft" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s" style="margin-top: -180px; color: #9f1447; font-family: 'ArchyEDT-Bold', sans-serif;">Apartment № <?=$apartment->apartmentno ?> - SOLD</h4>
+                                    <?php elseif ($apartment->status == 2): ?>
+                                        <h4 class="wow fadeInLeft" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s" style="margin-top: -180px; color: #f5d849; font-family: 'ArchyEDT-Bold', sans-serif;">Booked</h4>
+                                        <br>
                                     <?php else: ?>
                                         <h4 class="wow fadeInLeft" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s" style="margin-top: -180px; color: #00c054; font-family: 'ArchyEDT-Bold', sans-serif;">For sale</h4>
                                         <br>
@@ -264,6 +270,9 @@
                                 <div class="col-lg-12">
                                     <?php if ($apartment->status == 1 ): ?>
                                         <h4 class="wow fadeInLeft" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s" style="margin-top: -180px; color: #9f1447; font-family: 'ArchyEDT-Bold', sans-serif;">Квартира № <?=$apartment->apartmentno ?> - ПРОДАНО</h4>
+                                    <?php elseif ($apartment->status == 2): ?>
+                                        <h4 class="wow fadeInLeft" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s" style="margin-top: -180px; color: #f5d849; font-family: 'ArchyEDT-Bold', sans-serif;">Забронировано</h4>
+                                        <br>
                                     <?php else: ?>
                                         <h4 class="wow fadeInLeft" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s" style="margin-top: -180px; color: #00c054; font-family: 'ArchyEDT-Bold', sans-serif;">Продается</h4>
                                         <br>

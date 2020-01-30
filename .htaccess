@@ -1,6 +1,6 @@
 AddDefaultCharset utf-8
 RewriteEngine On
-RewriteRule (.*) public/$1
+RewriteRule ^((?!robots\.txt|sitemap\.xml|sitemap\.html).*) public/$1
 
 <IfModule mod_deflate.c>
 AddOutputFilterByType DEFLATE text/html

@@ -95,6 +95,13 @@
                                                 </div>
                                                 აპარტამენტი №<?=$apartment->apartmentno?>/<?=$apartment->kvmeter?>მ2
                                             </a>
+                                        <?php elseif ($apartment->status == 2): ?>
+                                            <a href="/ka/apartment/<?=$apartment->id?>" class="bookedbutton" style="font-family: 'ArchyEDT-Bold', sans-serif;"  title="დაჯავშნილია">
+                                                <div class="onHoverImageInner">
+                                                    <img src="/images/floors/apartments/<?=$apartment->img?>" style="width: 100%; border-radius: 10px" alt="Image not found" />
+                                                </div>
+                                                აპარტამენტი №<?=$apartment->apartmentno?>/<?=$apartment->kvmeter?>მ2
+                                            </a>
                                         <?php endif; ?>
                                     <?php endif; ?>
                                 <?php endforeach; ?>
@@ -222,6 +229,13 @@
                                                 </div>
                                                 Apartment №<?=$apartment->apartmentno?>/<?=$apartment->kvmeter?>M2
                                             </a>
+                                        <?php elseif ($apartment->status == 2): ?>
+                                            <a href="/en/apartment/<?=$apartment->id?>" class="bookedbutton" style="font-family: 'ArchyEDT-Bold', sans-serif;"  title="Booked">
+                                                <div class="onHoverImageInner">
+                                                    <img src="/images/floors/apartments/<?=$apartment->img?>" style="width: 100%; border-radius: 10px" alt="Image not found" />
+                                                </div>
+                                                Apartment №<?=$apartment->apartmentno?>/<?=$apartment->kvmeter?>M2
+                                            </a>
                                         <?php endif; ?>
                                     <?php endif; ?>
                                 <?php endforeach; ?>
@@ -344,6 +358,13 @@
                                             </a>
                                         <?php elseif ($apartment->status == 0): ?>
                                             <a href="/ru/apartment/<?=$apartment->id?>" class="floorbutton" style="font-family: 'ArchyEDT-Bold', sans-serif;"  title="Продается">
+                                                <div class="onHoverImageInner">
+                                                    <img src="/images/floors/apartments/<?=$apartment->img?>" style="width: 100%; border-radius: 10px" alt="Image not found" />
+                                                </div>
+                                                Квартира №<?=$apartment->apartmentno?>/<?=$apartment->kvmeter?>М2
+                                            </a>
+                                        <?php elseif ($apartment->status == 2): ?>
+                                            <a href="/ru/apartment/<?=$apartment->id?>" class="bookedbutton" style="font-family: 'ArchyEDT-Bold', sans-serif;"  title="Забронировано">
                                                 <div class="onHoverImageInner">
                                                     <img src="/images/floors/apartments/<?=$apartment->img?>" style="width: 100%; border-radius: 10px" alt="Image not found" />
                                                 </div>

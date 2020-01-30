@@ -1,0 +1,16 @@
+Sitemap: https://realpalace.ge/sitemap.html
+Sitemap: https://realpalace.ge/sitemap.xml
+
+User-Agent: *
+Disallow: 
+Disallow: /realpalace.ge/admin
+Allow: /realpalace.ge
+Allow: /realpalace.ge/ka
+Allow: /realpalace.ge/en
+Allow: /realpalace.ge/ru
+Allow: /realpalace.ge/ka/condition
+Allow: /realpalace.ge/en/condition
+Allow: /realpalace.ge/ru/condition
+Allow: /realpalace.ge/sitemap.html
+Allow: /realpalace.ge/sitemap.xml
+

@@ -29,6 +29,7 @@
     <meta property="og:url" content="https://realpalace.ge" />
     <meta property="og:type" content="website" />
     <meta name="resource-type" content="document"/>
+    <meta name="google-site-verification" content="0vNAVT43vkQ4Vh5Ma7v4iCW-r4cCCSKFj-QDszxddKA" />
 
 
     <!-- FAV ICONS and WEBFONT -->
